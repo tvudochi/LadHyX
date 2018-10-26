@@ -133,7 +133,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'localhost',
         'PORT': '',
-     
+
     }
 }
 
