@@ -1,5 +1,10 @@
 # LadHyX
-Web LadHyX / Django 
+Site Web du Laboratoire LadHyX / Ecole polytechnique sous Django.
+Application principale LadHyX
+Application personnel gère le personnel du laboratoire
+Application evenement gère les séminaires du laboratoire
+Application publications gère les publications des chercheurs du laboratoire. (La base de données est historiquement des fichiers plats)
+Application mutltimedia gère les requêtes d'affichage de vidéos vers Vimeo (API Vimeo python)
 
 backports-abc==0.5
 
