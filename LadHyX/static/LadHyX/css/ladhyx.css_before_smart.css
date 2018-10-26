@@ -1,0 +1,836 @@
+/* LadHyX Fonds de page
+-------------------------------------------------- */
+@font-face {
+  font-family: 'neutra', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  src: url('../fonts/NeutraTextTF-Demi.otf');
+  src: url('../fonts/NeutraTextTF-Demi.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color:#FFFFFF;
+  background: #2473b6;/* Old browsers */
+  background: -moz-linear-gradient(top, #2473b6 0%, #00305e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2473b6 0%,#00305e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2473b6 0%,#00305e 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2473b6', endColorstr='#00305e',GradientType=0 ); /* IE6-9 */
+  background-position:bottom;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+body > .container {
+  color:white;
+  height:100%;
+  padding: 0 0 0 0;
+}
+
+.content {
+  margin: 5%;
+}
+
+/* TITRES*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'neutra', sans-serif;
+}  
+
+h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+} 
+h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+h3 {
+      color:#6dccbb;
+      /*color: white;*/
+      font-size: 1.1em;
+      font-weight: 400
+}
+h4 {
+  font-size: 1em;
+  font-weight: 500
+}
+
+.capitales {
+  text-transform: capitalize;
+}
+
+.majuscules {
+  text-transform: uppercase;
+}
+
+.minuscules {
+  text-transform: lowercase;
+}
+
+.champ {
+  color: #6dccbb;
+  font-weight: 800;
+  width: 120px;
+  min-width: 120px;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px rgba(0, 48, 94, 0.8);
+}
+
+.champ1 {
+  color: #6dccbb;
+  font-weight: 800;
+  width: 70px;
+  min-width: 70px;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px rgba(0, 48, 94, 0.8);
+}
+
+.parution {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+a.vert {
+  color:#6dccbb;
+}
+
+a.bolder {
+  font-weight:600;
+}
+
+/* TOAI */
+span[class~="vert"] {
+  color:#6dccbb;
+  font-weight:600;
+}
+
+h2 small {
+  color:#ffffff;
+}
+
+/* LadHyX Navigations
+-------------------------------------------------- */
+/* TOAI */
+#myfr {
+  margin: 0;
+  padding-top: 12px;
+}
+
+#myen {
+  margin: 0;
+  padding-top: 12px;
+}
+.navbar {
+  border: none;
+  border-radius: 0px;
+  font-family: 'neutra';
+}
+
+.name {
+  text-transform: uppercase
+}
+
+.firstname {
+  text-transform: capitalize;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #6dccbb;
+  font-size: 0.9em;
+  padding-left: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 48, 94, 0.8);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  font-size: 0.9em;
+  text-decoration:none;
+}
+
+.navbar-default {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFFFFF;
+  background-color: transparent;
+  font-size: 0.9em;
+}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #2473b6;
+}
+
+
+.infospratiques .nav{
+  float:right;
+  padding-right: 15px;
+  margin-left: auto;
+  background-color: transparent;
+  display: -webkit-inline-box;
+}
+
+.principale.navbar {
+  padding-right:0;
+  margin: 0;
+  background-color: rgba(0, 48, 94, 0.2);
+}
+
+
+/* LadHyX Header
+-------------------------------------------------- */
+header {
+  text-align:center;
+}
+
+/* LOGO SVG*/
+.logoLadHyX {
+  margin-top:15px;
+  max-width:500px;
+  min-width: 320px;
+  fill:#ffffff;
+}
+a .texteLogo {
+  font-size:11px;
+  fill:#6dccbb;
+  font-family:'neutra', 'sans-serif';
+  letter-spacing:0.06em;
+  text-shadow: 1px 1px 2px rgba(0, 48, 94, 0.8);
+}
+
+a .rondLadHyX {
+  fill:#ffffff;
+}
+
+a .sigleLadHyX {
+  fill:#ffffff;
+}
+
+/* SLOGAN : Powered by water and air ! */
+.slogan {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.4em;
+}
+
+/* LOGO SMALL PAGE TYPE DE RECHERCHE*/
+.logoLadHyXsm {
+  margin-top:15px;
+  max-width:200px;
+}
+
+/* ENCART NEWS EVENT*/
+.newsevent {
+  text-decoration: none;
+  font-size: 11px;
+  background-color: rgba(0, 48, 94, 0.1);
+  margin-top:20px;padding-bottom:10px;
+  text-align: center;
+  border:1px solid #FFFFFF;
+  -webkit-box-shadow: 2px 3px 5px 2px #00305e;
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+  /*min-width: 140px;*/
+  /*width: 210px;*/
+  /*max-width:130px;*/
+  margin-left: 0px;
+}
+
+
+
+a:hover .newsevent, a:focus .newsevent  {
+  text-decoration : none !important;
+  font-size: 11px;
+  background-color: rgba(0, 48, 94, 0.2);
+  margin-top:20px;
+  padding-bottom:10px;
+  text-align: center;
+  border:1px solid #FFFFFF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+}
+
+.newsevent hr {
+  margin: 2px;
+  padding: 2px;
+}
+
+a .jour {
+  color:#ffffff;
+  /* TOAI */
+  /*font-size: 50px;*/
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 48, 94, 0.8);
+}
+
+a .mois {
+  color: #ffffff;
+  font-family:'neutra';
+  font-size: 16px;
+  line-height: 0.2em;
+  letter-spacing:0.1em;
+}
+
+a .evenement {
+  font-size: 14px;
+  color:#ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 48, 94, 0.8);
+}
+
+
+/* LadHyX Contenu
+-------------------------------------------------- */
+
+/* page 4 colonnes*/
+
+/* LadHyX Footer
+-------------------------------------------------- */
+footer {
+  bottom: 0px;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height:156px;
+  background: url("../img/nuages_footer.gif") no-repeat bottom center ;
+}
+
+.logos {
+  margin-top: 100px;
+}
+
+.mentions a {
+  padding-right:15px;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+
+/* LadHyX Liens
+-------------------------------------------------- */
+
+a {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/* TOAI*/
+p > a {
+  color: #6DCCBB ;
+}
+
+p > a:hover ,
+p > a:focus {
+  color : white;
+  background-color: transparent;
+  font-size: 0.9em;
+  text-decoration:none;
+}
+/* FIN TOAI*/
+
+li a {
+  font-family: 'Muli', sans-serif;
+  font-size:13px; color: #ffffff;
+}
+ 
+li > a:focus,
+li > a:hover {
+  color: #6DCCBB;
+  background-color: transparent;
+  font-size: 0.9em;
+  text-decoration:none;
+}
+
+/* LadHyX Icones
+-------------------------------------------------- */
+.glyphicon {
+  margin-right: 10px;
+  padding:10px;
+  background-color: rgba(0, 48, 94, 0.5);
+  color:#6dccbb;
+}
+
+.glyphicon-tint {
+  background-color:inherit;
+  color:inherit;
+  padding:0px;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.glyphicon-chevron-left,
+.glyphicon-chevron-right {
+  width:20px;
+  height:20px;
+  padding:0;
+  margin: 0;
+  text-align: center;
+  background-color: rgba(0, 48, 94, 0.0);
+}
+
+.glyphicon-chevron-left:hover,
+.glyphicon-chevron-left:focus {
+  content: "\e079";
+  color:#ffffff;
+  width:20px;
+}
+
+.glyphicon-chevron-right:hover,
+.glyphicon-chevron-left:focus {
+  content: "\e080";
+  color:#ffffff;
+  width: 20px;
+}
+
+/* LadHyX Boutons
+-------------------------------------------------- */
+.btn-default{
+  color: #fff;
+  background-color: rgba(0, 48, 94, 0.3);
+  border-radius: 0px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+  border-color: 1px solid transparent}
+
+.btn-annee {
+  display: inline-block;
+  padding: 12px 6px;
+  margin: 9px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: #6dccbb;
+  background-color: rgba(0, 48, 94, 0.1);
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+  border-color: #003e5c;
+}
+
+.btn-annee:focus,
+.btn-annee:hover {
+  color:#fff;
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.2);
+  border-color: #cccccc;
+}
+
+.btn-auto {
+  display: inline-block;
+  padding: 2px 2px;
+  margin: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: #6dccbb;
+  background-color: rgba(0, 48, 94, 0.8);
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+  border-color: #6dccbb;
+}
+
+.btn-auto:focus,
+.btn-auto:hover {
+  color:#fff;
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.2);
+  border-color: #cccccc;
+}
+
+/* LadHyX Modal
+-------------------------------------------------- */
+.modal-content {
+  font-family: 'Muli', sans-serif;font-size:13px;
+  position: relative;
+  color:#FFFFFF;
+  background-color: rgba(0, 48, 94, 0.8);
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+  background: #2473b6;/* Old browsers */
+  background: -moz-linear-gradient(top, #2473b6 0%, #00305e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2473b6 0%,#00305e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2473b6 0%,#00305e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2473b6', endColorstr='#00305e',GradientType=0 ); /* IE6-9 */
+  background-position:bottom;
+  padding-top:: 300px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: inherit;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  width: 100%;
+}
+
+.portrait{
+  float:left;
+}
+.identite {
+  display:inline-block;
+  clear:right;
+  text-transform: uppercase;
+  font-size: 1.2em;margin-top: 15px;
+}
+
+.firstname {
+  text-transform: capitalize;
+  font-size: 0.9em;
+}
+
+.profil {
+  margin-left: 135px;
+  color:#6dccbb;
+}
+
+#id_journal, #id_auteur {
+  width: 200px;
+  height: 35px ;
+}
+
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+
+.close {
+  color:#fff;
+  text-shadow: inherit;
+  opacity:1
+}
+
+
+/* LadHyX Tab Panels
+-------------------------------------------------- */
+.nav-tabs { margin-top:50px;margin-bottom: 10px; border: 1px solid transparent; text-transform: uppercase;background-color: rgba(0, 48, 94, 0.3); }
+
+.tab-content{  background-color: rgba(0, 48, 94, 0.3);
+}
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+color:#ffffff;  
+border:1px solid transparent ;
+background-color: transparent;
+border-radius:0px;
+}
+.tab-item { font-family: 'neutra', sans-serif;
+font-size: 1em;
+font-weight: 400;}
+.nav-tabs:a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-family: 'neutra', sans-serif;
+	font-size: 1.2em;}
+.nav-tabs>li>a {color:#6dccbb; font-family: 'neutra', sans-serif;
+font-size: 1.1em;
+font-weight: 400;	}
+.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+	color:#ffffff;  
+    background-color: transparent;
+	border:1px solid transparent;
+}
+
+.enligne {display:inline-block; min-width: 197px; line-height: 1.3em; text-overflow:clip; }
+.publications.nav-tabs a:{display: inherit; float: left;font-family: 'neutra', sans-serif;
+font-size: 1.1em;
+font-weight: 400;}
+
+/* LadHyX Panels Accordeon
+-------------------------------------------------- */
+.panel-default>.panel-heading {
+  color:#6dccbb;
+  background-color: rgba(0, 48, 94, 0.3);
+  text-transform: uppercase
+}
+
+.panel {
+  background-color: transparent;
+  border:1px solid transparent ;
+}
+h4 .small {
+  color:#6dccbb;
+}
+
+.panel-group {
+  width:60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50px;
+}
+
+.panel-title>.small,
+.panel-title>.small>a,
+.panel-title>a,
+.panel-title>small,
+.panel-title>small>a {
+  color: #6dccbb;
+  font-family: 'neutra', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.panel-title>.small>a:hover,
+.panel-title>a:hover,
+.panel-title>small>a:hover {
+  color: #fff;
+}
+
+.panel-title>.small>a:focus,
+.panel-title>a:focus,
+.panel-title>small>a:focus {
+  color: #fff;
+}
+
+.partenariats .tab-content,
+.emploi .tab-content {
+  background-color: rgba(0, 48, 94, 0.0);
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+button {
+  padding: 0px 0px 0px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: #003e5c;
+}
+
+.btn.btn-submit {
+  background-color: transparent;
+  padding: 0px 0px;
+  margin: 0px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.0);
+  border-color: transparent;
+}
+
+/* LadHyX IMAGES
+-------------------------------------------------- */
+.vignette {padding: 10px;background-color: rgba(0, 48, 94, 0.5); border:1px solid #6dccbb; -webkit-box-shadow: 2px 3px 5px 2px #00305e;margin-top: 15px; margin-right:15px;
+box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);min-width:90px}
+figcaption {font-size:0.9em; letter-spacing:0.01em;color: #6dccbb;padding:5px;}
+
+
+/* LadHyX VIDEO
+-------------------------------------------------- */
+#containervideo {max-width: 80%;margin-left: 10%;}
+video {
+  max-width:100%;
+  padding: 10px;
+  background-color: rgba(0, 48, 94, 0.5);
+  border:1px solid #6dccbb;
+  -webkit-box-shadow: 2px 3px 5px 2px #00305e;
+  box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+}
+
+#myiframe {
+  max-width:100%;
+
+    padding: 10px;
+    background-color: rgba(0, 48, 94, 0.5);
+    border:1px solid #6dccbb;
+    -webkit-box-shadow: 2px 3px 5px 2px #00305e;
+    box-shadow: 2px 2px 10px 2px rgba(0, 48, 94, 0.8);
+}
+    /* conserver le ratio des images */
+
+    img {
+        height: auto;
+    }
+    
+
+
+#play {
+	width: 100%; 
+	height:250px; 
+	position:absolute;
+	z-index: 1000;
+	top:400px; 
+	left:0;
+	font-size: 25px;
+	opacity:0;
+	}
+	
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: transparent;
+}
+
+/* LadHyX MEDIA QUERIES
+-------------------------------------------------- */
+@media (min-width: 320px) {
+    .accueil {
+        background:#00305e url(../img/bg_accueil_sm.jpg) no-repeat top center;
+    }
+    .membres {
+        background:#00305e url(../img/bg_membres_sm.jpg) no-repeat top center;
+    }
+    .publications {
+        background:#00305e url(../img/bg_publications_sm.jpg) no-repeat;
+    }
+    .multimedia {
+        background:#00305e url(../img/bg_multimedia_sm.jpg) no-repeat;
+    }
+    .partenariats {
+        background:#00305e url(../img/bg_partenariats_sm.jpg) no-repeat;
+    }
+    .actualite {
+        background:#00305e url(../img/bg_actualite_sm.jpg) no-repeat;
+    }
+    .emploi {
+        background:#00305e url(../img/bg_emploi_sm.jpg) no-repeat top center
+    }
+    .pagerecherche {
+        background:#00305e url(../img/bg_page_recherche_sm.jpg) no-repeat;
+    }
+    section {
+        min-width: 255px;
+    }
+    .slogan {
+        display:none
+    }
+    .principale.navbar li{
+        background-color: #0f4a82;
+    }
+    .accueil .content{
+        padding-top: 300px;
+    }
+
+    .multimedia section ul {
+        min-height: inherit;
+        margin-bottom: 10px;
+    }
+    body {
+        padding-bottom: 75px;
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 750px) {
+.accueil {background:#00305e url(../img/bg_accueil_sm.jpg) no-repeat top center; }
+.membres {background:#00305e url(../img/bg_membres_sm.jpg) no-repeat top center; }
+.publications {background:#00305e url(../img/bg_publications_sm.jpg) no-repeat; }
+.multimedia {background:#00305e url(../img/bg_multimedia_sm.jpg) no-repeat; }
+.partenariats {background:#00305e url(../img/bg_partenariats_sm.jpg) no-repeat; }
+.actualite {background:#00305e url(../img/bg_actualite_sm.jpg) no-repeat; }
+.emploi {background:#00305e url(../img/bg_emploi_sm.jpg) no-repeat; }
+.pagerecherche {background:#00305e url(../img/bg_page_recherche_sm.jpg) no-repeat; }
+.principale.navbar li{ background-color: inherit;}
+/*.row {width:70%; margin-left:15%; margin-right:15%}*/
+section {max-width:255px}
+.pagerecherche section,  {min-width:170px; max-width: 420px }
+.slogan {display:none}
+.pagerecherche h4 {min-height: 50px;}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 970px) {
+
+.accueil {background:#00305e  url(../img/bg_accueil_md.jpg) no-repeat top center }
+/*.membres {background:#00305e url(../img/bg_membres_md.jpg) no-repeat top center; }*/
+.publications {background:#00305e url(../img/bg_publications_md.jpg) no-repeat; }
+.multimedia {background:#00305e url(../img/bg_multimedia_md.jpg) no-repeat; }
+.partenariats {background:#00305e url(../img/bg_partenariats_md.jpg) no-repeat; }
+.actualite {background:#00305e url(../img/bg_actualite_md.jpg) no-repeat; }
+.emploi {background:#00305e url(../img/bg_emploi_md.jpg) no-repeat; }
+.pagerecherche {background:#00305e url(../img/bg_page_recherche_md.jpg) no-repeat; }
+section {min-width:270px; max-width: auto; }
+.pagerecherche section {min-width:255px; max-width: 320px }
+/*.row {width:80%; margin-left:10%; margin-right:10%}*/
+.slogan {display:inline;}
+.slogan {margin-top: 80px;}
+.multimedia section ul {min-height: 100px; margin-bottom: 10px;}
+.pagerecherche section, {min-width:225px; max-width: 320px }
+.pagerecherche h4 {min-height: 30px;}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1170px) {
+.accueil {background: #00305e url(../img/bg_accueil.jpg) no-repeat top center; }
+.membres {background:#00305e url('../img/bg_membres.jpg') no-repeat ; }
+.publications {background:#00305e url(../img/bg_publications.jpg) no-repeat; }
+.multimedia {background:#00305e url(../img/bg_multimedia.jpg) no-repeat; }
+.partenariats {background:#00305e url(../img/bg_partenariats.jpg) no-repeat; }
+.actualite {background:#00305e url(../img/bg_actualite.jpg) no-repeat; }
+.emploi {background:#00305e url(../img/bg_emploi.jpg) no-repeat; }
+.pagerecherche {background:#00305e url(../img/bg_page_recherche.jpg) no-repeat; }
+/*.row {width:90%; margin-left:5%; margin-right:5%}*/
+.accueil .content{padding-top: 400px; }
+.accueil section, .membres section  {min-width:255px; max-width: auto; }
+.pagerecherche section {min-width:270px; max-width:320px}
+.slogan {margin-top: 100px;}
+
+
+ }
+
+}
+
+

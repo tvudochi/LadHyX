@@ -1,0 +1,112 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Biomécanique cardiovasculaire</h1>
+
+    <hr>
+    </h2>
+    <a href="#" class="vert bolder">C.L.M. Gouget</a> -
+    <a href="#" class="vert bolder">Y. Hwang</a> -
+    <a href="#" class="vert bolder">A. I. Barakat</a>
+
+    <h3>Publications</h3>
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Gouget CL, Hwang Y, Barakat AI. Model of cellular mechanotransduction via actin stress fibers.
+        Biomech Model Mechanobiol. 2015 Jun 17:1-14. <a href="{{ MEDIA_URL }}larecherche/gouget2015.pdf">preprint</a>
+          <br>
+          Hwang Y, Gouget CL, Barakat AI. Mechanisms of cytoskeleton-mediated mechanical signal transmission in cells.
+          Commun Integr Biol. 2012 Nov 1;5(6):538-42. <a href="{{ MEDIA_URL }}larecherche/hwang2012.pdf">preprint</a>
+        </p>
+    <hr>
+
+    <h2>How do cells respond to mechanical stimulation ?
+
+    <h3>Why?</h3>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire6.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire6.jpg" >
+          </img>
+        </a>
+        <figcaption>Fig. 1: Cells in undisturbed flow (up) or in disturbed flow (dow)</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Cells are constantly subjected to mechanical forces and these forces regulate cell structure and function.
+      Thus, in arteries, cells in regions of disturbed flow have an abnormal behavior, and vascular disease tends to appear
+      in these regions, marked in red in Fig. 1.
+    </p>
+
+    <h3>How ?</h3>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire7.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire7.jpg" >
+          </img>
+        </a>
+        <figcaption>Fig. 2: The cytoskeleton, the mechanical backbone of the cell, plays a key role in
+          transmitting force within cells.</figcaption>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    We are studying force transmission in a model cytoskeleton (Fig. 2) consisting of network of beams
+      that are either randomly oriented or directionnally aligned (Fig. 3)
+    </p>
+
+    <h3>Results</h3>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire8.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire8.jpg" >
+          </img>
+        </a>
+        <figcaption>Fig. 3: Force transmission dynamics in aligned and random networks</figcaption>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Our results (Fig. 3) provide insight into the different mechanisms at stake in healthy and diseased
+       arterial regions.
+    </p>
+
+
+  <hr>
+
+  </div>
+
+
+{% endblock content %}

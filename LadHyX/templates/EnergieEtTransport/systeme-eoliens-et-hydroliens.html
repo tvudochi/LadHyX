@@ -1,0 +1,113 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% ifequal LANGUAGE_CODE  'fr' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Nouveaux systèmes éoliens et hydroliens</h1>
+    <hr>
+    <h2>Inventer et étudier de nouveaux procédés pour récupérer de l'énergie des écoulements</h2>
+
+    <span class="vert bolder">Xavier Amandolese</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/pascal/" class="vert bolder">Pascal Hémon</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/delangre/" class="vert bolder">Emmanuel de Langre</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/michelin" class="vert bolder">Sébastien Michelin</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Le LadHyX mène depuis plusieurs années des travaux de recherche afin de préciser le potentiel de
+    mécanismes de couplage fluide-structure génériques, dans l’objectif de concevoir des systèmes
+    innovants de récupération d’énergie des écoulements. Nous travaillons ainsi sur le flottement
+    de drapeau, soit par ajout de d'éléments piézo-électriques dans la membrane, soit par couplage
+    avec un mat oscillant (système breveté en 2014). Sont également étudiées des instabilités aéroélastiques
+    transverses comme le flottement d'aile par couplage de mode, le galop de prismes, ou encore les oscillations
+    de risers dues au lâcher périodique de tourbillons.
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Le point central de tous ces systèmes repose sur le prélèvement de l'énergie au solide qui oscille
+    dans l'écoulement : trop de prélèvement tue le mouvement, tandis qu'un prélèvement insuffisant mène
+    à un rendement faible. La recherche du point de fonctionnement optimal constitue ainsi l'enjeu majeur
+    dans ce domaine.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <h4>Eolienne drapeau à mat oscillant</h4>
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/176141895?title=0&portrait=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+    <p>
+      Plusieurs thèses ont été soutenues au LadHyX sur ces mécanismes : Xia (2015),
+      <a href="{{ MEDIA_URL }}larecherche/virot.pdf" >Virot (2015)</a>, Groutier (2013).<br>
+      L'équipe exécute également des contrats à la demande d'industriels.
+    </p>
+    <hr>
+  </div>
+{% endifequal %}
+
+{% ifequal LANGUAGE_CODE  'en' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>New energy harvester systems</h1>
+    <hr>
+    <h2>Invent and study new processes in order to harvest energy from fluid flows</h2>
+
+    <span class="vert bolder">Xavier Amandolese</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/pascal/" class="vert bolder">Pascal Hémon</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/delangre/" class="vert bolder">Emmanuel de Langre</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/michelin" class="vert bolder">Sébastien Michelin</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      LadHyX performs for several years some researches in order to clarify the potential of generic
+      fluid-structure mechanismes with the objectif of designing new innovant energy harvester systems.
+      We work then on the fluttering flag, by adding piezo-electric patches in the membrane, or by
+      coupling the flag with an oscillating mast (Patented in 2014). We also study transversal aeroelastic
+      instabilities such as airfoil coupled mode flutter, galloping of prisms, or riser oscillations due
+      to vortex shedding.
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      The common point of all these systems leads on the energy harvesting process on the oscillating solid :
+      too much harvesting kills the motion, whereas too low harvesting leads to a weak efficiency.
+      Researching the optimal conditions is therefore the major challenge of this domain.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <h4>Eolienne drapeau à mat oscillant</h4>
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/176141895?title=0&portrait=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p>
+      Sevareal PhD thesis have been successfully defended on this topic :  Xia (2015),
+      <a href="{{ MEDIA_URL }}larecherche/virot.pdf" >Virot (2015)</a>, Groutier (2013).<br>
+      The team performs also contracts for industry.
+    </p>
+    <hr>
+  </div>
+
+{% endifequal %}
+
+{% endblock content %}

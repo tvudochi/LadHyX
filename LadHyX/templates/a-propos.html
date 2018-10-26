@@ -1,0 +1,82 @@
+{% extends "base_larecherche.html" %}
+
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% ifequal LANGUAGE_CODE  'fr' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1 style="text-transform: none">LadHyX, Laboratoire d'hydrodynamique de l'Ecole polytechnique et du CNRS</h1>
+
+    <hr>
+
+{#  <div class="row">#}
+{#    <section class="col-sm-2 col-md-2 col-lg-2">#}
+{#    </section>#}
+{#    <section class="col-sm-8 col-md-8 col-lg-8">#}
+{#      <a href="{% static 'img/ladhyx_people.png' %}" data-toggle="lightbox">#}
+{#      <img class="vignette img-responsive img-fluid" src="{% static 'img/ladhyx_people.png' %}">#}
+
+{#      </a>#}
+{#               <figcaption style="text-align: justify"></figcaption>#}
+{#    </section>#}
+{#    <section class="col-sm-2 col-md-2 col-lg-2">#}
+{#    </section>#}
+{#  </div>#}
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="{% static 'LadHyX/img/ladhyx_people.png' %}" data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid" src="{% static 'LadHyX/img/ladhyx_people.png' %}">
+        </a>
+      </div>
+    </div>
+
+  <br>
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Le Laboratoire d'hydrodynamique LadHyX mène des recherches théoriques, numériques et expérimentales en dynamique des fluides fondamentale. Les activités du LadHyX étaient, dans les premières années, centrées sur les instabilités et la transition vers la turbulence dans les écoulements cisaillés. Elles se sont progressivement diversifiées, au fur et à mesure du développement de l'équipe, pour inclure des thèmes nouveaux : désordre spatio-temporel, écoulements géophysiques, interactions fluide-structure, écoulements à faible nombre de Reynolds, aéroacoustique, microfluidique, contrôle des écoulements, instabilités de jets et de couche limite, mécanique & systèmes vivants et hydrodynamique aux interfaces.
+
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+
+  <hr>
+  </div>
+
+{% endifequal %}
+
+{% ifequal LANGUAGE_CODE  'en' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1 style="text-transform: none">LadHyX, The Hydrodynamics laboratory of the École polytechnique</h1>
+
+    <hr>
+
+    <div class="row">
+     <div class="col-lg-12">
+       <a href="{% static 'LadHyX/img/ladhyx_people.png' %}" data-toggle="lightbox">
+         <img class="vignette img-responsive img-fluid" src="{% static 'LadHyX/img/ladhyx_people.png' %}">
+       </a>
+     </div>
+    </div>
+    <br>
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      The Hydrodynamics laboratory of the École polytechnique (LadHyX) leads theoretical, numerical, and experimental researches on fundamental fluid dynamics. Research activities at LadHyX were in its early years mainly dedicated to the study of instabilities and the transition to turbulence in sheared flows. These research directions have progressively diversified and included new thematics: spatio-temporal disorder, geophysical flows, fluid-structure interactions, flow at low Reynolds number, aeroacoustics, microfluidics, flow control, jet and boundary layer instability, mechanics of living systems, and hydrodynamics at the interfaces.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+
+  <hr>
+  </div>
+
+{% endifequal %}
+
+{% endblock content %}

@@ -1,0 +1,251 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+{% ifequal LANGUAGE_CODE 'en' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Oceans mix
+    </h1>
+    <hr>
+    <h2>How do oceans mix ?</h2>
+    <span class="vert bolder">G. Lérisson</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/jmarc" class="vert bolder">
+      J-M. Chomaz</a> - <span class="vert bolder">S. Ortiz (UME-ENSTA)</span>
+
+    <h3>Why ?</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Evolution of climate depends upon the intensity of the thermohaline circulation itself
+      controlled by deep ocean mixing.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/melange-des-oceans1.jpg">
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <h3>Internal gravity</h3>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/melange-des-oceans2.jpg">
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Internal waves develop in stratified media (e.g. oceans) where the fluid density varies
+      linearly with depth due to salinity and temperature.<br>
+      Generated at the bottom of the ocean, they propagate upwards and destabilize,
+      which is through to cause deep ocean mixing.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/melange-des-oceans3.jpg">
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans4.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/melange-des-oceans4.jpg">
+          </img>
+        </a>
+      </section>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <h3>Results</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      We study the stability of an internal wave beam through direct numerical simulations and find that
+      the instability differs with the mean advection speed. The pictures above are snapshots of the
+      density variation in a vertical plane for two simulations. When the mean speed is zero (right),
+      the wave develops small scale instability whereas for large mean speed (left), the instability
+      is large scale.
+    </p>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans5.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/melange-des-oceans5.jpg">
+          </img>
+        </a>
+      </section>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      We show that this selection depends on the group velocity of the perturbation, large scale and
+      small scale being part of two differents wave packets. This correspond to an extension of the
+      classical absolute and convective instability selection principe.
+    </p>
+
+  <hr>
+  </div>
+{% endifequal %}
+
+  {% ifequal LANGUAGE_CODE 'fr' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+      <h1>Melange des océans
+      </h1>
+      <hr>
+      <h2>Comment les océans se mélangent ?</h2>
+      <span class="vert bolder">G. Lérisson</span> -
+      <a href="http://www.off-ladhyx.polytechnique.fr/people/jmarc" class="vert bolder">
+        J-M. Chomaz</a> - <span class="vert bolder">S. Ortiz (UME-ENSTA)</span>
+
+      <h3>Pourquoi ?</h3>
+
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        L'évolution du climat dépend de l'intensité de la circulation thermohaline elle-même
+        contrôlée par le mélange océanique profond.
+      </p>
+
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans1.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/melange-des-oceans1.jpg">
+            </img>
+          </a>
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+      </div>
+
+      <h3>Ondes internes de gravité</h3>
+
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans2.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/melange-des-oceans2.jpg">
+            </img>
+          </a>
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+      </div>
+      <br>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Les ondes internes de gravité se propagent dans les milieux stratifiés où la densité du
+        fluide augmente avec la profondeur, une particule de fluide soulevée étant plus lourde que
+        le fluide ambiant a tendance à retourner à sa position de départ et oscille. Dans l’océan la
+        stratification est due à la salinité qui augmente avec la profondeur et à la température qui
+        elle diminue en allant vers le bas.<br>
+        Les ondes internes de gravité sont dans l’océan, générées sur les reliefs au fond de l'océan
+        par les déplacements horizontaux de toute la colonne d’eau sous l’action des marées. Elles
+        se propagent verticalement  et se déstabilisent, ce qui entraîne le mélange océanique
+        profond et explique que celui-ci ait lieu au dessus des dorsales océaniques où le relief est
+        le plus tourmenté.
+      </p>
+
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans3.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/melange-des-oceans3.jpg">
+            </img>
+          </a>
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans4.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/melange-des-oceans4.jpg">
+            </img>
+          </a>
+        </section>
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+      </div>
+      <br>
+      <h3>Resultats</h3>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Nous avons étudié la stabilité d'un faisceau d'onde interne par des simulations numériques
+        directes et avons constaté que l'instabilité diffère en fonction des courants marins au
+        dessus des reliefs. Les images ci-dessus sont des instantanés de la variation de densité
+        dans un plan vertical pour deux simulations. Lorsque la vitesse moyenne du courant est nulle
+        (droite), l'onde développe une instabilité à petite échelle alors que pour une grande
+        vitesse moyenne (gauche), l'instabilité est à grande échelle.
+
+      </p>
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/melange-des-oceans5.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/melange-des-oceans5.jpg">
+            </img>
+          </a>
+        </section>
+        </section>
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+      </div>
+      <br>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Nous montrons que ces deux modes d’instabilité correspondent à des branches différentes de
+        l’instabilité triadique qui couple l’onde directement générée à la topographie sous-marine
+        avec deux ondes filles qui forment une triade avec elle et sont capables d’extraire de
+        l’énergie de l’onde mère par un cercle vertueux instable, le couplage d’une onde avec l’onde
+        mère donnant de l’énergie à l’autre onde fille et réciproquement. La sélection d’ondes
+        filles de petite ou de grande échelle s’explique par le fait que la vitesse de groupe de la
+        perturbation de petite échelle est proche de celle du fluide alors que celle des
+        perturbations grande échelle est finie. Les petites échelles se développeront donc lorsque
+        la vitesse du fluide est faible ou nulle par rapport au relief elle seront enportée par le
+        courant lorsque celui-ci devient significatif alors que dans ce cas les perturbations grande
+        échelle pourront se propagées à contre courant et se développer. Ceci correspond à une
+        extension du principe de sélection de l'instabilité absolue et de l'instabilité convective
+        qui prend en compte la vitesse de propagation des modes instables.
+      </p>
+
+    <hr>
+    </div>
+  {% endifequal %}
+{% endblock content %}

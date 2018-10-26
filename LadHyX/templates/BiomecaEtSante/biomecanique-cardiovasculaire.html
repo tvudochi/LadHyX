@@ -1,0 +1,47 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Biomécanique cardiovasculaire</h1>
+    <hr>
+
+     <ul class="list-unstyled" style="text-align: left;">
+        <li><a href="{% url "what-should-tomorrow-drug-eluting-stent-look-like" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          What should tomorrow's drug-eluting stent look like ?</a>
+        </li>
+
+{#        <li><a href="{% url "how-to-avoid-stent-complications" %}" >#}
+{#          <i class="glyphicon glyphicon-tint small"></i>#}
+{#          How to avoid stent complications ?</a>#}
+{#        </li>#}
+
+        <li><a href="{% url "how-do-cells-respond-to-mechanical-stimulation" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          How do cells respond to mechanical stimulation ?</a>
+        </li>
+
+        <li><a href="{% url "cellular-internalization-of-nanoparticles" %}" ><i class="glyphicon glyphicon-tint small">
+        </i>Cellular Internalization of Nanoparticles : A therapy for Atherosclerosis ?</a>
+        </li>
+
+        <li><a href="{% url "what-is-the-impact-of-cell-shape-on-vascular-cell-mechanotransduction" %}" ><i class="glyphicon glyphicon-tint small"></i>
+          What is the impact of cell shape on vascular cell mechanotransduction?</a>
+        </li>
+        <li><a href="{% url "what-are-the-effects-of-stent-degradation-on-the-arterial-wall" %}" ><i class="glyphicon glyphicon-tint small"></i>
+          What are the effects of stent degradation on the arterial wall ?</a>
+        </li>
+      </ul>
+
+  <hr>
+
+  </div>
+
+
+{% endblock content %}

@@ -1,0 +1,527 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block image_specifique %}membres{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="row hidden-md hidden-sm hidden-xs">
+          <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+          </div>
+  </div>
+{% endblock slogan-actu %}
+{#{% block Actu %}#}
+{#  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">#}
+{#  </div>#}
+{#{% endblock Actu %}#}
+
+{% block content %}
+
+{% get_static_prefix as STATIC_PREFIX %}
+  {{ STATIC_PREFIX }}
+<!-- TOUT SAUF SMARTPHONE -->
+  <div class="content row hidden-xs">
+  <!-- Nav tabs -->
+<ul class="liste nav nav-tabs col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" role="tablist ">
+  <li class="tab-item">
+    <a class="nav-link active" data-toggle="tab" href="#staff" role="tab">staff</a>
+  </li>
+  <li class="tab-item active">
+    <a class="nav-link" data-toggle="tab" href="#chercheurs" role="tab">{% trans "chercheurs" %}</a>
+  </li>
+  <li class="tab-item">
+    <a class="nav-link" data-toggle="tab" href="#doctorants" role="tab">{% trans "doctorants" %}</a>
+  </li>
+  <li class="tab-item">
+    <a class="nav-link" data-toggle="tab" href="#postdoctorants" role="tab">
+      {% trans "post-doctorants" %}</a>
+  </li>
+
+</ul>
+
+<!--****************************************************************************************************************-->
+<div class="tab-content col-xs-12  col-sm-10 col-sm-offset-1  col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+ <!-- Tab panes STAFF-->
+  <div class="tab-pane" id="staff" role="tabpanel">
+    {% for group in groupstaff %}
+      <ul class="list-unstyled enligne col-xs-12  col-sm-6  col-md-3  col-lg-3" >
+        {% for object in group %}
+          <li>
+            <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+            <i class="glyphicon glyphicon-tint small"></i>
+              {% ifequal object.nom 'Rodriguez Garcia'%}
+                <span class="name" style="display: inline-block">{{ object.nom }}</span>
+                <span class="firstname" style="display: inline-block;margin-left: 25px;">{{ object.prenom }}</span>
+              {% else %}
+                <span class="name">{{ object.nom }}</span>
+                <span class="firstname">{{ object.prenom }}</span>
+              {% endifequal %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+
+  <!-- Tab panes CHERCHEURS-->
+  <div class="tab-pane active" id="chercheurs" role="tabpanel">
+    {% for group in groupchercheurs %}
+      <ul class="list-unstyled enligne col-xs-12  col-sm-6  col-md-3  col-lg-3" >
+        {% for object in group %}
+          <li style="text-align: left;">
+            <a  href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+            <i class="glyphicon glyphicon-tint small"></i><span class="name">{{ object.nom }}</span>
+              <span class="firstname">{{ object.prenom }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+
+  <!-- Doctorants -->
+  <div class="tab-pane" id="doctorants" role="tabpanel">
+    {% for group in groupdoctorants %}
+      <ul class="list-unstyled enligne col-xs-12  col-sm-6  col-md-3  col-lg-3" >
+        {% for object in group %}
+          <li>
+            <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+            <i class="glyphicon glyphicon-tint small"></i>
+              {% if object.nom == 'Shaabani Ardali' or object.nom == "Mortveit Ellingsen"%}
+                <span class="name" style="display: inline-block">{{ object.nom }}</span>
+                <span class="firstname" style="display: inline-block;margin-left: 25px;">{{ object.prenom }}</span>
+              {% else %}
+              <span class="name">{{ object.nom }}</span>
+              <span class="firstname">{{ object.prenom }}</span>
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+
+  <!-- Tab panes 	POST-DOCTORANTS-->
+  <div class="tab-pane" id="postdoctorants" role="tabpanel">
+    {% for group in grouppostdocs %}
+      <ul class="list-unstyled enligne col-xs-12  col-sm-6  col-md-3  col-lg-3" >
+        {% for object in group %}
+          <li>
+            <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+            <i class="glyphicon glyphicon-tint small"></i>
+            <span class="name">{{ object.nom }}</span>
+            <span class="firstname">{{ object.prenom }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+
+</div>
+</div>
+
+
+<!-- POUR SMARTPHONE -->
+    <div class="panel-group mobile hidden-sm hidden-md hidden-lg" id="field">
+    <!-- STAFF MOB -->
+      <div class="panel panel-default" id="div-section">
+          <div class="panel-heading list-unstyled">
+              <h1 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#field" href="#staff-mob"><i class="glyphicon glyphicon-tint"></i>Staff</a>
+              </h1>
+          </div><!--/.panel-heading-->
+          <div id="staff-mob" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <ul class="list-unstyled">
+                {% for object in staff %}
+                    <li>
+                      <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+                      <i class="glyphicon glyphicon-tint small"></i>
+                        {% ifequal object.nom 'Rodriguez Garcia'%}
+                          <span class="name" style="display: inline-block">{{ object.nom }}</span>
+                          <span class="firstname" style="display: inline-block;margin-left: 0px;">{{ object.prenom }}</span>
+                        {% else %}
+                          <span class="name">{{ object.nom }}</span>
+                          <span class="firstname">{{ object.prenom }}</span>
+                        {% endifequal %}
+                      </a>
+                    </li>
+                {% endfor %}
+              </ul>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+      </div><!--/.panel-default-->
+    <!-- FIN STAFF MOB -->
+
+    <!-- CHERCHEURS MOB -->
+        <div class="panel panel-default" id="div-section">
+          <div class="panel-heading">
+              <h1 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#field" href="#chercheurs-mob"><i class="glyphicon glyphicon-tint"></i>{% trans "chercheurs" %}</a>
+              </h1>
+          </div><!--/.panel-heading-->
+          <div id="chercheurs-mob" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <ul class="list-unstyled">
+                {% for object in chercheurs %}
+                    <li>
+                      <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+                      <i class="glyphicon glyphicon-tint small"></i>
+                        {% ifequal object.nom 'Rodriguez Garcia'%}
+                          <span class="name" style="display: inline-block">{{ object.nom }}</span>
+                          <span class="firstname" style="display: inline-block;margin-left: 25px;">{{ object.prenom }}</span>
+                        {% else %}
+                          <span class="name">{{ object.nom }}</span>
+                          <span class="firstname">{{ object.prenom }}</span>
+                        {% endifequal %}
+                      </a>
+                    </li>
+                {% endfor %}
+              </ul>
+            </div><!--/.panel-body-->
+          </div><!--/.panel-collapse-->
+        </div><!--/.panel-default-->
+    <!-- FIN CHERCHEURS MOB -->
+
+<!-- DOCTORANTS MOB -->
+       <div class="panel panel-default" id="div-section">
+         <div class="panel-heading">
+             <h1 class="panel-title">
+                 <a data-toggle="collapse" data-parent="#field" href="#doctorants-mob"><i class="glyphicon glyphicon-tint"></i>{% trans "doctorants" %}</a>
+             </h1>
+         </div><!--/.panel-heading-->
+         <div id="doctorants-mob" class="panel-collapse collapse ">
+           <div class="panel-body">
+             <ul class="list-unstyled">
+               {% for object in doctorants %}
+                   <li>
+                     <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+                     <i class="glyphicon glyphicon-tint small"></i>
+                       {% ifequal object.nom 'Rodriguez Garcia'%}
+                         <span class="name" style="display: inline-block">{{ object.nom }}</span>
+                         <span class="firstname" style="display: inline-block;margin-left: 25px;">{{ object.prenom }}</span>
+                       {% else %}
+                         <span class="name">{{ object.nom }}</span>
+                         <span class="firstname">{{ object.prenom }}</span>
+                       {% endifequal %}
+                     </a>
+                   </li>
+               {% endfor %}
+             </ul>
+           </div><!--/.panel-body-->
+         </div><!--/.panel-collapse-->
+       </div><!--/.panel-default-->
+   <!-- FIN DOCTORANTS MOB -->
+
+    <!-- POST DOCTORANTS MOB -->
+           <div class="panel panel-default" id="div-section">
+             <div class="panel-heading">
+                 <h1 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#field" href="#postdocs-mob"><i class="glyphicon glyphicon-tint"></i>{% trans "post-doctorants" %}</a>
+                 </h1>
+             </div><!--/.panel-heading-->
+             <div id="postdocs-mob" class="panel-collapse collapse ">
+               <div class="panel-body">
+                 <ul class="list-unstyled">
+                   {% for object in postdocs %}
+                       <li>
+                         <a href="#" data-toggle="modal" data-target="#{{ object.personnel_id }}">
+                         <i class="glyphicon glyphicon-tint small"></i>
+                           {% ifequal object.nom 'Rodriguez Garcia'%}
+                             <span class="name" style="display: inline-block">{{ object.nom }}</span>
+                             <span class="firstname" style="display: inline-block;margin-left: 25px;">{{ object.prenom }}</span>
+                           {% else %}
+                             <span class="name">{{ object.nom }}</span>
+                             <span class="firstname">{{ object.prenom }}</span>
+                           {% endifequal %}
+                         </a>
+                       </li>
+                   {% endfor %}
+                 </ul>
+               </div><!--/.panel-body-->
+             </div><!--/.panel-collapse-->
+           </div><!--/.panel-default-->
+       <!-- FIN POST DOCTORANTS MOB -->
+      </div><!--/.panel-group-->
+      <div class="clearfix"></div>
+<!-- FIN SMATPHONE -->
+  <!--******************************************************MODAL STAFF********************************************************-->
+
+    {% for object in staff %}
+      <div class="modal fade" id="{{ object.personnel_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;
+                </span>
+              </button>
+              <!--SECTION IDENTITE-------------------------------------------------------------------->
+              {% if object.Photo %}
+              <div class="portrait"><img src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ object.Photo }}"
+                                         class="vignette img-responsive" width="120" height="120"
+                                         alt="Photo de {{ object.prenom }} {{ object.prenom }}"/></div>
+              {% else %}
+              <div class="portrait vignette img-responsive" style="width: 120px;height: 120px"> </div>
+              {% endif %}
+              <div class="identite">{{ object.nom }}<span class="firstname"> {{ object.prenom }}</span></div>
+              {% if object.fonction %}
+              <div class="profil">{{ object.fonction }}</div>
+              {% endif %}
+            </div>
+
+            <div class="modal-body">
+              <!--SECTION COORDONNES--------------------------------------------------------------------->
+              <ul class="list-unstyled">
+                <li class="mail"><i class="glyphicon glyphicon-envelope"></i>
+                  {% for mail in object.email.all %}
+                    {{ mail }}
+                  {% endfor %}
+                </li>
+                <br>
+                {% if object.page_perso %}
+                <li class="website"><i class="glyphicon glyphicon-globe"></i>
+                  <a href="{{ object.page_perso }}" >Website</a></li>
+                {% endif %}
+                <br>
+                {% if object.telephone %}
+                <li class="website"><i class="glyphicon glyphicon-phone"></i>
+                  {% for phone in object.telephone.all %}
+                  {{ phone }}
+                  {% endfor %}
+                {% endif %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  <!--******************************************************MODAL CHERCHEURS********************************************************-->
+
+    {% for object in chercheurs %}
+      <div class="modal fade" id="{{ object.personnel_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;
+                </span>
+              </button>
+              <!--SECTION IDENTITE-------------------------------------------------------------------->
+              {% if object.Photo %}
+              <div class="portrait"><img src="{{ STATIC_PREFIX }}LadHyX/img/people/NB/{{ object.Photo }}" class="vignette img-responsive" width="120" height="120" alt="Photo de {{ object.prenom }} {{ object.prenom }}"/></div>
+              {% else %}
+              <div class="portrait vignette img-responsive" style="width: 120px;height: 120px"> </div>
+              {% endif %}
+              <div class="identite">{{ object.nom }}<span class="firstname"> {{ object.prenom }}</span></div>
+              {% if object.fonction %}
+              <div class="profil">{{ object.fonction }}</div>
+              {% endif %}
+              {% if object.fonction1 %}
+                <div class="profil">{{ object.fonction1 }}</div>
+              {% endif %}
+              {% if object.fonction2 %}
+                <div class="profil">{{ object.fonction2 }}</div>
+              {% endif %}
+            </div>
+
+            <div class="modal-body">
+              <!--SECTION COORDONNES--------------------------------------------------------------------->
+              <ul class="list-unstyled">
+                <li class="mail"><i class="glyphicon glyphicon-envelope"></i>
+                  {% for mail in object.email.all %}
+                    {{ mail }}
+                  {% endfor %}
+                </li>
+                <br>
+                {% if object.page_perso %}
+                <li class="website"><i class="glyphicon glyphicon-globe"></i>
+                  <a href="{{ object.page_perso }}" >Website</a></li>
+                {% endif %}
+                <br>
+                {% if object.telephone %}
+                <li class="website"><i class="glyphicon glyphicon-phone"></i>
+                  {% for phone in object.telephone.all %}
+                  {{ phone }}
+                  {% endfor %}
+                {% endif %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  <!--******************************************************MODAL DOCTORANTS********************************************************-->
+
+    {% for object in doctorants %}
+      <div class="modal fade" id="{{ object.personnel_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;
+                </span>
+              </button>
+              <!--SECTION IDENTITE-------------------------------------------------------------------->
+              {% if object.Photo %}
+              <div class="portrait"><img src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ object.Photo }}" class="vignette img-responsive" width="120" height="120" alt="Photo de {{ object.prenom }} {{ object.prenom }}"/></div>
+              {% else %}
+              <div class="portrait vignette img-responsive" style="width: 120px;height: 120px"> </div>
+              {% endif %}
+              <div class="identite">{{ object.nom }}<span class="firstname"> {{ object.prenom }}</span>
+              </div>
+              {% if object.fonction %}
+              <div class="profil">{{ object.fonction }}</div>
+              {% endif %}
+              <br><br>
+              {% if object.tuteur %}
+               <div>
+                 <span class="col-xs-2 champ1" style="padding-right: 0;padding-left: 0;">Advisors :</span>{{ object.tuteur.all.0 }}
+                  {% if object.tuteur.all.1 %}
+                    , {{ object.tuteur.all.1 }}
+                  {% endif %}
+                 {% if object.extern_advisors %}
+                   , {{ object.extern_advisors }}
+                 {% endif %}
+               </div>
+              {% endif %}
+              <br>
+              {% if object.phdtopic %}
+
+                  <span class="col-xs-2 champ1" style="padding-right: 0;padding-left: 0;">Topic :</span>
+                  <span class="col-xs-6" style="padding-right: 0;padding-left: 0;">{{ object.phdtopic }}</span>
+
+              {% endif %}
+
+            </div>
+
+            <div class="modal-body">
+              <!--SECTION COORDONNES--------------------------------------------------------------------->
+              <ul class="list-unstyled">
+                <li class="mail"><i class="glyphicon glyphicon-envelope"></i>
+                  {% for mail in object.email.all %}
+                    {{ mail }}
+                  {% endfor %}
+                </li>
+                <br>
+                {% if object.page_perso %}
+                <li class="website"><i class="glyphicon glyphicon-globe"></i>
+                  <a href="{{ object.page_perso }}" >Website</a></li>
+                {% endif %}
+                <br>
+                {% if object.telephone %}
+                <li class="website"><i class="glyphicon glyphicon-phone"></i>
+                  {% for phone in object.telephone.all %}
+                  {{ phone }}
+                  {% endfor %}
+                {% endif %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  <!--******************************************************MODAL POSTDOCTORANTS********************************************************-->
+    {% for object in postdocs %}
+      <div class="modal fade" id="{{ object.personnel_id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;
+                </span>
+              </button>
+              <!--SECTION IDENTITE-------------------------------------------------------------------->
+              {% if object.Photo %}
+              <div class="portrait"><img src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ object.Photo }}" class="vignette img-responsive" width="120" height="120" alt="Photo de {{ object.prenom }} {{ object.prenom }}"/></div>
+              {% else %}
+              <div class="portrait vignette img-responsive" style="width: 120px;height: 120px"> </div>
+              {% endif %}
+              <div class="identite">{{ object.nom }}<span class="firstname"> {{ object.prenom }}</span></div>
+              {% if object.fonction %}
+              <div class="profil">{{ object.fonction }}</div>
+              {% endif %}
+              <br><br>
+              {% if object.tuteur %}
+               <div>
+                 <span class="col-xs-2 champ1" style="padding-right: 0;padding-left: 0;">Advisors :</span>{{ object.tuteur.all.0 }}
+                  {% if object.tuteur.all.1 %}
+                    , {{ object.tuteur.all.1 }}
+                  {% endif %}
+                 {% if object.extern_advisors %}
+                   , {{ object.extern_advisors }}
+                 {% endif %}
+               </div>
+              {% endif %}
+              <br>
+              {% if object.phdtopic %}
+                <span class="col-xs-2 champ1" style="padding-right: 0;padding-left: 0;">Topic :</span>
+                <span class="col-xs-6" style="padding-right: 0;padding-left: 0;">{{ object.phdtopic }}</span>
+
+              {% endif %}
+            </div>
+
+            <div class="modal-body">
+              <!--SECTION COORDONNES--------------------------------------------------------------------->
+              <ul class="list-unstyled">
+                <li class="mail"><i class="glyphicon glyphicon-envelope"></i>
+                  {% for mail in object.email.all %}
+                    {{ mail }}
+                  {% endfor %}
+                </li>
+                <br>
+                {% if object.page_perso %}
+                <li class="website"><i class="glyphicon glyphicon-globe"></i>
+                  <a href="{{ object.page_perso }}" >Website</a></li>
+                {% endif %}
+                <br>
+                {% if object.telephone %}
+                <li class="website"><i class="glyphicon glyphicon-phone"></i>
+                  {% for phone in object.telephone.all %}
+                  {{ phone }}
+                  {% endfor %}
+                {% endif %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+{% endblock content %}
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}
+

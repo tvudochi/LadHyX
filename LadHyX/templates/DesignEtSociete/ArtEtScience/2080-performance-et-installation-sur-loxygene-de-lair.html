@@ -1,0 +1,75 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>art et science</h1>
+
+    <hr>
+
+    <h2>2080 performance et installation sur l’oxygène de l’air</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+L'atmosphère est une couche de gaz extrêmement fine vue de l'espace, où les nuages apparaissent comme une peau tendue à la surface d'une sphère peinte. L'homme n'a compris la non‑pérennité de l'air que depuis l’invention du vide et de la pression atmosphérique par Blaise Pascal et avec l’observation des variations de la colonne de mercure de Torricelli entre la plaine et le sommet du Puy de Dôme. Cette idée est passée dans l'imaginaire collectif avec des expériences nées de la curiosité que suscita l'invention de la pompe à vide, comme figuré dans le célèbre tableau du British Museum de Joseph Wright of Derby. Ce dernier représente une expérience sur le vide inspirée de travaux de Robert Boyle datant de 1768.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+L'idée de non-pérennité de la part d’oxygène qui compose l’air n’est pas encore entrée dans la conscience collective. Seules les multinationales comme Air Liquide qui commercialisent ce bien commun, comprimé ou liquéfié, se posent la question de son économie durable ainsi que de l’épuisement de sa capacité de régénération (effectuée en grande partie par le phytoplancton) que pourrait induire le développement de nouveaux procédés de production d’énergie ou l’affaiblissement de la vie.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+L’installation 2080, part de la constatation que si l’ensemble de l’atmosphère était liquéfié alors la planète serait recouverte d’une couche de 2080mm d’oxygène liquide, la taille d’un humain. L’oxygène diffusant plus le bleu, un trait de lumière bleu à 2080mm du sol produit par quatre lasers équipés d’une lentille cylindrique forme un plan horizontal de lumière, qui ceinturait l’ensemble de la Maison de Verre à Amsterdam et débordait sur les arbres et tous alentours, métaphore de l’atmosphère, une couche si mince facile à polluer localement ou globalement. La ligne était une bande métallique tout autour de la cours d’honneur de la Sorbonne pour l’exposition le Méridien climatique, 2015.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Lors du vernissage du Méridien climatique, sept cornues de cuivre remplies d’azote liquide condensaient l’oxygène de l’air en un fin filet de gouttelettes et une goutte d’oxygène étaient distribuée à chaque personne qui le souhaite. Les propriétés magnétiques de l’oxygène permettaient de l’identifier. Au centre, la stelle portant la cornue sera surmontée d’un disque d’où un trait de lumière bleu à 2080mm du sol ceinturait l’ensemble du salon d’honneur.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+            <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science16.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science16.jpg" >
+        </a>
+        <figcaption>Installation 2080 lors de la performance inaugurale à la Glazen Huis, Amsterdam,
+          2015, la cornue de cuivre remplies d’azote liquide condense l’oxygène de l’air en fines
+          gouttelettes distribuées à l’assistance</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

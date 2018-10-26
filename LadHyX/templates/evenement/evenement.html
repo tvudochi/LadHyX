@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block image_specifique %}actualite{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="row hidden-md hidden-sm hidden-xs">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+    </div>
+  </div>
+{% endblock slogan-actu %}
+
+{% get_static_prefix as STATIC_PREFIX %}
+
+{% block content %}
+  {% include "screen-tablet.html" %}
+
+  {% include "mobil.html" %}
+
+{% endblock %}
+
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}
+

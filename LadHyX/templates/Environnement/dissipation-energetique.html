@@ -1,0 +1,101 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Energy dissipation
+    </h1>
+    <hr>
+
+    <span class="vert bolder">J. Basley</span> -
+    <span class="vert bolder">P. Billant</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/jmarc" class="vert bolder">
+      J-M. Chomaz</a>
+
+    <h3>Publications</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      A. Deloncle, P. Billant and J-M. Chomaz 2008 Nonlinear evolution of the zigzag instability in
+      stratified fluids: a shortcut on the route to dissipation. J. Fluid Mech, 599, 229-239.
+      <a href="{{ MEDIA_URL }}larecherche/deloncle-2008.pdf" >(Preprint)</a>
+    </p>
+    <hr>
+    <h2>How is energy dissipated in the ocean and atmosphere ?</h2>
+    <h3>Context</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      At large scale, atmosphere and oceans are dominated by planetary rotation and density stratification.
+      This lead to two-dimensionnal like dynamics in with the energy injected by solar radiation goes
+      to largest scale. Since large scales are almost non-dissipative, it is still unclear how and where
+      energy is dissipated.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/dissipation-energetique1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/dissipation-energetique1.jpg" >
+          </img>
+        </a>
+        <figcaption>
+          Horizontal cut in high resolution numerical simulations of stratified rotating turbulence [1]
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/dissipation-energetique2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/dissipation-energetique2.jpg" >
+          </img>
+        </a>
+        <figcaption>Seismic vertical cross-section in the gulf of Cadiz [2]</figcaption>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Recent studies [1,2] have revealed that part of energy can also transfered to small dissipative
+      scales.
+    </p>
+    <h3>Results</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      We investigate the formation of small scales in the case of a dipole in a stratified rotating fluid,
+      by means of direct numerical simulations.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/dissipation-energetique3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/dissipation-energetique3.jpg" >
+          </img>
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://www.dailymotion.com/embed/video/x3wc5q1"
+        width="360" height="204" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </section>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Small scales are generated if the effect of planetary rotation is not too high, ie. when the radius
+      of vortices si small enough.
+    </p>
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

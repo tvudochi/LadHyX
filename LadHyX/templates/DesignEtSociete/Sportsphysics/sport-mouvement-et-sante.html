@@ -1,0 +1,82 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Sport, Mouvement et Santé
+    </h1>
+    <hr>
+    <h3>Mouvement humain et stratégie à l'arraché</h3>
+    <br>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+          <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162831400"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		    </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Les sportifs s’entraînent à répéter leurs gestes pour réaliser des performances. On s’attend à trouver des lois à partir de leur fonctionnement optimisé. On s’intéresse au couplage entre le fonctionnement mécanique du corps et la caractéristique physiologique du muscle. A l’arraché, le sportif doit soulever la barre depuis le sol jusqu’au dessus de sa tête, en étant debout avec les bras tendus. Pour battre les records, il préfère utiliser deux fois les muscles des cuisses plutôt que ses bras.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics1.png"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics1.png" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+  <hr>
+  <h3>Mouvement humain et nouveaux outils de diagnostic</h3>
+
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  L’idée de cette partie est d’utiliser les lois physiques qui régissent le mouvement humain pour développer de nouveaux outils de diagnostic. On récupère la loi de levée issue d’un mouvement simple (développé-couché, levéed’un haltère connecté). L’analyse de cette loi de levée à partir du modèle théorique qui couple les descriptions macroscopique du mouvement et microscopique de la contraction musculaire permet de caractériser la fraction de fibres rapides du muscle, et d’identifier les comportements anormaux (dopage, pathologies du muscles…)
+  </p>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Ces résultats sont utilisés pour mettre au point un rhéomètre musculaire : confronter les lois de levées expérimentales au modèle physique permet de connaître la structure fine des muscles des individus sans pratiquer de biopsie. Les applications envisagées sont multiples : amélioration des performances et des techniques d’entraînement, détection précoce de pathologies…
+  </p>
+    <br>
+    <div class="row">
+     <section class="col-sm-4 col-md-4 col-lg-4">
+       <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162833800" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+     </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics2.png"
+             data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics2.png">
+          </img>
+        </a>
+        <figcaption style="text-align: justify"></figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+  <hr>
+
+  </div>
+{% endblock content %}

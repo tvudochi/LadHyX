@@ -1,0 +1,65 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>{% trans 'Vagues de vent' %}
+    </h1>
+    <hr>
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/benzaquen/" class="vert bolder">Michael Benzaquen</a> -
+    <a class="vert bolder">Stéphane Perrard</a>
+    <br><br>
+    <div class="row">
+          <section class="col-sm-4 col-md-4 col-lg-4">
+          </section>
+
+          <section class="col-sm-4 col-md-4 col-lg-4">
+            <a href="{{ MEDIA_URL }}larecherche/windwaves.jpg"
+               data-toggle="lightbox">
+              <img class="vignette img-responsive img-fluid"
+                   src="{{ MEDIA_URL }}larecherche/windwaves.jpg" >
+
+              </img>
+            </a>
+            <figcaption style="text-align: justify">
+            </figcaption>
+          </section>
+
+          <section class="col-sm-4 col-md-4 col-lg-4">
+          </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      When the wind blows over the ocean, it generates surface waves. The mechanism underlying this
+      observation is not yet fully understood. The current theories can be traced back to the 50s’ (see [1,2]).
+      Phillips suggested that pressure fluctuations in the air must be the central ingredient, while Miles
+      suggested that tangential shear stress at the interface is responsible for surface waves generation.
+      As of today both theories - based on different physical mechanisms - have not proven contradictory
+      and are still jointly used in geo-physical Science. Both pressure and shear stress at the interface
+      may play a key role in the generation of waves by the wind, but a unified picture is still lacking.
+    </p>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+       In collaboration with the experimental team of M. Rabaud and F. Moisy at the FAST laboratory
+       (Orsay) (see [3]), we aim at disentangling the role of pressure and shear stress on the deformation
+       of a viscous liquid interface. One could say that the air-water interface acts as a spatial and temporal
+       filter of near-wall turbulence in the air. Using lubrication theory together with viscous surface waves
+       theory, we intend to understand the crucial role of viscosity on surface wrinkles and the onset of
+       wind-wave generation.
+    </p>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+       [1] O. M. Phillips. On the generation of waves by turbulent wind. J. Fluid Mech. 2(05), (1957).<br>
+       [2] J. W. Miles. On the generation of surface waves by turbulent shear flows. J. Fluid Mech. 7(03) (1960).<br>
+       [3] A. Paquier, F. Moisy, and M. Rabaud. Surface deformations and wave generation by wind blowing
+       over a viscous liquid. Phys. Fluids 27 (2015).<br>
+     </p>
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

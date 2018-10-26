@@ -1,0 +1,199 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Sports de glisse et transports à faible coût</h1>
+    <hr>
+    <h3>Utiliser le vent pour tracter les navires</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Un porte-container consomme 300 000 L de carburant par jour. En équipant les navires de cerf-volants, une économie de 20% de carburant pourrait être réalisée. En collaboration avec Yves Parlier, nous nous sommes engagés dans le projet beyond the sea ® qui vise à déployer des cerfs-volants sur différents types de navires. Nous nous sommes intéressé aux mécanismes de déploiement des cerfs-volants, ainsi qu’aux problèmes de stabilité de vol.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics3.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics4.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics4.jpg" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+	      <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics5.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics5.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+    </div>
+    <br>
+  <hr>
+  <h3>Stabilité de vol</h3>
+   <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162952619" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162952313" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+  <br>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  Un problème qui se pose pour le développement de la traction par cerf-volant est celui de la stabilité de vol illustré dans la vidéo ci-dessous. Les multi-kites semblent être une solution prometteuse au problème de stabilité.
+  </p>
+  <hr>
+  <h3>Utiliser les vagues pour transporter des particules</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  Pour prendre la vague, le surfeur doit nager et atteindre une vitesse suffisante pour être entraîné par la vague. Si la force exercée par la vague sur la planche est trop faible, le surfeur dérive. On s’intéresse au critère d’entraînement d’une particule par une onde, ainsi qu’à la stabilité du surfeur une fois qu’il a pris la vague et qu’il est debout sur la planche.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162953515" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics6.png"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics6.png" >
+          </img>
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162953961" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Dauphins</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162954347" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Cata marrant !</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162954661" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Pelicans surfeurs</figcaption>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162955322" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Surf classique</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162955690" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Surf mécanique, bille sur vague solide, dérive</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162955814" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Surf mécanique, bille sur vague solide, surf</figcaption>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162956757" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Surf sans contact (goutes en caléfaction)/figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <hr>
+    <h3>Utiliser les vagues pour se déplacer ou produire de l'électricité</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      A l’aide du dispositif présenté ci-dessous, on étudie l’efficacité de la propulsion par des palmes flexibles de différentes formes (plaques rectangulaires, raie manta,  nageoire de baleine…). Ce dispositif convertit un mouvement d’oscillation verticale en rotation. En l’équipant d’un flotteur et d’une génératrice, on peut l’utiliser pour récupérer de l’électricité à partir de l’oscillation de la houle. En orientant les palmes dans le même sens, on obtient une structure qui se déplace spontanément grâce à l’oscillation des vagues.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162957429" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162957425" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162957424" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+    </div>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162957423" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/166008391" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Utiliser des vagues pour se déplacer</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+
+   <hr>
+  </div>
+
+
+{% endblock content %}

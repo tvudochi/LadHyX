@@ -1,0 +1,216 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et Science
+{#      <span class="minuscules">(Propulsion)</span>#}
+    </h1>
+    <hr>
+
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+
+    <div class="row">
+
+       <section class="col-sm-4 col-md-4 col-lg-4">
+
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science1.jpg" >
+         </img>
+         <figcaption style="text-align: justify">
+          Exoplanet, un cosmos intime habité de la bioluminescence du phytoplancton Pyrocistis
+           Noctiluca vivant
+         </figcaption>
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Depuis sa création en 1990, le Laboratoire d’Hydrodynamique s’est investi sous l’impulsion de
+ Jean-marc Chomaz dans des projets “Arts et Sciences” en collaboration avec des artistes de toutes
+ les disciplines (cirque, théâtre, design, art contemporain, musique…). Depuis 2003, une partie de
+ cette activité est portée par le collectif d’artistes et de scientifiques
+      <a href="http://www.labofactory.com/index.php" >Labofactory.</a>
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Cette approche tente de donner directement accès à un imaginaire construit sur les pratiques
+scientifiques et artistiques, utilisant le langage et les concepts scientifiques non pour faire
+preuve mais pour faire sens. Ses œuvres n’utilisent pas de démarche déductive ou démonstrative mais
+présentent une dimension humaine et sensible de la physique qui autorise transgressions, métaphores,
+contre-sens et clins d’œil, pour construire un univers où le spectateur pourra inventer son propre
+chemin.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Cette activité est maintenant une thématique de recherche transverse avec plus de cinq
+collaborations actives et deux doctorats en codirection avec le laboratoire de sciences humaines et
+sociales de l’École LinX. Elle bénéficie du soutien de la Fondation Daniel et Nina Carasso, de la
+chaire développement durable EDF-École Polytechnique et du Labex LaSIPS. Les productions sont à la
+fois des articles et des conférences scientifiques que des créations artistiques co-signées entre
+artistes et scientifiques
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      <a href="{% url "approche-philosophique-et-epistemologique" %}"  >
+        L’approche philosophique et Epistémologique</a>
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      <a href="{% url "art-science-innovation-et-entreprenariat-culturelle" %}" >
+        Art & science, Innovation et entreprenariat culturelle</a>
+    </p>
+
+    <h3>Les projets en cours (liste non exhaustive)</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    <ul>
+    <li>
+        <a href="{% url "mist-collector" %}" >Mist Collector : la collector du brouillard</a>
+    </li>
+    <li>
+        <a href="{% url "transmutation-de-base" %}" >Transmutation de base : installation et
+        chorégraphie sur les éléments de mémoire</a>
+    </li>
+
+    <li>
+        <a href="{% url "luminous-drift-climat-de-saturne" %}" >Luminous Drift : climat de Saturne</a>
+    </li>
+    <li>
+        <a href="{% url "arc-avec-ensa-de-dijon" %}" >L’ARC avec ENSA de Dijon</a>
+    </li>
+    <li>
+        <a href="http://www.victorverite.com/content.php?cat=spect&actu=gardien" >Gardien du temple : théâtre et réalité diminuée</a>
+    </li>
+    <li>
+{#        <a href="#">Climax : la pluie d’un autre temps avec ESEA</a>#}
+      Climax : la pluie d’un autre temps avec ESEA
+    </li>
+    <li>
+{#        <a href="#">Sky : un ciel en mouvement avec L’université du Havre</a>#}
+      Sky : un ciel en mouvement avec L’université du Havre
+    </li>
+
+    <li>
+        <a href="{% url "redshift-voyage-temporel-et-mythe-de-pan" %}"  >
+          Redshift : voyage temporel et mythe de Pan</a>
+    </li>
+    <li>
+        <a href="{% url "redshift-n020-malevitch-dialogue-avec-takis" %}" >
+          Redshift n°0.20, Malevitch dialogue avec Takis</a>
+    </li>
+
+    <li>
+        <a href="{% url "wave" %}" >
+          Wave</a>
+    </li>
+
+    <li>
+        <a href="{% url "exoplanet-un-cosmos-habite-de-plancton-bioluminescent" %}" >
+          Exoplanet : un cosmos habité de plancton bioluminescent</a>
+    </li>
+
+    <li>
+        <a href="{% url "2080-performance-et-installation-sur-loxygene-de-lair" %}" >
+          2080 performance et installation sur l’oxygène de l’air</a>
+    </li>
+
+    <li>
+        <a href="{% url "fluxus" %}" >
+          Fluxus</a>
+    </li>
+    <li>
+        <a href="{% url "infini-jeu-deau-avec-luniversite-du-havre" %}" >
+          Infini : Jeu d’Eau avec L’université du Havre</a>
+    </li>
+      </ul>
+    </p>
+
+
+    <h3>Publications</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      <ul>
+    <li><a href="{{ MEDIA_URL }}/larecherche/art-et-science/manifeste_de_la_dualite_art-science_revue_mdc_n_81-2016.pdf">Manifeste de la dualite Art-Science</a>, revue MDC N°81, 2016.</li>
+    <li><a href="{{ MEDIA_URL }}/larecherche/art-et-science/it_is_time_to_think_the_anthropocene_a_manifesto_chomaz_2015.pdf">It is time to think the anthropocene ! A manifesto</a>, Leonardo MIT press, 2015.</li>
+    <li><a href="{{ MEDIA_URL }}/larecherche/art-et-science/les_plis_de_la_memoire_-boucles_memorielles_chomaz_plastir_2015.pdf">Les boucles mémorielles de la Terre</a>, N° hors série papier de PLASTIR sur la Mémoire, 2015.</li>
+    <li><a href="{{ MEDIA_URL }}/larecherche/art-et-science/mcd79-chomaz.pdf">De la science cinétique à la science sensible</a>, Un manifeste, revue MDC N°79, 2015.</li>
+    <li><a href="{{ MEDIA_URL }}/larecherche/art-et-science/articleleonardo2014water_-_chomaz.pdf">Science and Art Sculpturing fluids</a>, Leonardo MIT Press, 2014.</li>
+    <li><a href="{{ MEDIA_URL }}/larecherche/art-et-science/aetensionhserie14s.pdf">Une histoire d'ondes</a>, revue Artension hors série N°14, 2014.</li>
+  </ul>
+    </p>
+
+    <h3></h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+
+    </p>
+
+        <div class="row">
+
+       <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science8.jpg" >
+         </img>
+{#         <figcaption style="text-align: justify">#}
+{#          Numerical simulation of the Medditerranean eddy, from Ménesguen et al. 2009#}
+{#         </figcaption>#}
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+    <div class="row">
+
+       <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science9.png" >
+         </img>
+{#         <figcaption style="text-align: justify">#}
+{#          Numerical simulation of the Medditerranean eddy, from Ménesguen et al. 2009#}
+{#         </figcaption>#}
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+    <div class="row">
+
+       <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science10.png" >
+         </img>
+{#         <figcaption style="text-align: justify">#}
+{#          Numerical simulation of the Medditerranean eddy, from Ménesguen et al. 2009#}
+{#         </figcaption>#}
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+
+
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

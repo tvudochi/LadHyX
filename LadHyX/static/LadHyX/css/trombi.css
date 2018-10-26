@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'neutra', sans-serif;
+  color: #FFFFFF;
+  /*letter-spacing: 0.05em;*/
+  src: url('../fonts/NeutraTextTF-Demi.otf');
+  src: url('../fonts/NeutraTextTF-Demi.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: transparent;
+  background-image: url(../img/Fond-trombi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  font-size: 0.6rem;
+  min-height: 100vh;
+
+}
+
+.parent {
+  display:flex;
+  flex-flow: row nowrap;
+
+}
+.myflex {
+  min-height:100%;
+  width: calc(100% / 3);
+}
+
+.padding {
+  /*background-color: black;*/
+  padding-top: 27rem;
+
+}
+
+.vignette {
+  border: 1px solid #ADD1ED;
+}

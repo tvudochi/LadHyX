@@ -1,0 +1,80 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et science, Innovation et entreprenariat culturelle
+
+{#      <span class="minuscules">(Propulsion)</span>#}
+    </h1>
+    <hr>
+
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+     Certains projets art & science incluent un travail, dès la phase de recherche et développement, avec le public, les scolaires, tous impliquent des élèves ou doctorants d’écoles d’ingénieur, d’art, de design ou d’architecture.
+
+
+
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Pour ces élèves, le but pédagogique d’un travail en « Arts & Sciences » est double. Il permet, d’une part, de leur offrir une approche sensible des sciences et de travailler ainsi sur la motivation pour les sciences,  et d’autre part, dans une approche plus fondamentale, de les former à l’innovation en leur apprenant à mobiliser des savoirs multidisciplinaires dispersés au service d’une production originale.
+
+
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Avoir des actions interdisciplinaires mélangeant des élèves de formations différentes, des chercheurs et des artistes, permet aussi de développer des qualités d’écoute de l’autre, en valorisant son originalité.
+
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Pour les établissements d’enseignement supérieur du campus, l’intérêt sera triple : former les élèves à l’innovation et renforcer leur créativité, toucher le public et s’inscrire dans une dynamique territoriale, et agir plus largement pour l’égalité des chances.
+
+    </p>
+
+
+    <div class="row">
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science6.jpg" >
+         </img>
+         <figcaption style="text-align: justify">
+        Projet de dispositif scénique qui est en cours de développement et sera finalisé en 2015-2016
+         </figcaption>
+		  </section>
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+<div class="row">
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science7.jpg" >
+         </img>
+         <figcaption style="text-align: justify">
+          Atelier avec le public autour du savoir populaire sur les plantes médicinales au Brésil dans le cadre du programme Rural.Scapes, juin 2015.
+         </figcaption>
+		  </section>
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+
+
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

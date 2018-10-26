@@ -1,0 +1,95 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et science</h1>
+
+    <hr>
+
+    <h2>L’ARC avec ENSA de Dijon</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science11.png"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science11.png" >
+        </a>
+        <figcaption>Exposition à l’ENSBA-Dijon en mars 2015 des travaux issus du
+          Workshop.</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Le workshop propose, avec des étudiants en art et design et en science, d'échanger des réflexions et
+recherches, de présenter et commenter des travaux de Laboratoire, des objets connectés et
+installations qui questionnent les chants de l'art et la science. Au sein du workshop les étudiants
+réalisent des essais et des manipulations simples autour de la question de l'eau, de la brume, du
+mouvement, de l'écoulement et de la lumière. L'ensemble des propositions issues de ces réflexions et
+manipulations seront développés en objets, en installations, en fontaines, ou encore en dispositifs
+urbains, ces dernières étant situées dans l'espace public, pour la ville de Dijon dans des espaces
+concrets, mais pourront être adaptée à toutes autres villes.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Leur intention artistique convoque un imaginaire scientifique, plastique et émotionnel. Leurs
+réalisations, sous forme de prototypes, s'appuient sur une maitrise des outils du design et de la
+conception de l'espace et sur une connaissance des nouvelles technologies et avancées scientifiques.
+Certains projets seront dépendants de l'endroit d'implantation et du contexte local pour raisonner
+avec les habitants, leur histoire et le devenir du lieu. Le lieu influera sur la forme, l'échelle,
+leur matérialité et leur spatialisation.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Les projets pourront être réalisés en vrai grandeur dans les ateliers de l'Ecole de Dijon mais aussi
+à l'Ecole polytechnique avec l'appui de chercheurs et d'élèves en doctorat de science sous forme de
+séminaires et de résidences. Ils constitueront un ensemble de propositions artistiques singulières,
+dans le champ d'un mouvement Art-Science qui s'appuie sur ce principe de dualité, de symétrie et sur
+un processus où artistes et scientifiques, en changeant de rôle, ont laissé place au lâcher prise.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+L'œuvre a ainsi perdu toute tentation descriptive, didactique, elle n'est plus univoque ni
+prescriptive mais elle ouvre directement sur un imaginaire partagé entre artiste et scientifique,
+qui laisse toute sa place au regard du spectateur qui, comme l'observable quantique, modifie le sens
+porté par œuvre. Ces actions, où l'échange public-science est symétrique, où le public peut
+dialoguer avec l'œuvre, permettent de transmuter le savoir en culture populaire accessible à tous,
+car privilégiant l'imaginaire. Elles changent aussi la projection que les scientifiques font de leur
+rôle et la perception par le public de celui-ci, la dualité Art-Science ayant déplacé les lignes,
+annulé les seuils.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+  <hr>
+  </div>
+
+
+{% endblock content %}

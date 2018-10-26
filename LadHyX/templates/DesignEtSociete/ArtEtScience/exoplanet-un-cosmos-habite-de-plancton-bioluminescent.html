@@ -1,0 +1,79 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>art et science</h1>
+
+    <hr>
+
+    <h2>Exoplanet : un cosmos habité de plancton bioluminescent</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+En collaboration avec Julie Lafaurie-Janvore, avec la participation d’Antoine Garcia, Caroline Frot, Gaétan Lerisson, Camille Duprat, Anouk Daguin et Evelina Domnitch & Dmitry Gelfand.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Un espace intime se déploie, n’est-il qu’imagination, un plasma issu de mon rêve. Voie lactée perçue de l’intérieur des fractures qui parcourent l’univers. Une lumière vacille, sillon bleu de ma mémoire, double spirale enroulée des origines, je me souviens d’une planète océan. Capturer la lumière et la libérer pour interroger la nuit. Je perpétue ce cycle oublié. Je suis cette planète d’un autre soleil dont tu crois percevoir le scintillement ultime. L’espace est replié il n’y a ni dehors ni dedans, je suis toi.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+L’installation Exoplanet est une création pour le salon des Réalités Nouvelles 2015, elle interroge les nouvelles matérialités des sciences qui ont découvert des planètes extra solaire relançant le rêve de trouver la possibilité d’autres Iles, d’autres nous. Elle parle aussi de ces planètes modèles des univers mathématiques, imaginaires rendus tangibles dans la mémoire virtuelle de nos ordinateurs, scansion de zeros et de uns qui forme une image, une réalité augmentée.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+La pièce est plongée dans le noir, le spectateur l’apprivoise et s’éveille. Une faible pulsation bleu, en s’approchant il découvre un tourbillon de trainées lumineuse qui dessine un univers à hauteur de regard, succession de bandes ou de spirales qui s’accélèrent et s’échappent. Ces crépitements sont produits par l’excitation d’un phytoplancton le Pyrocistis Noctiluca qui absorbe le CO2 le jour par photosynthèse et synthétise une protéine la luciférine dont l’oxydation dans le cycle nocturne émet de la lumière.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Ces éclats éphémères et erratiques donnent vie à la sphère de verre qui les stimule sans les imposer. Ils évoquent aussi bien la planète des origines où la photosynthèse des océans a coloré de bleu le ciel que le rôle que joue toujours le plancton en produisant l’oxygène de l’air. Par nouvelle Lune, la bioluminescence du plancton est visible depuis l’espace et éclaire les tourbillons de l’océan.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science15.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science15.jpg" >
+        </a>
+        <figcaption>Exoplanet, un cosmos intime habité de la bioluminescence du phytoplancton
+          Pyrocistis Noctiluca, création pour le salon des Réalités Nouvelles 2015</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <!-- FIN IMAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

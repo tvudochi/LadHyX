@@ -1,0 +1,245 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Cellular diagnostic</h1>
+    <hr>
+    <span class="vert bolder">Cyprien Guermonprez</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/michelin" class="vert bolder">Sébatien Michelin</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/baroud/" class="vert bolder">Charles Baroud</a>
+
+    <h3>Publications</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Publication : R. Dangla, S. Lee and C. Baroud. Trapping microfluidic drops in wells of surface
+      energy.<br>Physical Review Letters, 107:124-501. Phys. Rev. Lett. 107, 124501.
+      <a href="{{ MEDIA_URL }}larecherche/dangla2011.pdf">preprint</a>
+    </p>
+    <hr>
+    <h2>How to produce concentration gradients in microfluidics?</h2>
+    <h3>Why ?</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Concentration gradients are important in microfluidics for biomechanicals and screening
+      assays. For example, bacteria response to an antibiotic depends on the agent concentration.
+    </p>
+
+    <h3>Methods</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Flow rates distribution within channels.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire1.jpg" >
+          </img>
+        </a>
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire2.jpg" >
+          </img>
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Advection - Diffusion
+    </p>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire3.jpg" >
+          </img>
+        </a>
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+
+    <h3>Results</h3>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire4.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire4.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+          Flow rate distribution with branches
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire5.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire5.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+          Branch concentration profile is Péclet dependant
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire6.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire6.jpg" >
+          </img>
+        </a>
+
+      </section>
+    </div>
+    <br>
+    <h3>Applications</h3>
+     <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire7.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire7.jpg" >
+          </img>
+
+        </a>
+        <figcaption style="text-align: justify">
+          Array of micro-reactors with diverse and controlled concentrations
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+  <hr>
+
+  <h2>Can we control thousands of parallel cell colonies in square centimeter ?</h2>
+    <a href="#" class="vert bolder">R. Tomasi</a> -
+    <a href="#" class="vert bolder">G. Amselem</a> -
+    <a href="#" class="vert bolder">S. Sart</a>
+    <a href="#" class="vert bolder">C. N. Baroud</a>
+
+  <h3>Why?</h3>
+   <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Single-cell studies allow to investigate cellular heterogeneity in large populations, which is crucial
+     in many fields such as cancer therapy ot stemcell isolation.
+   </p>
+
+  <h3>How?</h3>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Microdroplets can be efficiently trapped by anchors etched in the channel ceiling.
+  </p>
+
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire8.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire8.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+  </div>
+    <br>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  We built a high density array on a microfluidic chip
+  </p>
+
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire9.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire9.jpg" >
+          </img>
+
+        </a>
+        <figcaption style="text-align: justify">564 droplets trapped on anchors
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+  </div>
+    <br>
+
+  <h3>Results</h3>
+
+  <div class="row">
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire10.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire10.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">Droplet production
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire11.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/diagnostique-cellulaire11.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">3D cell culture in collagen
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+{% endblock content %}

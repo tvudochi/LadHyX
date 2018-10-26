@@ -1,0 +1,59 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Récupération d'eau douce</h1>
+    <hr>
+
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/duprat" class="vert bolder">
+      Camille Duprat</a> -
+    <a href="https://www.pmmh.espci.fr/fr/gouttes/" class="vert bolder">Christophe Clanet</a> -
+    Thèse <span class="vert bolder">Romain Labbe</span> -
+    En collaboration avec
+    <span class="vert bolder">Ana Rewakowicz</span> et
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/jmarc" class="vert bolder">
+      Jean-marc Chomaz</a> (Art & Science/Mist collector)
+
+    <h3>Contexte</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Nous étudions la collecte d’eau de brume à l’aide d’un filet à brouillard. Ces filets représentent
+      une méthode simple, durable et efficace pour collecter de l’eau dans certaines régions arides,
+      dans lesquelles les précipitations sont rares mais le brouillard est abondant.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Les gouttes présentes dans le brouillard impactent les fibres du filet, coalescent puis s’écoulent
+      par gravité pour être finalement collectées sous le filet. Nous proposons une alternative aux
+      textiles actuellement utilisés, sous la forme d’une forêt de fils flexibles parallèles.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/recuperation-eau-douce1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/recuperation-eau-douce1.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+          Collection of water droplets on flexible threads
+        </figcaption>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <hr>
+  </div>
+
+
+{% endblock content %}

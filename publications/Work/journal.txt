@@ -1,0 +1,131 @@
+Ed53|Aerospace Science and Technology
+Ed54|Agricultural and Forest Meteorology
+Ed66|American Journal of Botany
+Ed93|Analytical Chemistry
+Ed118|Annals of Biomedical Engineering
+Ed56|Annals of Vascular Surgery
+Ed2|Annual Review of Fluid Mechanics
+Ed67|Applied Mechanic Review
+Ed68|Applied Physics Letters
+Ed32|ASME Journal of Pressure Vessel Technology
+Ed69|Astronomische Nachrichten
+Ed63|Astronomy & Astrophysics
+Ed99|Bioinspiration and Biomimetics
+Ed111|Biomechanics and Modeling In Mechanobiology
+Ed119|Biomedical Microdevices
+Ed83|Biomicrofluidics
+Ed105|Biophysical Journal
+Ed123|Bulletin of JSME, Mechanical Engineering Reviews
+Ed22|Canadian Journal of Mathematics
+Ed117|Cell
+Ed103|Chaos, Solitons & Fractals
+Ed52|Comptes Rendus de Physique
+Ed4|Comptes-Rendus de l'Académie des Sciences, Paris
+Ed40|Comptes-Rendus Mécanique
+Ed121|Computational & Applied Mechanics
+Ed41|Computational Mechanics
+Ed74|Computer Graphics Forum
+Ed62|Computer Methods in Applied Mechanics and Engineering
+Ed73|Computer Modeling in Engineering and Sciences
+Ed89|Computers & Fluids
+Ed94|Computers & Geosciences
+Ed60|Computers and Structures
+Ed16|Dynamics of Atmospheres and Oceans
+Ed85|EPL - Europhysics Letters
+Ed131|European Journal of Computational Mechanics
+Ed37|European Journal of Mechanics A/Solids
+Ed31|European Journal of Mechanics B/Fluids
+Ed30|European Physical Journal B
+Ed25|Europhysics Letters
+Ed5|Experiments in Fluids
+Ed58|Far East Journal of Applied Mathematics
+Ed90|Faraday Discussions
+Ed34|Flow Turbulence and Combustion
+Ed81|Fluid Dynamics Research
+Ed130|Fluids Structure Interactions in Low-Reynolds Number Flow
+Ed8|Geophysical and Astrophysical Fluid Dynamics
+Ed120|Hypertension
+Ed33|IMA Journal of Applied Mathematics
+Ed114|Integrative Biology
+Ed70|International Journal for Numerical Methods in Fluids
+Ed132|International Journal of Bifurcation and Chaos
+Ed51|International Journal of Heat and Fluid Flow
+Ed75|International Journal of Mechanical Science
+Ed55|International Journal of Solids and Structures
+Ed20|Journal de Physique II (France)
+Ed48|Journal of Acoustical Society of America
+Ed36|Journal of Applied Mechanics
+Ed47|Journal of Biomechanical Engineering
+Ed65|Journal of Biomechanics
+Ed91|Journal of Climate
+Ed61|Journal of Colloid and Interface science
+Ed92|Journal of Computational and Applied Mathematics
+Ed28|Journal of Computational Physics
+Ed24|Journal of Energy Ressource Technology
+Ed1|Journal of Fluid Mechanics
+Ed29|Journal of Fluids and Structures
+Ed125|Journal of Geophysical Reasearch-Atmospheres
+Ed15|Journal of Mathematical Analysis and Applications
+Ed101|Journal of Mathematical Biology
+Ed78|Journal of Mathematics in Industry
+Ed113|Journal of Mechanics of Materials and Structures
+Ed9|Journal of Mechanics
+Ed84|Journal of Physical D: Applied Physics
+Ed72|Journal of Physics
+Ed35|Journal of Sound and Vibration
+Ed46|Journal of Statistical Physics
+Ed128|Journal of the Royal Society Interface
+Ed96|Journal of Theoretical Biology
+Ed10|Journal of Tribology
+Ed39|Journal of Vibrations and Acoustics
+Ed57|Journal of Wind Engineering and Industrial Aerodynamics
+Ed43|JSME International Journal
+Ed38|La Houille Blanche
+Ed64|Lab on Chip
+Ed124|Lancet
+Ed71|Langmuir
+Ed110|Leonardo
+Ed50|Magneto-hydrodynamics
+Ed27|Mathematical Proceedings of the Cambridge Philosophical Society
+Ed98|Medical Engineering and Physics
+Ed122|Molecular Biology of the Cell
+Ed102|Nature Communications
+Ed95|Nature Physics
+Ed26|Nature
+Ed88|New journal of Physics
+Ed127|Nonlinear Dynamics: Materials, Theory and Experiments
+Ed42|Nonlinear Phenomena in Complex Systems
+Ed44|Oil and Gas Science and Technology (IFP)
+Ed18|Philosophical Transactions A of the Royal Society of London
+Ed21|Philosophical Transactions of the Royal Society of London
+Ed17|Physica A
+Ed14|Physica D
+Ed109|Physical Review Applied
+Ed100|Physical Review B
+Ed19|Physical Review E
+Ed126|Physical Review Fluids
+Ed6|Physical Review Letters
+Ed115|Physical Review X
+Ed13|Physics of Earth and Planetary Interiors
+Ed7|Physics of Fluids A
+Ed12|Physics of Fluids
+Ed107|Plant Science
+Ed112|Plos One
+Ed45|Powder Technology
+Ed86|PRAMANA - Journal of Physics
+Ed76|Proceedings of the National Academy of Sciences
+Ed82|Proceedings of the Royal Society A
+Ed23|Proceedings of the Royal Society of London
+Ed59|Progress of Theoretical Physics Supplements
+Ed11|Quarterly Journal of Applied Mathematics
+Ed104|Scientific Reports
+Ed79|Sensors and Actuators B: Chemical
+Ed97|Signaling and Communication in Plants
+Ed116|Smart Materials and Structures
+Ed80|Soft Matter
+Ed3|Studies in Applied Mathematics
+Ed108|The European Physical Journal E
+Ed77|The Journal of Experimental Biology
+Ed49|Theoretical and Computational Fluid Dynamics
+Ed87|Theoretical Foundations of Chemical Engineering
+Ed106|Wind and Structures

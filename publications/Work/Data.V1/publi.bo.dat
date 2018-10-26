@@ -1,0 +1,78 @@
+# Creation le 07/12/2009
+#
+# Ouvrages, chapitres de livres, édition de livres, cours écrits
+#
+# Ce fichier est utilisé pour créer les pages html des Ouvrages; chapitres... (publi.bo.xxx.html)
+# 7 champs sont possibles et le séparateur de champ est |
+# Les lignes doivent commencer et finir avec un |
+# Le format d'une ligne est :
+# |année xxxx|Auteur(s)|Titre [in....]|Editeur|Références (lieu,vol, pages...)|Texte du lien hypertexte|lien (url)|
+#
+# Attention il ne doit pas y avoir " dans les champs
+# On peut les remplacer par leur code en html ==> &quot;
+#
+|1991|P.&nbsp;Coullet and Patrick Huerre, editors|New Trends in Nonlinear Dynamics and Pattern-Forming Phenomena : The Geometry of Nonequilibrium|Carg&#232;se| 2-12 août 1988, Plenum, New-York.Proceedings of NATO-ARW Workshop|||
+|1992|Jean-Marc Chomaz|Linear and non-linear, local and global stability analysis of open flows. In Roberto Benzi, editor, Turbulence in spatially extended systems|Springer Verlag| 1992.tt|||
+|1992|Jean-Marc Chomaz|Stratified flows|INSU|1992, pages 167-178|||
+|1993|H.&nbsp;Eckelmann, J.&nbsp;M.&nbsp;R. Graham, Patrick Huerre, and P.&nbsp;A. Monkewitz, editors|Bluff-Body Wakes, Dynamics and Instabilities|Springer|Gottingen Allemagne, 7-11 sept. 1992,Berlin 1993. Proceedings of IUTAM Symposium|||
+|1994|Paul Manneville|Dissipative structures and weak turbulence. In Spatiotemporal instabilities of aerodynamical and hydrodynamical flows|Rhode-Saint-Genèse| Belgium, 1994. von Karman Institute of Fluid Dynamics|||
+|1995|Hugues Chat&#233; and Paul Manneville|Phase turbulence. In P.&nbsp;Tabeling and O.&nbsp;Cardoso, editors, Turbulence, a tentative dictionary|Plenum Press|pages 67-74. New York, 1995. NATO ASI series, Series B: Physics, Vol. 341|||
+|1995|Hugues Chat&#233; and Paul Manneville|Spatio-temporal intermittency. In P.&nbsp;Tabeling and O.&nbsp;Cardoso, editors, Turbulence, a tentative dictionary|Plenum Press|pages 111-116., New York, 1995. NATO ASI series, Series B: Physics, Vol. 341|||
+|1995|Patrick Huerre|Cours de M&#233;canique des Fluides|&#201;cole Polytechnique| 1995|||
+|1995|Patrick Huerre|Recueil de probl&#232;mes|&#201;cole Polytechnique| 1995|||
+|1996|Jean-Marc Chomaz, editor|Euromech 355 Interfacial Instabilities||1996|||
+|1996|Jean-Marc Chomaz|Instabilit&#233; dans les &#233;coulements ouverts. Dossier d'habilitation &#224; diriger des recherches|Universit&#233; Pierre et Marie Curie|1996|||
+|1996|Elisabeth Dubois-Violette and Paul Manneville|Flow instabilities in nematics. In L.&nbsp;Kramer and A.&nbsp;Buka, editors, Pattern formation in liquid crystals|Springer|pages 91-163 , Heidelberg, 1996|||
+|1996|Paul Manneville|Dissipative structures and weak turbulence. In Chaotic systems in fluid dynamics|von Karman Institute of Fluid Dynamics|Rhode-Saint-Genèse Belgium, 1996. . 51 pages|||
+|1997|Paul Manneville|D&#233;buter en TeX et LaTeX|Ellipses| Paris, 1997. 118 pages|||
+|1998|Patrick Huerre|Cours de M&#233;canique des Fluides|&#201;cole Polytechnique| 1998|||
+|1998|Patrick Huerre|Recueil de probl&#232;mes|&#201;cole Polytechnique| 1998|||
+|1998|Patrick Huerre and Maurice Rossi|Hydrodynamic instabilities in open flows. In C.&nbsp;Godr&#232;che and Paul Manneville, editors Hydrodynamics and Nonlinear Instabilities|Cambridge University Press|pages 81-294, 1998|||
+|1998|Stephane Le&nbsp;Diz&#232;s, A.&nbsp;Verga, H.K. Moffatt, and Patrick Huerre, editors|Dynamics and Statistics of Concentrated Vortices in Turbulent Flows. In: European Journal of Mechanics B/Fluids||volume&nbsp;17, 1998|||
+|1999|Hugues Chaté, E.&nbsp;Villermaux, and Jean-Marc Chomaz, editors|Mixing, Chaos and Turbulence|NATO ASI Series| Kluwer Academic/Plenum Publishers, 1999. 396 papes|||
+|1999|Jean-Marc Chomaz and Michela Costa|Thin film dynamics. In Hendrick&nbsp;C. Kuhlmann and Hans-Josef Rath, editors, Free surface flow|Springer|volume 391, pages 45-100. CISM, Wien New York, 1999|||
+|1999|Emmanuel de&nbsp;Langre|Introduction aux interactions fluide-structure|Ecole Polytechnique| 1999|||
+|1999|Paul Manneville|Des ph&#233;nom&#232;nes critiques au chaos|CEA| DRECAM/SPEC, Gif-sur-Yvette, France, 1999. Actes du Colloque Scientifique &#224; la M&#233;moire de Pierre Berg&#233, Saclay, 16-17 Mars 1998|||
+|1999|Paul Manneville|Instabilit&#233;s, Chaos et Turbulence|Ecole Nationale Sup&#233;rieure de Techniques Avanc&#233;es| 1999. 226 pages|||
+|1999|Paul Manneville|Introduction aux Syst&#232;mes Dynamiques|7<sup>ème</sup> Ecole de Printemps de Mécanique des Fluides Numérique| Aussois, 1999. 44 pages|||
+|1999|Paul Manneville|Syst&#232;mes Dynamiques et Chaos|DEA de Physique des Liquides, DEA de M&#233;canique, Université Paris VI| 1999. 233 pages|||
+|1999|Antoine Sellier|Asymptotic solution of boundary integral equations. In M.&nbsp;Bonnet, A.&nbsp;M. S&#228;ndig, and W.&nbsp;L. Wendland, editors, Mathematical Aspects of Boundary Element Methods|Research Notes in Mathematics| pages 275-284. Chapman and Hall, 1999|||
+|2000|P. H&eacute;mon, E. de Langre and B. Peseux|Introduction aux interactions fluide-structure|Editions IPSI| 200 p|||
+|2000|P. Huerre|Open shear flow instabilities. In G.&nbsp;K. Batchelor, H.&nbsp;K. Moffatt, and M.&nbsp;G. Worster, editors Developments in Fluid Mechanics: A Collection for the Millenium|Cambridge University Press| pp. 159-229|||
+|2000|P. Manneville|Chapter 18: Nonlinear physics and complexity. In: A Physicist's Desk Reference (3rd Edition)|L.G. Trigg, editor, American Institute of Physics and Springer||||
+|2000|P. Manneville|La terre sous l'angle des syst&egrave;mes dynamiques. In: La Physique et la Terre|éd. par H.-C. Nataf et J. Somm&eacute;ria| CNRS-&Eacute;ditions/Belin, pp. 70-85|||
+|2000|Delbende I. et Chomaz J.-M|Bursting of a swirling jet stemming from a localized perturbation. In: Vortex Structure and Dynamics|éd. par A. Maurel et P. Petitjeans, Lecture Notes in Physics, Springer| pp. 136-142|||
+|2001|de Langre E|Fluides et Solides|&eacute;ditions de l'&Eacute;cole Polytechnique||||
+|2001|Manneville P. et Dubois-Violette E|Nematic liquid crystals: instabilities. In: Encyclopedia of Materials: Science and Technology|Elsevier| vol. 6, pp. 6090-6094|||
+|2001|Manneville P|Dynamique non-lin&eacute;aire et chaos|DEA de Physique des Liquides, &Eacute;cole doctorale de la r&eacute;gion parisienne| 233 p|||
+|2001|Manneville P|Instabilit&eacute;s, chaos et turbulence|&Eacute;cole Nationale Sup&eacute;rieure de Techniques Avanc&eacute;es| 188 p|||
+|2001|Manneville P|Dynamique non-lin&eacute;aire appliqu&eacute;e au chaos et &agrave; son contr&ocirc;le|DEA de M&eacute;canique (Paris VI) et DEA de Dynamique des Fluides et des Transferts (Paris XI)| 55 p|||
+|2002|de Langre E|Dynamique et vibrations|polycopi&eacute;, &Eacute;cole Polytechnique| 90 p|||
+|2002|de Langre E. et Ziada S|Engineering application of fluid-structure interaction research|Special Issue of the Journal of Fluids and Structures| 148 p|||
+|2002|H&eacute;mon P|Chapitre Notions d'a&eacute;rodynamique et d'a&eacute;ro&eacute;lasticit&eacute; dans &quot;Comportement au vent des ponts&quot;|Presses de l'ENPC| 66 p|||
+|2002|Sellier A|A&eacute;rodynamique compressible|polycopi&eacute;, &Eacute;cole Polytechnique| 222 p|||
+|2003|de Langre E. et Amabili M|Axial and internal flow. In: Special|Issue of the Journal of Fluids and Structures||||
+|2003|Manneville P|Chapter 17: Nonlinear physics and complexity. In: A Physicist's Desk Reference (3rd Edition)|éd. par Cohen E.R., Lide D.R. et Trigg G.L., American Institute of Physics and Springer| pp. 522-543|||
+|2003|Manneville P|Dynamique non-linéaire et chaos|DEA de Physique des Liquides, École doctorale de la région parisienne| 233 p|||
+|2003|Manneville P|Dynamique non-linéaire appliquée au chaos et à son contrôle|DEA de Mécanique (Paris VI) et DEA de Dynamique des Fluides et des Transferts (Paris XI)| 55 p|||
+|2004|de Langre et Axisa F|Proceedings of the 8th International conference on flow-induced vibrations, FIV|éd. par École Polytechnique| vol. I, 522 p., vol. II, 550 p||
+|2004|Manneville P|Spatio-temporal chaos, In: Encyclopedia of Nonlinear Science|éd. par A. Scott (Taylor & Francis)||||
+|2004|Manneville P|Instabilités, Chaos et Turbulence|éd. École Polytechnique (distr. Ellipses)|346 p|||
+|2004|Manneville P|Instabilities, Chaos and Turbulence|éd. Imperial College Press (distr. World Scientific)| 391 p|||
+|2004|Salsac A.-V., Sparks S.R., Lasheras J.C|Changes in pressure and wall tension during the enlargement of abdominal aortic aneurysms. In: Simplicity, Rigor and Relevance in Fluid Mechanics|éd. Higuera F.J., Jiménez J., Vega J.M. (CIMNE Barcelona)||||
+|2005|Cossu C|On the minimum threshold energy and the nonlinearly-optimal perturbations in subcritical instabilities. IUTAM Symposium on Laminar-Turbulent Transition and Finite Amplitude Solutions|In Fluid Mechanics and its Applications, &Eacute;ds. T. Mullin and R. Kerswell| vol. 77, pp. 251-266|||
+|2005|Manneville P|Spatio-temporal chaos. In Encyclopedia of Nonlinear Science|&Eacute;d. A. Scott, Routledge (Taylor &amp; Francis)| pp. 860-863|||
+|2005|Manneville P|Modeling the direct transition to turbulence. IUTAM Symposium on Laminar-Turbulent Transition and Finite Amplitude Solutions, in Fluid Mechanics and its Applications|&Eacute;ds. T. Mullin and R. Kerswell| vol. 77, pp. 1-33|||
+|2005|Manneville P|Rayleigh-B&eacute;nard convection: thirty years of experi-mental, theoretical and modeling work. To appear in Spatio-temporal cellular structures - Henri B&eacute;nard centenary review|&Eacute;ditions I. Mutabazi, E. Guyon, J.E. Wesfreid (Springer)||||
+|2006|H&eacute;mon P|Vibrations des structures coupl&eacute;es avec le vent|Editions de l&rsquo;Ecole Polytechnique||||
+|2008|Baroud C.N|Encyclopedia of microfluidics and nanofluidics. Dongqing Li (Editeur en chef). Thermocapillarity, Marangoni convection|Editions Springer Reference||||
+|2008|Baroud C.N|Microfluidic drops as microreactors. Chapitre dans un ouvrage : Lab on a Chip Technologies and Applications. Horizon Scientific Press|Editeurs: Avraham Rasooly and Keith Herold||||
+|2008|de Langre E. & Chaigne A|Dynamique et Vibrations|Editions de l'Ecole Polytechnique| 152 pages|||
+|2009|Manneville P. & Pomeau Y|Transition to turbulence|Scholarpedia|4(3):2072|||
+|2009|Pasol L., Sellier A. & Feuillebois F|Slow viscous motion of a solid sphere in the vicinity of a plane solid wall|Chapitre à paraître dans le livre &quot;Theoretical Methods for Micro Scale Viscous Flows&quot|||||
+|2009|Sellier A. & Feuillebois F|Co-Editeurs du livre &quot;Theoretical Methods for Micro Scale Viscous Flows&quot; qui rassemble plusieurs chapitres|A paraître||||
+|2009|Sellier A|Boundary Element Technique for slow viscous flows about particles|Editeur Ferri Aliabadi. World Scientific/Imperial College Press|Chapitre à paraître dans le livre &quot;State of the Art on BEM&quot;|||
+|2010|Manneville P|Instabilities, Chaos and Turbulence|Imperial College Press|2<sup>ème</sup> édition: 2010, 439 pages|||
+|2010|Chomaz J.-M, Ortiz S., Gallaire F. & Billant P|Stability of quasi two dimensional vortices|Lecture Notes in Physics, Editor Jan-Bert Flor|vol. 805, chapitre 2, pp.35-39|||
+|2014|Mazzag B., Gouget C. L. M., Hwang Y. & Barakat A. I|Mechanical force transmission via the cytoskeleton in vascular endothelial cells. In: Endothelial Cytoskeleton, Enfield|CRC Press|Chapitre 5, pp. 91-115||| 
+|2015|Clanet C|Sports Ballistics Edited by: Davis H. Moin P|Annual Review of Fluid Mechanics|Vol. 47  Book Series: pp. 455-478 Published: 2015|||

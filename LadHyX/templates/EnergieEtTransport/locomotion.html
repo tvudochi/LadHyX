@@ -1,0 +1,65 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Locomotion
+      <span class="minuscules">(Propulsion)</span>
+    </h1>
+    <hr>
+    <h2>How living organisms move in a fluid environment ?
+    </h2>
+    <br>
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/baroud" class="vert bolder">Charles Baroud</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/michelin" class="vert bolder"> Sébastien
+                                                                                   Michelin</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Moving in a fluid environment requires living organisms to generate propulsive forces by
+      setting the fluid around them into motion. This is true regardless of their size, whether
+      they are microscopic (e.g. bacteria or large eukaryotic cells) or macroscopic
+      (e.g. swimming fish and flying birds). However, the dominant fluid-structure interactions vary
+      widely from small to large scale, making this set of problems highly diverse.
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+     Research on these topics at LadHyX focuses on understanding the propulsion mechanisms, their
+      efficiency and their link to other biological functions such as feeding or escaping predators,
+      both in the inertia-dominated regime (e.g. fish) and viscous regime (e.g. unicellular organisms). In particular, the swimming dynamics of microscopic systems is analyzed using experimental studies, theoretical analysis and numerical simulations. Our objectives are twofold: from a biophysical point of view, we wish to identify the role of motility in the individual and collective behavior of microswimmers; from an engineering point of view, understanding the fundamental principles of microscale propulsion provide important insight on the design of self-propelled artificial microsystems.
+    </p>
+    <div class="row">
+
+       <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" frameborder="0" width="360" height="204"
+                 src="https://www.dailymotion.com/embed/video/x3ikba6" allowfullscreen>
+         </iframe>
+         <figcaption style="text-align: justify">Paramacium is an example of ciliated microorganism:
+           it swims by actuating thousands of cilia at its surface. What is the link between cilia
+           beating and swimming speed/direction ?
+         </figcaption>
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <iframe class="vignette img-responsive" frameborder="0" width="360" height="204"
+                 src="https://www.dailymotion.com/embed/video/x3ikawz" allowfullscreen>
+         </iframe>
+         <figcaption style="text-align: justify">
+           Propulsion of a model ciliated organism: what is the link between surface deformation
+           (waves), swimming efficiency and nutrient absorption ? (color: nutrient concentration)
+         </figcaption>
+		  </section>
+
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

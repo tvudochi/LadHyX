@@ -1,0 +1,93 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>L’approche philosophique et Epistémologique
+
+{#      <span class="minuscules">(Propulsion)</span>#}
+    </h1>
+    <hr>
+
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+     Cette démarche artistique a pour objectif  de changer la parole et la posture de l’expert en
+      ouvrant d’autre voies non limitées à la preuve, mais qui laissent place à l’intime conviction,
+      à l’intuition, interrogent les mythes et les croyances scientifiques. Cela est particulièrement
+      important pour les grands enjeux sociétaux comme celui du climat et de l’anthropocène
+      (la nouvelle ère géologique pour laquelle l'activité humaine est le principal facteur de modification,
+      le Geology of Mankind proposé par le prix Nobel de chimie Paul Crutzen), où le basculement est
+      trop rapide et le système trop complexe pour que la science puisse répondre, avant qu’il ne soit
+      trop tard, à cette question brûlante de la société.
+
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+     L’art est alors une façon de réinterroger et reconstruire ces questions, de décaler le regard sans confusion avec la preuve, sans prescription. Il permet en particulier de reformuler le problème, qui n’est pas d’établir la preuve du changement climatique, ni celle de sa nature anthropique, mais de penser collectivement ce changement et de redonner le rôle d’acteur aux citoyens, car le climat du futur sera déterminé par nos choix individuels aussi bien que collectifs. La science peut éclairer ces choix, mais elle ne peut pas se substituer aux acteurs de la société, individus, mondes économique et politique.L’ensemble du programme interroge l’idée d’anthropocène et de changement climatique.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Le programme de résidences d’artistes mis en place au LadHyX a permis l’expérimentation de divers « protocoles » d’interaction avec l’implication d’élèves et de doctorants de l’École polytechnique, des universités Paris Sud, Paris Diderot, Pierre et Marie Curie, de l’ENSTA, de l’ENS Cachan et d’élèves des Beaux-Arts, des Arts déco ou d’écoles de design.
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      De plus, lors de l’école d’été « Fluid Dynamics for sustainability and Environment », d’une durée de deux semaines, créée par l’Ecole polytechnique et l’Université de Cambridge, trois artistes ont été accueillis en résidence en 2013. Un artiste a suivi l’ensemble des programmes comme un élève, et deux autres artistes ont proposé des projets « Arts & Sciences » aux élèves de l’école d’été, tous doctorants internationaux dans les meilleurs universités mondiales (Oxford, Nanyang Technological, Imperial College, Oslo, Stockholm, KTH Stockholm, Columbia, Politecnico di Torino, Tokyo, Univ. Autónoma México, ETH, Delft, Princeton…).
+
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Notre équipe a également été à l’initiative d’une résidence entre quatre scientifiques et cinq artistes, qui a eu lieu à Deauville pendant trois jours. Cette collaboration a permis la rédaction d’un livre proposant plus de cinquante idées-concepts de fontaines contemporaines et de propositions d’évènements. Elle donnera lieu à une exposition permanente au Museum d’histoire naturelle du Havre, du 22 juin 2014 au 4 janvier 2015.
+    </p>
+
+    <div class="row">
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+         <img class="vignette img-responsive" width="360" height="204"
+                 src="{{ MEDIA_URL }}larecherche/art-et-science/art-science5.jpg" >
+         </img>
+         <figcaption style="text-align: justify">
+          « La Femme en noir » Time trace obtenue par une coupe spatio temporelle du film « à bout
+           de soufle » de J.L. Godard. Exposée au salon Réalités Nouvelles, Paris 2014
+         </figcaption>
+		  </section>
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+		  </section>
+    </div>
+
+
+    <h3>Publications</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      <ul>
+    <li>
+      <a href="{{ MEDIA_URL }}larecherche/art-et-science/it_is_time_to_think_the_anthropocene_a_manifesto_chomaz_2015.pdf" >
+        It is time to think the anthropocene ! A manifesto</a>, accepté à la revue Leonardo MIT press, 2015.
+    </li>
+    <li>
+      <a href="{{ MEDIA_URL }}larecherche/art-et-science/les_plis_de_la_memoire_-boucles_memorielles_chomaz_plastir_2015.pdf" >
+        Les boucles mémorielles de la Terre</a>, N° hors série papier de PLASTIR sur la Mémoire, 2015.
+    </li>
+    <li>
+      <a href="{{ MEDIA_URL }}larecherche/art-et-science/mcd79-chomaz.pdf" >
+        De la science cinétique à la science sensible</a>.  Un manifeste, revue MDC N°79.
+    </li>
+    <li>
+      <a href="{{ MEDIA_URL }}larecherche/art-et-science/articleleonardo2014water_-_chomaz.pdf" >
+        Science and Art Sculpturing fluids</a>, Leonardo MIT Press, 2014.
+    </li>
+  </ul>
+    </p>
+
+
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

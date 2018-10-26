@@ -1,0 +1,605 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block image_specifique %}emploi{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="row hidden-md hidden-sm hidden-xs">
+          <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+          </div>
+  </div>
+{% endblock slogan-actu %}
+{#{% block Actu %}#}
+{#  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">#}
+{#  </div>#}
+{#{% endblock Actu %}#}
+
+{% block content %}
+  <div class="content row">
+    {% get_static_prefix as STATIC_PREFIX %}
+
+    <!-- TABLET / ECRAN -->
+    <ul class="liste nav nav-tabs col-xs-8  col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8
+      col-md-offset-2 col-lg-8 col-lg-offset-2 hidden-xs" role="tablist ">
+      <li class="tab-item">
+        <a class="nav-link" data-toggle="tab" href="#stages" role="tab">{% trans "stage" %}</a>
+      </li>
+      <li class="tab-item">
+        <a class="nav-link" data-toggle="tab" href="#theses" role="tab" style="text-transform: none">{% trans "PhD" %}</a>
+      </li>
+      <li class="tab-item">
+              <a class="nav-link" data-toggle="tab" href="#postdoc" role="tab">{% trans "Postdoc" %}</a>
+      </li>
+      <li class="tab-item active">
+        <a class="nav-link active" data-toggle="tab" href="#professeur" role="tab">{% trans "professeur" %}</a>
+      </li>
+    </ul>
+
+    <div class="tab-content col-xs-8  col-xs-offset-2 col-sm-8 col-sm-offset-2  col-md-8
+      col-md-offset-2 col-lg-8 col-lg-offset-2 hidden-xs">
+
+      <!-- ID PROF-->
+      <div class="tab-pane active" id="professeur" role="tabpanel">
+        <!-- FICHE -->
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">20/02/2018</p>
+          <p>{% trans "Professeur Assistant Gaspard Monge en Physique du Sport" %}</p>
+          <p>{% trans "Date limite d'inscription" %} : 30 mars 2018 </p>
+          <p>Contact : <a href="mailto:christophe.josserand@polytechnique.edu">Christophe Josserand</a>,
+            <a href="mailto:christophe.clanet@ladhyx.polytechnique.fr">Christophe Clanet</a>
+          </p>
+          <p>Informations :
+            {%  ifequal LANGUAGE_CODE 'fr' %}
+            <a class="btn btn-auto" href="{{ MEDIA_URL }}sportsphysics-poste-fr.pdf">pdf</a>
+            {% endifequal %}
+            {%  ifequal LANGUAGE_CODE 'en' %}
+            <a class="btn btn-auto" href="{{ MEDIA_URL }}sportsphysics-poste-en.pdf">pdf</a>
+            {% endifequal %}
+          </p>
+        </div>
+        <hr>
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">29/01/2018</p>
+          <p>{% trans "Professeur Assistant en Mécanique des Fluides" %}</p>
+          <p>{% trans "Date limite d'inscription" %} : 07 févr. 2018 </p>
+          <p>Contact : <a href="mailto:christophe.josserand@polytechnique.edu">Christophe Josserand</a>,
+            <a href="mailto:christophe.clanet@ladhyx.polytechnique.fr">Christophe Clanet</a>
+          </p>
+          <p>Informations : <a class="btn btn-auto" href="{{ MEDIA_URL }}MECA-AProf-LadHyX-3.pages.pdf">pdf</a></p>
+        </div>
+      <hr>
+      </div>
+      <!-- FIN PROF -->
+
+      <!-- ID STAGES-->
+      <div class="tab-pane" id="stages" role="tabpanel">
+        <!-- FICHE -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">23/10/2018</p>
+           <p>M2 : Enhanced nutrient uptake by microswimmers under flow</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}algaeUnderFlow.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+
+                <hr>
+        <!-- FICHE -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">23/10/2018</p>
+           <p>M2 : Growth of a living nematic phase on a curved surface</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@ladhyx.polytechnique.fr">Michael Benzaquen</a>,
+             <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_BacterialShell.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+
+        <hr>
+        <!-- FICHE -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">23/10/2018</p>
+           <p>M2 : Transport in 2D by microswimmers</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:blaise.delmotte@ladhyx.polytechnique.fr">Blaise Delmotte</a>,
+             <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}AlgaeTransport2DFilms.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+
+         <hr>
+        <!-- FICHE -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">22/10/2018</p>
+           <p>M2 : simulating particle transport and mixing by microswimmers in liquid films</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:blaise.delmotte@ladhyx.polytechnique.fr">Blaise Delmotte</a>,
+             <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}Swimmers_Film.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+
+         <hr>
+        <!-- FICHE -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">22/10/2018</p>
+           <p>M2 : An efficient computational framework to study collective motion in reactive suspensions.</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:blaise.delmotte@ladhyx.polytechnique.fr">Blaise Delmotte</a>,
+             <a href="mailto:sebastien.michelin@ladhyx.polytechnique.fr">Sébastien Michelin</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}Reactive_FCM.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+         <hr>
+        <!-- FICHE -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">17/09/2018</p>
+           <p>M2 : Market-mediated Schelling dynamics</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Schelling.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+        <hr>
+        <!-- FICHER -->
+         <div class="clearfix" style="text-align: left">
+           <br>
+           <p class="champ">15/11/2017</p>
+           <p>M2 : Etude par microscopie à force atomique de la dynamique du mouillage</p>
+           <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+           <br> Informations : <a href="{{ MEDIA_URL }}2018_Stage_M2_IMFT_Ladhyx.pdf" class="btn btn-auto" role="button">pdf</a>
+           </p>
+         </div>
+        <hr>
+
+
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">15/11/2017</p>
+          <p>M2 : Etude par microscopie à force atomique de la dynamique du mouillage</p>
+          <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+          <br> Informations : <a href="{{ MEDIA_URL }}2018_Stage_M2_IMFT_Ladhyx.pdf" class="btn btn-auto" role="button">pdf</a>
+          </p>
+        </div>
+
+        <hr>
+
+        <!-- FICHE -->
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">11/10/2017</p>
+          <p>M2 : Impact of hull-asymmetry in rowing performance</p>
+          <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+          <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Wavedrag.pdf" class="btn btn-auto" role="button">pdf</a>
+          </p>
+        </div>
+
+        <hr>
+
+        <!-- FICHE -->
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">11/10/2017</p>
+          <p>M2 : Endogenous instabilities in financial market</p>
+          <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+          <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Finance.pdf" class="btn btn-auto" role="button">pdf</a>
+          </p>
+        </div>
+
+        <hr>
+
+        <!-- FICHE -->
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">11/10/2017</p>
+          <p>M2 : Wind wave generation: Filtering role of a liquid interface</p>
+          <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+          <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Waves.pdf" class="btn btn-auto" role="button">pdf</a>
+          </p>
+        </div>
+
+        <hr>
+      </div>
+      <!-- FIN STAGES -->
+
+      <!-- ID THESES-->
+      <div class="tab-pane" id="theses" role="tabpanel">
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">24/05/2018</p>
+          <p>Vortex-induced vibrations on industrial chimneys</p>
+          <p>Intended start date : Oct. 2018</p>
+          <p>Contact : <a href="mailto:amandolese@ladhyx.polytechnique.fr">Xavier Amandolese</a></p>
+          <p>Informations :
+            <a href="{{ MEDIA_URL }}PhD_VIV_Chimney.pdf" class="btn btn-auto" role="button">pdf
+            </a>
+        </div>
+        <hr>
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">15/03/2018</p>
+          <p>Fluid mechanics and nutrient uptake by microorganisms</p>
+          <p>Intended start date : Oct. 2018</p>
+          <p>Contact : <a href="mailto:amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a></p>
+          <p>Informations :
+            <a href="{{ MEDIA_URL }}PhD_BacteriaFlowMetablism.pdf" class="btn btn-auto" role="button">pdf
+            </a>
+        </div>
+        <hr>
+
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">13/02/2018</p>
+          <p>Emergent Adaptive Behaviors<br>Embracing fluid-structure interactions to achieve new
+             functionalities
+          </p>
+          <p>Intended start date : Sept. 2018</p>
+          <p>Contact : <a href="mailto:sophie.ramananarivo@ladhyx.polytechnique.fr">Sophie Ramananarivo</a></p>
+          <p>Informations :
+            <a href="{{ MEDIA_URL }}sujet_these_adaptive.pdf" class="btn btn-auto" role="button">pdf
+            </a>
+        </div>
+        <hr>
+
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">12/02/2018</p>
+          <p>{% trans "Interactions et mouvements collectifs de microparticules actives" %}</p>
+          <p>Contact : <a href="mailto:sebastien.michelin@ladhyx.polytechnique.fr">Sébastien Michelin</a></p>
+          <p>Informations :
+            <a href="{{ MEDIA_URL }}these_erc4.pdf" class="btn btn-auto" role="button">pdf
+            </a>
+        </div>
+        <hr>
+        <div class="clearfix" style="text-align: left">
+          <p class="champ">04/06/2017</p>
+          <p>Arteres artificielles avancees pour le developpement et l'optimisation des dispositifs
+            endovasculaires</p>
+          <p>Date : 2017-2018</p>
+          <p>Contact : <a href="mailto:abdul.barakat@ladhyx.polytechnique.fr">Abdul Barakat</a></p>
+          <p>Informations :
+            <a href="{{ MEDIA_URL }}proposition-these-barakat.pdf" class="btn btn-auto" role="button">pdf
+            </a>
+        </div>
+        <hr>
+      </div>
+      <!-- FIN THESES -->
+
+      <!-- ID POSTDOC-->
+      <div class="tab-pane" id="postdoc" role="tabpanel">
+
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">29/08/2018</p>
+          <p>The onset of wind waves</p>
+          <p>Date : ASAP</p>
+          <p>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+          </p>
+          <p>Informations :
+            <a class="btn btn-auto" href="{{ MEDIA_URL }}postdoc_ova.pdf">pdf</a>
+          </p>
+        </div>
+        <hr>
+        <div class="clearfix" style="text-align: left">
+          <br>
+          <p class="champ">23/02/2018</p>
+          <p>Single-cell study of the emergence of antibiotic resistance
+          using microfluidics</p>
+          <p>Date : ASAP</p>
+          <p>Contact : <a href="mailto:charles.baroud@pasteur.fr">Charles Baroud</a>
+
+          </p>
+          <p>Informations :
+            <a class="btn btn-auto" href="{{ MEDIA_URL }}announcement_unibac.pdf">pdf</a>
+          </p>
+        </div>
+        <hr>
+
+      </div>
+      <!-- FIN POSTDOC -->
+
+    </div>
+    <!-- FIN TABLET / ECRAN -->
+
+    <!-- SMARTPHONE -->
+    <div class="panel-group mobile hidden-sm hidden-md hidden-lg" id="field">
+
+    <!-- SECTION PROF -->
+    <section class="panel panel-default">
+      <div class="panel-heading list-unstyled">
+        <h1 class="panel-title">
+          <a data-toggle="collapse" data-parent="#field" href="#prof-mob"><i class="glyphicon
+          glyphicon-tint"></i>{%  trans 'professeur' %}
+          </a>
+        </h1>
+      </div>
+      <!-- SECTION PROF -->
+      <div id="prof-mob" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <div class="row">
+            <div class="clearfix" style="text-align: left">
+              <br>
+              <p class="champ">20/02/2018</p>
+              <p>{% trans "Professeur Assistant Gaspard Monge en Physique du Sport" %}</p>
+              <p>{% trans "Date limite d'inscription" %} : 30 mars 2018 </p>
+              <p>Contact : <a href="mailto:christophe.josserand@polytechnique.edu">Christophe Josserand</a>,
+                <a href="mailto:christophe.clanet@ladhyx.polytechnique.fr">Christophe Clanet</a>
+              </p>
+              <p>Informations :
+                {%  ifequal LANGUAGE_CODE 'fr' %}
+                <a class="btn btn-auto" href="{{ MEDIA_URL }}sportsphysics-poste-fr.pdf">pdf</a>
+                {% endifequal %}
+                {%  ifequal LANGUAGE_CODE 'en' %}
+                <a class="btn btn-auto" href="{{ MEDIA_URL }}sportsphysics-poste-en.pdf">pdf</a>
+                {% endifequal %}
+              </p>
+            </div>
+          <hr>
+
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">29/01/2018</p>
+              <p>{% trans "Professeur Assistant en Mécanique des Fluides" %}</p>
+              <p>{% trans "Date limite d'inscription" %} : 07 févr. 2018 </p>
+              <p>Contact : <a href="mailto:christophe.josserand@polytechnique.edu">Christophe Josserand</a>,
+                <a href="mailto:christophe.clanet@ladhyx.polytechnique.fr">Christophe Clanet</a>
+              </p>
+              <p>Informations : <a class="btn btn-auto" href="{{ MEDIA_URL }}MECA-AProf-LadHyX-3.pages.pdf">pdf</a></p>
+            </div>
+
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION POSTDOC -->
+    <section class="panel panel-default">
+          <div class="panel-heading list-unstyled">
+            <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#postdoc-mob"><i class="glyphicon
+              glyphicon-tint"></i>{%  trans 'postdoc' %}
+              </a>
+            </h1>
+          </div>
+          <div id="postdoc-mob" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <div class="row">
+                <div class="clearfix" style="text-align: left">
+                  <br>
+                  <p class="champ">29/08/2018</p>
+                  <p>The onset of wind waves</p>
+                  <p>Date: ASAP</p>
+                  <p>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Micheal Benzaquen</a>
+                  </p>
+                  <p>Informations :
+                    <a class="btn btn-auto" href="{{ MEDIA_URL }}postdoc_ova.pdf">pdf</a>
+                  </p>
+                </div>
+                <hr>
+
+                <div class="clearfix" style="text-align: left">
+                  <br>
+                  <p class="champ">23/02/2018</p>
+                  <p>Single-cell study of the emergence of antibiotic resistance using microfluidics</p>
+                  <p>Date: ASAP</p>
+                  <p>Contact : <a href="mailto:charles.baroud@pasteur.fr">Charles Baroud</a>
+                  </p>
+                  <p>Informations :
+                    <a class="btn btn-auto" href="{{ MEDIA_URL }}announcement_unibac.pdf">pdf</a>
+                  </p>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- SECTION THESE -->
+    <section class="panel panel-default">
+          <div class="panel-heading list-unstyled">
+            <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#phd-mob"><i class="glyphicon
+              glyphicon-tint"></i>{%  trans 'PhD' %}
+              </a>
+            </h1>
+          </div>
+          <!-- ID  -->
+          <div id="phd-mob" class="panel-collapse collapse ">
+            <div class="panel-body">
+              <div class="row">
+                <div class="clearfix" style="text-align: left">
+                  <br>
+                  <p class="champ">24/05/2018</p>
+                  <p>Vortex-induced vibrations on industrial chimneys</p>
+                  <p>Intended start date : Sept. 2018</p>
+                  <p>Contact : <a href="mailto:amandolese@ladhyx.polytechnique.fr">Xavier Amandolese</a></p>
+                  <p>Informations :
+                    <a href="{{ MEDIA_URL }}PhD_VIV_Chimney.pdf" class="btn btn-auto" role="button">pdf
+                    </a>
+                </div>
+                <hr>
+
+                <div class="clearfix" style="text-align: left">
+                  <br>
+                  <p class="champ">15/03/2018</p>
+                  <p>Fluid mechanics and nutrient uptake by microorganisms</p>
+                  <p>Intended start date : Sept. 2018</p>
+                  <p>Contact : <a href="mailto:amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a></p>
+                  <p>Informations :
+                    <a href="{{ MEDIA_URL }}PhD_BacteriaFlowMetablism.pdf" class="btn btn-auto" role="button">pdf
+                    </a>
+                </div>
+                <hr>
+
+                <div class="clearfix" style="text-align: left">
+                  <br>
+                  <p class="champ">13/02/2018</p>
+                  <p>Emergent Adaptive Behaviors<br>Embracing fluid-structure interactions to achieve new
+                     functionalities
+                  </p>
+                  <p>Intended start date : Sept. 2018</p>
+                  <p>Contact : <a href="mailto:sophie.ramananarivo@ladhyx.polytechnique.fr">Sophie Ramananarivo</a></p>
+                  <p>Informations :
+                    <a href="{{ MEDIA_URL }}sujet_these_adaptive.pdf" class="btn btn-auto" role="button">pdf
+                    </a>
+                </div>
+                <hr>
+
+                <div class="clearfix" style="text-align: left">
+                  <br>
+                  <p class="champ">12/02/2018</p>
+                  <p>{% trans "Interactions et mouvements collectifs de microparticules actives" %}</p>
+                  <p>Contact : <a href="mailto:sebastien.michelin@ladhyx.polytechnique.fr">Sébastien Michelin</a></p>
+                  <p>Informations :
+                    <a href="{{ MEDIA_URL }}these_erc4.pdf" class="btn btn-auto" role="button">pdf
+                    </a>
+                </div>
+                <hr>
+                <div class="clearfix" style="text-align: left">
+                  <p class="champ">04/06/2017</p>
+                  <p>Arteres artificielles avancees pour le developpement et l'optimisation des dispositifs
+                    endovasculaires</p>
+                  <p>Date : 2017-2018</p>
+                  <p>Contact : <a href="mailto:abdul.barakat@ladhyx.polytechnique.fr">Abdul Barakat</a></p>
+                  <p>Informations :
+                    <a href="{{ MEDIA_URL }}proposition-these-barakat.pdf" class="btn btn-auto" role="button">pdf
+                    </a>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- SECTION STAGE -->
+    <section class="panel panel-default">
+      <div class="panel-heading list-unstyled">
+        <h1 class="panel-title">
+          <a data-toggle="collapse" data-parent="#field" href="#stage-mob"><i class="glyphicon
+          glyphicon-tint"></i>{%  trans 'stage' %}
+          </a>
+        </h1>
+      </div>
+
+      <div id="stage-mob" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <div class="row">
+          <div class="clearfix" style="text-align: left">
+              <p class="champ">23/10/2018</p>
+              <p>M2 : Enhanced nutrient uptake by microswimmers under flow
+              </p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}algaeUnderFlow.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">23/10/2018</p>
+              <p>M2 : Growth of a living nematic phase on a curved surface
+              </p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@ladhyx.polytechnique.fr">Micheal Benzaquen</a>,
+                <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_BacterialShell.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">23/10/2018</p>
+              <p>M2 : Transport in 2D by microswimmers
+              </p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:blaise.delmotte@ladhyx.polytechnique.fr">Blaise Delmotte</a>,
+                <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Swimmers_Film.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">22/10/2018</p>
+              <p>M2 : simulating particle transport and mixing by microswimmers in liquid films
+              </p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:blaise.delmotte@ladhyx.polytechnique.fr">Blaise Delmotte</a>,
+                <a href="mailto:gabriel.amselem@ladhyx.polytechnique.fr">Gabriel Amselem</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Swimmers_Film.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">22/10/2018</p>
+              <p>M2 : An efficient computational framework to study collective motion in reactive suspensions.
+              </p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:blaise.delmotte@ladhyx.polytechnique.fr">Blaise Delmotte</a>,
+                <a href="mailto:sebastien.michelin@ladhyx.polytechnique.fr">Sébastien Michelin</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Reactive_FCM.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">17/09/2019</p>
+              <p>M2 : Market-mediated Schelling dynamics</p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Schelling.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">15/11/2017</p>
+              <p>M2 : Etude par microscopie à force atomique de la dynamique du mouillage
+              </p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}2018_Stage_M2_IMFT_Ladhyx.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">15/11/2017</p>
+              <p>M2 : Etude par microscopie à force atomique de la dynamique du mouillage</p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}2018_Stage_M2_IMFT_Ladhyx.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <!-- FICHE -->
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">11/10/2017</p>
+              <p>M2 : Impact of hull-asymmetry in rowing performance</p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Wavedrag.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <!-- FICHE -->
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">11/10/2017</p>
+              <p>M2 : Endogenous instabilities in financial market</p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Finance.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+            <hr>
+            <!-- FICHE -->
+            <div class="clearfix" style="text-align: left">
+              <p class="champ">11/10/2017</p>
+              <p>M2 : Wind wave generation: Filtering role of a liquid interface</p>
+              <p>Date : ASAP<br>Contact : <a href="mailto:michael.benzaquen@polytechnique.edu">Michael Benzaquen</a>
+              <br> Informations : <a href="{{ MEDIA_URL }}Internship_M2_Ladhyx_Waves.pdf" class="btn btn-auto" role="button">pdf</a>
+              </p>
+            </div>
+
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- FIN SMARTPHONE -->
+  </div>
+{% endblock %}
+
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}

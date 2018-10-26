@@ -1,0 +1,359 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block image_specifique %}actualite{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="row hidden-md hidden-sm hidden-xs">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+    </div>
+  </div>
+{% endblock slogan-actu %}
+
+{#{% block Actu %}#}
+{#  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">#}
+{#  </div>#}
+{#{% endblock Actu %}#}
+
+{% block content %}
+<div class="content row">
+  {% get_static_prefix as STATIC_PREFIX %}
+  <!-- Nav tabs -->
+
+  <ul class="liste nav nav-tabs col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0
+  col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-2 hidden-xs" role="tablist ">
+    <li class="tab-item active">
+      <a class="nav-link " data-toggle="tab" href="#seminaires" role="tab">
+        {% trans "séminaires" %}</a>
+    </li>
+    <li class="tab-item ">
+      <a class="nav-link" data-toggle="tab" href="#colloques" role="tab">{% trans "colloques" %}</a>
+    </li>
+    <li class="tab-item">
+      <a class="nav-link" data-toggle="tab" href="#ecoles" role="tab">{% trans "écoles d'été" %}</a>
+    </li>
+{#    <li class="tab-item">#}
+{#      <a class="nav-link" data-toggle="tab" href="#evepass" role="tab">{% trans "événements passés" %}</a>#}
+{#    </li>#}
+    <li class="tab-item">
+      <a class="nav-link" data-toggle="tab" href="#evepass" role="tab">{% trans "Jeudi de la recherche" %}</a>
+    </li>
+  </ul>
+
+  <div class="tab-content col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0
+  col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-2 hidden-xs">
+
+    <!-- Tab panes SEMINAIRES-->
+    <div class="tab-pane active" id="seminaires" role="tabpanel">
+      <!--<p class="col-lg-12">-->
+
+      {% for foo in 2first %}
+        <span class="champ">{{ foo.date_debut }}</span>
+        <p>
+          {{ foo.intitule }}
+          {% if foo.abstract %}
+            <a href="{{ MEDIA_URL }}/{{ foo.abstract }}" class="btn btn-auto" role="button">pdf</a>
+          {% endif %}
+        </p>
+        <p>{{ foo.personne }} ({{ foo.institut }})</p>
+        <p>{{ foo.heure }} - {{ foo.lieu }}</p>
+        <hr>
+      {% endfor %}
+
+      <!-- TOGGLE -->
+        <p class="text-center"><a data-toggle="collapse" href="#suite" class="btn btn-auto" role="button">&nbsp;+&nbsp;</a></p>
+        <div class="panel-collapse collapse"  id="suite">
+          {% for foo in lereste %}
+                  <span class="champ">{{ foo.date_debut }}</span>
+                  <p>
+                    {{ foo.intitule }}
+                    {% if foo.abstract %}
+                      <a href="{{ MEDIA_URL }}/{{ foo.abstract }}" class="btn btn-auto" role="button">pdf</a>
+                    {% endif %}
+                  </p>
+                  <p>{{ foo.personne }} ({{ foo.institut }})</p>
+                  <p>{{ foo.heure }} - {{ foo.lieu }}</p>
+                  <hr>
+                {% endfor %}
+
+        </div>
+
+      <!-- FIN DIV TAB PANE SEMINAIRES-->
+      </div>
+
+
+    <!-- TAB COLLOQUES-->
+    <div class="tab-pane" id="colloques" role="tabpanel">
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <a href="https://yakari.polytechnique.fr/isfa2020/">
+          <img class="vignette img-responsive" src="{{ MEDIA_URL }}/flutter.png" style="margin: 0 auto;">
+          </a>
+
+        </div>
+        <div class="col-lg-8" style="text-align: center">
+          <a href="https://yakari.polytechnique.fr/isfa2020/" style="color: #6dccbb;text-decoration: none">
+            ISFA 2020
+          </a>
+          <br>
+          Second International Symposium on Flutter and its Application
+          <br>May 2020, Paris, France
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- TAB ECOLES-->
+    <div class="tab-pane" id="ecoles" role="tabpanel">
+  <div class="row">
+    <div class="col-lg-4 col-md-12">
+      <a href="https://yakari.polytechnique.fr/cmif2018/">
+        <img class="vignette img-responsive" src="{{ MEDIA_URL }}evenement/afficheCMIF2018.png"  style="margin: 0 auto;" >
+      </a>
+    </div>
+
+    <div class="col-lg-8 col-md-12" style="text-align: center">
+      <a  href="https://yakari.polytechnique.fr/cmif2018/" style="color: #6dccbb;text-decoration: none">
+        COMPLEX MOTION IN FLUIDS</a><br>
+      Sports physics and collective phenomena
+      <br>July 8-14 2018
+      <br>Normandie, France
+    </div>
+        </div>
+
+</div>
+
+    <!-- TAB EVENEMENTS PASSES -->
+{#    <div class="tab-pane" id="evepass" role="tabpanel">#}
+{#      <div class="row">#}
+{#        <div class="col-lg-4">#}
+{#          <img class="vignette img-responsive" src="{{ MEDIA_URL }}evenement/logo-art-science.jpg" style="margin: 0 auto;">#}
+{#        </div>#}
+{#            <div class="col-lg-8" style="text-align: center">#}
+{#              Encounters "Becoming Plant"<br>#}
+{#              8-13 october 2017<br>#}
+{#              <a href="{{ MEDIA_URL }}/evenement/devenir_plante_programme.pdf" class="btn btn-auto" role="button">pdf</a><br>#}
+{#            </div>#}
+{#          </div>#}
+{#    </div>#}
+    <div class="tab-pane" id="evepass" role="tabpanel">
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="https://www.polytechnique.edu/fr/jeudis-de-la-recherche-de-lx">
+              <img class="vignette img-responsive" src="{{ MEDIA_URL }}evenement/JeudiX.jpg" style="margin: 0 auto;">
+              </a>
+            </div>
+                <div class="col-lg-8" style="text-align: justify">
+                  <p>Dans le cadre de la 4e saison des Jeudis de la Recherche sur la thématique « A la croisée des sciences »,
+                     trois chercheurs du LadHyX présenteront leurs travaux à la croisée de la mécanique et de la biologie le jeudi 3 mai 2018.
+                  </p>
+                  <p>
+                    <em>Comment la danse des plantes inspire la science ?</em><br>Emmanuel de Langre, professeur et chercheur.
+                  </p>
+                  <p>
+                    <em>La physique et la mécanique au service des sportifs</em><br>Caroline Cohen, chercheuse en post-doctorat.
+                  </p>
+                  <p>
+                    <em>Soigner le cancer / Le baiser du globule blanc</em><br>Julien Husson, professeur assistant à l'X et chercheur.
+                  </p>
+                  <p>
+                    Jeudi 3 mai 2018 de 9h00-10h30<br>
+                    Maison des X<br>
+                    12 rue de Poitiers 75007 Paris<br>
+                    <a href="https://www.polytechnique.edu/fr/jeudis-de-la-recherche-de-lx">Lien</a>
+                  </p>
+                </div>
+              </div>
+        </div>
+  </div>
+
+  <!-- SMARTPHONE -->
+
+  <div class="panel-group mobile hidden-sm hidden-md hidden-lg" id="field">
+    <!-- SEM -->
+    <div class="panel panel-default" id="div-section-actu">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#sem-mob"><i class="glyphicon
+              glyphicon-tint"></i>{%  trans 'séminaires' %}
+              </a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="sem-mob" class="panel-collapse collapse ">
+        <div class="panel-body" style="text-align: left">
+          {% for foo in 2first %}
+
+             <span class="champ">{{ foo.date_debut }}</span>
+            <p>
+              {{ foo.intitule }}.
+              {% if foo.abstract %}
+                <a href="{{ MEDIA_URL }}/{{ foo.abstract }}" class="btn btn-auto" role="button">pdf</a>
+              {% else %}
+              {% endif %}
+            </p>
+            {{ foo.personne }} ({{ foo.institut }})
+            <br>
+            {{ foo.lieu }} - {{ foo.heure }}
+            <br>
+            <hr>
+          {% endfor %}
+          <p class="text-center"><a data-toggle="collapse" href="#mob-suite" class="btn btn-auto"
+                                    role="button">&nbsp;+&nbsp;</a></p>
+          <div class="panel-collapse collapse"  id="mob-suite">
+            {% for foo in lereste %}
+
+              <span class="champ">{{ foo.date_debut }}</span>
+              <p style="text-align: justify">
+                {{ foo.intitule }}.
+                {% if foo.abstract %}
+                  <a href="{{ MEDIA_URL }}/{{ foo.abstract }}" class="btn btn-auto" role="button">pdf</a>
+                {% else %}
+                {% endif %}
+              </p>
+              {{ foo.personne }} ({{ foo.institut }})
+              <br>
+              {{ foo.lieu }} - {{ foo.heure }}
+              <br>
+              <hr>
+            {% endfor %}
+          </div>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+    <!-- COLLOQUES -->
+    <div class="panel panel-default" id="div-section-actu">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#col-mob"><i class="glyphicon
+              glyphicon-tint"></i>{%  trans 'colloques' %}
+              </a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="col-mob" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <div class="row">
+            <a href="https://www.ladhyx.polytechnique.fr/isfa2020/">
+            <img class="vignette img-responsive" style="margin: 0 auto;"
+                             src="{{ MEDIA_URL }}evenement/flutter.png" >
+            </a>
+          </div>
+          <div class="row" style="text-align: center">
+            <br>
+            <a href="https://yakari.polytechnique.fr/isfa2020/">
+              ISFA 2020
+            </a>
+            <br>
+            Second International Symposium on Flutter and its Application
+            <br>May 2020, Paris, France
+          </div>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+    <!-- ECOLES ETE -->
+    <div class="panel panel-default" id="div-section-actu">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#ecoles-mob"><i class="glyphicon
+              glyphicon-tint"></i>{%  trans 'écoles d\'été' %}
+              </a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="ecoles-mob" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <div class="row">
+            <a href="https://www.ladhyx.polytechnique.fr/cmif2018/">
+              <img class="vignette img-responsive" style="margin: 0 auto;min-width: 200px;"  src="{{ MEDIA_URL }}evenement/afficheCMIF2018.png" >
+            </a>
+          </div>
+          <div class="row" style="text-align: center">
+            <br>
+            <a  href="https://yakari.polytechnique.fr/cmif2018/" style="color: #6dccbb;text-decoration: none">
+              COMPLEX MOTION IN FLUIDS</a><br>
+            Sports physics and collective phenomena
+            <br>July 8-14 2018
+            <br>Normandie, France
+          </div>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+    <!-- EVENEMENTS PASSES-->
+{#    <div class="panel panel-default" id="div-section-actu">#}
+{#      <div class="panel-heading list-unstyled">#}
+{#          <h1 class="panel-title">#}
+{#              <a data-toggle="collapse" data-parent="#field" href="#mob-evepass"><i class="glyphicon#}
+{#              glyphicon-tint"></i>{%  trans 'événements passés' %}#}
+{#              </a>#}
+{#          </h1>#}
+{#      </div><!--/.panel-heading-->#}
+{#      <div id="mob-evepass" class="panel-collapse collapse ">#}
+{#        <div class="panel-body">#}
+{#          <div class="row">#}
+{#              <img class="vignette img-responsive" style="margin: 0 auto;min-width: 200px;"#}
+{#                   src="{{ MEDIA_URL }}evenement/logo-art-science.jpg" >#}
+{#          </div>#}
+{#          <div class="row" style="text-align: center">#}
+{#            <h2 >Encounters "Becoming Plant"<br>#}
+{#                 8-13 october 2017<br>#}
+{#              <a href="{{ MEDIA_URL }}/evenement/devenir_plante_programme.pdf" class="btn btn-auto" role="button">pdf</a><br>#}
+{#            </h2>#}
+{#          </div>#}
+{#        </div><!--/.panel-body-->#}
+{#      </div><!--/.panel-collapse-->#}
+{#    </div><!--/.panel-default-->#}
+    <div class="panel panel-default" id="div-section-actu">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#mob-evepass"><i class="glyphicon
+              glyphicon-tint"></i>{%  trans 'JeudiX' %}
+              </a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="mob-evepass" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <div class="row">
+              <img class="vignette img-responsive" style="margin: 0 auto;min-width: 200px;"
+                   src="{{ MEDIA_URL }}evenement/JeudiX.jpg" >
+          </div>
+          <div class="row" style="text-align: left">
+            <p>Dans le cadre de la 4e saison des Jeudis de la Recherche sur la thématique «A la croisée des sciences»,
+               trois chercheurs du LadHyX présenteront leurs travaux à la croisée de la mécanique et de la biologie le jeudi 3 mai 2018.
+            </p>
+            <p>
+              <em>Comment la danse des plantes inspire la science ?</em> Emmanuel de Langre.
+            </p>
+            <p>
+              <em>La physique et la mécanique au service des sportifs</em>, Caroline Cohen.
+            </p>
+            <p>
+              <em>Soigner le cancer / Le baiser du globule blanc</em>Julien Husson.
+            </p>
+            <p>
+              Jeudi 3 mai 2018 de 9h00-10h30<br>
+              Maison des X<br>
+              12 rue de Poitiers 75007 Paris<br>
+              <a href="https://www.polytechnique.edu/fr/jeudis-de-la-recherche-de-lx">Lien</a>
+            </p>
+          </div>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+  </div>
+
+
+
+  <!-- FIN DIV ROW -->
+</div>
+{% endblock %}
+
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}
+

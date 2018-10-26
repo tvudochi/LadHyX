@@ -1,0 +1,84 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et science</h1>
+
+    <hr>
+
+    <h2>Fluxus</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a> -
+    <a href="#" class="vert bolder">François Eudes Chanfrault</a>
+     <!-- FIN AUTEURS -->
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+avec la participation de Gaétan Lerisson
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Les métamachines Fluxus sont constituées d’un bassin de 3 mètres de long par 10 cm de large rempli de 27 cm d’eau. Lorsqu’elle est frappée, la surface de l’eau, tendue par la gravité, oscille. Comme la corde d’une guitare ou la peau d’un tambour, cette oscillation va correspondre à un ensemble de notes chacune associée à un nombre entier de vagues dans le bassin.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+              <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science17.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science17.jpg" >
+        </a>
+        <figcaption>Métamachines Fluxus exposées à la Nuit Blanche Paris, Ménagerie de verre,
+          2013</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Les métamachines Fluxus deviennent alors des tambours mous sonnant sur les fréquences 1.71Hz et 1.31Hz. Ces fréquences représentent des infrasons inaudibles à l’homme mais visibles par le mouvement des vagues. Un générateur de vapeur froide attaché à chaque batteur génère en permanence une mince couche de brume et embue sur les vitres.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Cette brume permet une inversion de la matérialité de la vague. Cet effet est renforcé par l’éclairage par deux bandes de LED diffusé par la couche de brume s’échappant aussi par les deux ménisques que forme la nappe d’eau au contact des bords du bassin. Lorsque les vagues se brisent ou déferlent la surface même de l’eau devient lumineuse donnant à ces mouvements une étrange plasticité.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      La composition musicale conçoit les métamachines Fluxus comme des instruments de musique jouant leurs infra-notes. La musique électronique est composée sur la partition de ces tambours mous silencieux.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Parfois le son se fait grondement de la terre, crescendo, roulement ou reflux. L’ensemble crée un paysage sonore à la fois audible et visuel, familier et étrange où la gravité semble inversée l’air étant lourd de nuée et de lumière. La surface de l’eau prend un aspect métallique tendu entre deux lignes de lumière et s’éclaire lorsque les vagues trop fortes déferlent ou s’affrontent en produisant des figures éphémères et chimériques toujours renouvelées car non linéaires et chaotiques.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+  <hr>
+  </div>
+
+
+{% endblock content %}

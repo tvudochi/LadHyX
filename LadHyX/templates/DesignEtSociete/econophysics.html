@@ -1,0 +1,141 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  {% ifequal LANGUAGE_CODE 'en' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Econophysics
+    </h1>
+    <hr>
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/benzaquen/" class="vert bolder">Michael Benzaquen</a>
+
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Ever since Bachelier’s PhD thesis in 1900 - a theory of Brownian motion 5 years before Einstein -
+      our understanding of financial markets has reasonably progressed. Over the past decades financial
+      engineering has grown tremendously and has regrettably outgrown our understanding. The inadequacy
+      of the models used to describe financial markets is often responsible for the worst financial crises,
+      with significant impact on everyday economy.
+    </p>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    From a physicist’s perspective, understanding price formation in financial markets -
+       namely how markets absorb and process information of thousands of individual agents to come up to a “fair” price -
+       is a truly fascinating and challenging problem. Statistical physics has taught us that systems made of a
+       large number of individual entities may display robust (often unanticipated) regularities that rise above
+       individual behaviours. Or as P. W. Anderson puts it “More is different”, see Science <b>177</b> (1972).
+    </p>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Our approach is primarily empirical. We work in collaboration with J.-P. Bouchaud (chairman at Capital Fund Management)
+    on building self-consistent agent-based models able to reproduce stylised facts revealed by real market data.
+    The success of zero-intelligence “hydrodynamic” models (see figure above) comforted us in the idea that market
+    dynamics can, to some extent, be understood from a purely mechanical endogenous perspective, in conflict with
+    most economical models. In particular models need no exogenous ingredients (such as news reports) to be able
+    to reproduce a number of well-established empirical findings. One remarkable observation is that only a very
+    small fraction of large price jumps can be correlated to news feeds, indicating that most small-scale market
+    crashes seem to be induced by the dynamics of the market itself. Using the class of continuous models mentioned
+    above and keeping an ear open for what real data may tell us, we now concentrate on understanding what can trigger
+    unstable feedback loops and destabilise markets, a question of indisputable economical and societal importance.
+
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/econophysics1.png"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/econophysics1.png" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+
+  <hr>
+  </div>
+  {% endifequal %}
+
+  {% ifequal LANGUAGE_CODE 'fr' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+      <h1>Dynamique et instabilités des marchés financiers
+      </h1>
+      <hr>
+      <a href="http://www.off-ladhyx.polytechnique.fr/people/benzaquen/" class="vert bolder">Michael Benzaquen</a>
+
+
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Depuis la thèse de Bachelier en 1900 - une théorie du mouvement brownien 5 ans avant
+        Einstein - notre compréhension des marchés financiers a raisonnablement progressé. Au cours
+        des dernières décennies, l'ingénierie financière a considérablement augmenté et a
+        malheureusement dépassé notre compréhension. L'inadéquation des modèles utilisés pour
+        décrire les marchés financiers est souvent responsable des pires crises financières, avec un
+        impact significatif sur l'économie quotidienne
+      </p>
+       <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+         Du point de vue du physicien, comprendre la formation des prix sur les marchés financiers -
+         à savoir comment les marchés absorbent et traitent l'information de milliers d'agents
+         individuels pour arriver à un prix «juste» - est un problème vraiment fascinant. La
+         physique statistique nous a appris que les systèmes constitués d'un grand nombre d'entités
+         individuelles peuvent présenter des régularités robustes (souvent imprévues) qui dépassent
+         les comportements individuels. Ou comme le dit P. W. Anderson "More is different", voir
+         Science <b>177</b> (1972).
+      </p>
+       <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+         Notre approche est par essence empirique. Nous travaillons en collaboration avec la société
+         Capital Fund Management sur la construction de modèles basés-agent (ABM) auto-consistants
+         capables de reproduire des faits stylisés révélés par des données de marché réelles. Le
+         succès des modèles «hydrodynamiques» à intelligence zéro (voir figure ci-dessus) nous a
+         confortés dans l'idée que la dynamique du marché peut, dans une certaine mesure, être
+         comprise d'une perspective purement mécanique endogène, en conflit avec la plupart des
+         modèles économiques. En particulier, les modèles n'ont pas besoin d'ingrédients exogènes
+         (comme les bulletins de nouvelles) pour reproduire un certain nombre de résultats
+         empiriques bien établis. Une observation remarquable est que seule une très petite fraction
+         des grands sauts de prix peut être corrélée aux flux de nouvelles, ce qui indique que la
+         plupart des petits accidents de marché semblent être induits par la dynamique du marché
+         lui-même. En utilisant la classe de modèles continus mentionnée ci-dessus et en gardant
+         l'oreille ouverte à ce que les données réelles peuvent nous dire, nous nous concentrons sur
+         la compréhension de ce qui peut déclencher des boucles de rétroaction instables et
+         déstabiliser les marchés, une question d'importance économique et sociétale incontestable.
+
+      </p>
+
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/econophysics1.png"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/econophysics1.png" >
+
+            </img>
+          </a>
+          <figcaption style="text-align: justify">
+          </figcaption>
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+      </div>
+      <br>
+
+    <hr>
+    </div>
+    {% endifequal %}
+
+{% endblock content %}

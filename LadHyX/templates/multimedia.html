@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block image_specifique %}multimedia{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="row hidden-md hidden-sm hidden-xs">
+          <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+          </div>
+  </div>
+{% endblock slogan-actu %}
+{#{% block Actu %}#}
+{#  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">#}
+{#  </div>#}
+{#{% endblock Actu %}#}
+
+{% block content %}
+  <div class="content row hidden-xs">
+
+    {% get_static_prefix as STATIC_PREFIX %}
+
+    <section class="col-xs-12 col-xs-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1">
+      <h1>videos</h1>
+      <ul class="list-unstyled" id="ul-videos">
+        <li><a href="{% url 'experiences-enseignement' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Expériences d'enseignements" %}</a></li>
+        <li><a href="{% url 'ingenierie-du-vent-aeroelasticite' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Ingénierie du vent" %}</a></li>
+        <li><a href="{% url 'physiquedusport' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Physique du sport" %}</a></li>
+        <li><a href="{% url 'mecanique-cellulaire' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Mécanique cellulaire" %}</a></li>
+        <li><a href="{% url 'artetscience' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Art et Science" %}</a></li>
+      </ul>
+      <img class="vignette img-responsive" src="{{ STATIC_PREFIX }}/LadHyX/img/vignette_videos.jpg" width="360" height="204" alt="dernière video"/>
+      <figcaption>By Jean-Marc Chomaz</figcaption>
+    </section>
+
+    <section class="col-xs-12 col-xs-offset-0  col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0">
+      <h1>moocs</h1>
+      <ul class="list-unstyled" id="ul-videos">
+        <li><a href="https://www.coursera.org/learn/fluid-solid-interaction" target="_blank"><i class="glyphicon glyphicon-tint small"></i>Fundamental of fluid solid interaction</a></li>
+      </ul>
+      <img class="vignette img-responsive" src="{{ STATIC_PREFIX }}/LadHyX/img/vignette_moocs.jpg" width="360" height="204" alt="dernier mooc"/>
+      <figcaption>By Emmanuel Delangre, Xavier Amandolèse et Olivier Doaré</figcaption>
+    </section>
+  </div>
+
+  <div class="row hidden-xs">
+    <section class="col-xs-4 col-xs-offset-3 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1">
+    </section>
+  </div>
+
+  <!-- SMARTPHONE -->
+  <div class="panel-group mobile hidden-sm hidden-md hidden-lg" id="field">
+    <section class="panel panel-default">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title">
+              <a data-toggle="collapse" data-parent="#field" href="#videos"><i class="glyphicon glyphicon-tint"></i>Videos</a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="videos" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            <li><a href="{% url 'experiences-enseignement' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Expériences d'enseignements" %}</a></li>
+            <li><a href="{% url 'ingenierie-du-vent-aeroelasticite' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Ingénierie du vent" %}</a></li>
+            <li><a href="{% url 'physiquedusport' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Physique du sport" %}</a></li>
+            <li><a href="{% url 'mecanique-cellulaire' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Mécanique cellulaire" %}</a></li>
+            <li><a href="{% url 'artetscience' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Art et Science" %}</a></li>
+          </ul>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </section><!--/.panel-default-->
+
+    <section class="panel panel-default">
+         <div class="panel-heading list-unstyled">
+             <h1 class="panel-title">
+                 <a data-toggle="collapse" data-parent="#field" href="#moocs"><i class="glyphicon glyphicon-tint"></i>MOOCS</a>
+             </h1>
+         </div><!--/.panel-heading-->
+         <div id="moocs" class="panel-collapse collapse">
+           <div class="panel-body">
+             <ul class="list-unstyled">
+               <li><a href="https://www.coursera.org/learn/fluid-solid-interaction" target="_blank"><i class="glyphicon glyphicon-tint small"></i>Fundamental of fluid solid interaction</a></li>
+             </ul>
+           </div><!--/.panel-body-->
+         </div><!--/.panel-collapse-->
+       </section><!--/.panel-default-->
+
+  </div>
+{% endblock %}
+
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}

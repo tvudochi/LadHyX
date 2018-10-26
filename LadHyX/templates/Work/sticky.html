@@ -1,0 +1,159 @@
+{% extends "base_sticky.html" %}
+{% load i18n %}
+{% load  static %}
+
+{% block image_specifique %}accueil{% endblock image_specifique %}
+{% block content %}
+  {% get_static_prefix as STATIC_PREFIX %}
+  {% get_current_language as LANGUAGE_CODE %}
+
+  <!-- Liste Rubrique Recherche -->
+  <div class="content row hidden-xs" style="margin-top: 15px;">
+    <section
+        class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+      <h1>{% trans "énergie et transport" %} </h1>
+      <ul class="list-unstyled" id="section">
+        <li><a href="{% url 'aerodynamique-et-performance' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Aérodynamique et performance" %}</a></li>
+        <li><a href="{% url 'ingenierie-du-vent-et-vibrations' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Ingénierie du vent et vibrations" %}</a></li>
+        <li><a href="{% url 'systeme-eoliens-et-hydroliens' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Système éoliens et hydroliens" %}</a></li>
+        {%  ifequal LANGUAGE_CODE 'fr' %}
+        <li><a href="{% url 'transport-ecoulement-micro' %}"><i class="glyphicon glyphicon-tint small"></i><span>Transport en écoulements</span><span style="display: inline-block;margin-left: 25px;">microscopiques</span></a></li>
+        {% endifequal %}
+        {%  ifequal LANGUAGE_CODE 'en' %}
+        <li><a href="{% url 'transport-ecoulement-micro' %}"><i class="glyphicon glyphicon-tint small"></i>Transport in microscale flows</a></li>
+        {% endifequal %}
+        <li><a href="{% url 'transport-sans-contact' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Transport sans contact" %}</a></li>
+      </ul>
+    </section>
+
+    <section class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+
+      <h1>environnement</h1>
+      <ul class="list-unstyled">
+        <li><a href="{% url 'ecoulements-geophysiques' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Écoulement géophysique" %}</a></li>
+        <li><a href="{% url 'dispersion-des-polluants' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Dispersion des polluants" %}</a></li>
+        <li><a href="{% url 'dissipation-energetique' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Dissipation énergétique" %}</a></li>
+        <li><a href="{% url 'melange-des-oceans' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Mélange des océans" %}</a></li>
+        <li><a href="{% url 'recuperation-eau-douce' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Récupération d'eau douce" %}</a></li>
+        <li><a href="{% url 'wind-waves' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Vagues de vent" %}</a></li>
+      </ul>
+    </section>
+
+    <section
+        class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+      <h1>{% trans "design et société" %}</h1>
+      <ul class="list-unstyled">
+        <li><a href="{% url 'art-et-science' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Art et science" %}</a></li>
+        <li><a href="{% url "econophysics" %}" ><i class="glyphicon glyphicon-tint small"></i>Econophysics</a>
+        <li><a href="{% url 'fabrication-du-verre' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Fabricationdu verre" %}</a></li>
+{#        <li><a href="{% url 'nouveaux-materiaux' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Nouveaux matériaux" %}</a></li>#}
+        <li><a href="{% url 'physique-du-sport' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Physique du sport" %}</a></li>
+        <li><a href="{% url 'textiles-intelligents' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Textiles intelligents" %}</a></li>
+        </li>
+      </ul>
+    </section>
+
+    <section class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+      <h1>{% trans "biomécanique et santé" %} </h1>
+      <ul class="list-unstyled">
+        <li><a href="{% url 'biomecanique-cellulaire' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Biomécanique cellulaire" %}</a></li>
+        <li><a href="{% url "biomecanique-cardiovasculaire" %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Biomécanique cardiovasculaire" %}</a></li>
+        <li><a href="{% url 'biomecanique-et-biomimetique-vegetale' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Biomécanique végétale" %}</a></li>
+        <li><a href="{% url 'diagnostique-cellulaire' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Diagnostic cellulaire" %}</a></li>
+      </ul>
+    </section>
+  </div>
+
+<!-- POUR SMARTPHONE XS -->
+  <div class="panel-group mobile hidden-sm hidden-md hidden-lg" id="field">
+
+    <div class="panel panel-default center-block" id="div-section">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title" style="text-align: left">
+              <a data-toggle="collapse" data-parent="#field" href="#energie" ><i class="glyphicon glyphicon-tint"></i>
+                {% trans 'énergie et transport' %} </a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="energie" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            <li><a href="{% url 'aerodynamique-et-performance' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Aérodynamique et performance" %}</a></li>
+            <li><a href="{% url 'ingenierie-du-vent-et-vibrations' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Ingénierie du vent et vibrations" %}</a></li>
+            <li><a href="{% url 'systeme-eoliens-et-hydroliens' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Système éoliens et hydroliens" %}</a></li>
+            {%  ifequal LANGUAGE_CODE 'fr' %}
+            <li><a href="{% url 'transport-ecoulement-micro' %}"><i class="glyphicon glyphicon-tint small"></i><span>Transport en écoulements</span><span style="display: inline-block;margin-left: 25px;">microscopiques</span></a></li>
+            {% endifequal %}
+            {%  ifequal LANGUAGE_CODE 'en' %}
+            <li><a href="{% url 'transport-ecoulement-micro' %}"><i class="glyphicon glyphicon-tint small"></i>Transport in microscale flows</a></li>
+            {% endifequal %}
+            <li><a href="{% url 'transport-sans-contact' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Transport sans contact" %}</a></li>
+          </ul>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+    <div class="panel panel-default " id="div-section">
+      <div class="panel-heading list-unstyled">
+          <h1 class="panel-title" style="text-align: left">
+              <a data-toggle="collapse" data-parent="#field" href="#environnement"><i class="glyphicon glyphicon-tint"></i>
+                {% trans 'environnement' %}</a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="environnement" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            <li><a href="{% url 'ecoulements-geophysiques' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Écoulement géophysique" %}</a></li>
+            <li><a href="{% url 'dispersion-des-polluants' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Dispersion des polluants" %}</a></li>
+            <li><a href="{% url 'dissipation-energetique' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Dissipation énergétique" %}</a></li>
+            <li><a href="{% url 'melange-des-oceans' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Mélange des océans" %}</a></li>
+            <li><a href="{% url 'recuperation-eau-douce' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Récupération d'eau douce" %}</a></li>
+            <li><a href="{% url 'wind-waves' %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Vagues de vent" %}</a></li>
+          </ul>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+    <div class="panel panel-default" id="div-section">
+      <div class="panel-heading">
+          <h1 class="panel-title" style="text-align: left">
+              <a data-toggle="collapse" data-parent="#field" href="#design"><i class="glyphicon glyphicon-tint"></i>
+                {% trans 'design et société' %}</a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="design" class="panel-collapse collapse ">
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li><a href="{% url 'art-et-science' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Art et science" %}</a></li>
+              <li><a href="{% url "econophysics" %}" ><i class="glyphicon glyphicon-tint small"></i>Econophysics</a></li>
+              <li><a href="{% url 'fabrication-du-verre' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Fabricationdu verre" %}</a></li>
+{#              <li><a href="{% url 'nouveaux-materiaux' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Nouveaux matériaux" %}</a></li>#}
+              <li><a href="{% url 'physique-du-sport' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Physique du sport" %}</a></li>
+              <li><a href="{% url 'textiles-intelligents' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Textiles intelligents" %}</a></li>
+            </ul>
+          </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+
+    <div class="panel panel-default" id="div-section">
+      <div class="panel-heading">
+          <h1 class="panel-title" style="text-align: left">
+              <a data-toggle="collapse" data-parent="#field" href="#biomecanique"><i class="glyphicon glyphicon-tint"></i>
+                {% trans 'biomécanique et santé' %}</a>
+          </h1>
+      </div><!--/.panel-heading-->
+      <div id="biomecanique" class="panel-collapse collapse ">
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            <li><a href="{% url 'biomecanique-cellulaire' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Biomécanique cellulaire" %}</a></li>
+            <li><a href="{% url "biomecanique-cardiovasculaire" %}" ><i class="glyphicon glyphicon-tint small"></i>{% trans "Biomécanique cardiovasculaire" %}</a></li>
+            <li><a href="{% url 'biomecanique-et-biomimetique-vegetale' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Biomécanique végétale" %}</a></li>
+            <li><a href="{% url 'diagnostique-cellulaire' %}"><i class="glyphicon glyphicon-tint small"></i>{% trans "Diagnostic cellulaire" %}</a></li>
+          </ul>
+        </div><!--/.panel-body-->
+      </div><!--/.panel-collapse-->
+    </div><!--/.panel-default-->
+  </div><!--/.panel-group-->
+  <div class="clearfix"></div>
+
+
+{% endblock content %}

@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% load  static %}
+{% block image_specifique %}publications{% endblock image_specifique %}
+{% block slogan %}
+  <div class="sloga col-xs-6 col-xs-offset-3" style="min-height: 0px">
+  </div>
+{% endblock slogan %}
+{% block Actu %}
+  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">
+  </div>
+{% endblock Actu %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="content row">
+    <div class="panel-group col-xs-12  col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1" id="accordion">
+    <!--REVUES A COMITE DE LECTURE----------------------------------------------------------------------->
+      <div class="panel panel-default">
+        <div class="panel-heading list-unstyled">
+                <li class="panel-title ">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#revues">
+                      <i class="glyphicon glyphicon-tint small"></i>
+                      revues à comité de lecture
+                    </a>
+                </li>
+            </div>
+        <div id="revues" class="panel-collapse collapse ">
+          <div class="panel-body">
+            <div>
+			        <!--ANNEES-->
+            {% for key, value in maliste.items %}
+              <a data-toggle="collapse" href="#{{ key }}revues" class="btn btn-annee" role="button">{{ key }}</a>
+              <div class="panel-collapse collapse"  id="{{ key }}revues">
+                {% for object in value %}
+                  <p style="text-align: justify">{{ object.auteurs|safe }} {{ object.titre|safe }}
+                    <i>{{ object.journal|safe }}</i> {{ object.index|safe }}
+                    {% if object.abstract %}
+                    <a href="{{ object.abstract|safe }}" >Abstract</a>
+                    {%  endif %}
+                    {% if object.preprint %}
+                    <a href="http://yakari.polytechnique.fr/Django-pub/documents/{{ object.preprint|safe }}" >Pre-print</a>
+                    {% endif %}
+                  </p><br>
+                {% endfor %}
+              </div>
+            {% endfor %}
+            </div>
+
+            <!--CHAMPS DE RECHERCHE PAR AUTEUR-->
+            <form class="navbar-form navbar-left" method="GET">
+              <div class="form-group">
+                <h3>Recherche par auteur</h3>
+
+                {{ form.auteur }}
+                <input type="search"  placeholder="Auteur">
+                <h3>Recherche par journal</h3>
+{#                    {% csrf_token %}#}
+                {{ form.journal }}
+                <input type="search"  placeholder="Journal">
+                <button type="submit" class="btn btn-submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+          	</form>
+            <!--CHAMPS DE RECHERCHE PAR JOURNAL-->
+{#            <form class="navbar-form ">#}
+{#            <div class="form-group">#}
+{#              <h3>Recherche par journal</h3>#}
+{#              <input type="search"  placeholder="Journal">#}
+{#              <button type="submit" class="btn btn-submit">#}
+{#                <i class="glyphicon glyphicon-search">#}
+{#                </i>#}
+{#              </button>#}
+{#            </div>#}
+{#            </form>#}
+        	</div>
+          <hr>
+        </div>
+      </div>
+    <!------------------------------------OUVRAGES-------------------------------------------------------------->
+        <div class="panel panel-default">
+            <div class="panel-heading list-unstyled">
+                <li class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#ouvrages"><i class="glyphicon glyphicon-tint small"></i>ouvrages, chapitres de livres, édition de livres, cours écrits</a>
+                </li>
+            </div>
+            <div id="ouvrages" class="panel-collapse collapse">
+                <div class="panel-body">
+			<div>
+			<!--ANNEES-->
+			<a href="#" class="btn btn-annee" role="button">2015</a>
+			<a href="#" class="btn btn-annee" role="button">2014</a>
+			<a href="#" class="btn btn-annee" role="button">2010</a>
+			<a href="#" class="btn btn-annee" role="button">2009</a>
+			<a href="#" class="btn btn-annee" role="button">2008</a>
+			<a href="#" class="btn btn-annee" role="button">2006</a>
+			<a href="#" class="btn btn-annee" role="button">2005</a>
+			<a href="#" class="btn btn-annee" role="button">2004</a>
+			<a href="#" class="btn btn-annee" role="button">2003</a>
+			<a href="#" class="btn btn-annee" role="button">2002</a>
+			<a href="#" class="btn btn-annee" role="button">2001</a>
+			<a href="#" class="btn btn-annee" role="button">2000</a>
+			<a href="#" class="btn btn-annee" role="button">1999</a>
+			<a href="#" class="btn btn-annee" role="button">1998</a>
+			<a href="#" class="btn btn-annee" role="button">1997</a>
+			<a href="#" class="btn btn-annee" role="button">1996</a>
+			<a href="#" class="btn btn-annee" role="button">1995</a>
+			<a href="#" class="btn btn-annee" role="button">1994</a>
+			<a href="#" class="btn btn-annee" role="button">1993</a>
+			<a href="#" class="btn btn-annee" role="button">1992</a>
+			<a href="#" class="btn btn-annee" role="button">1991</a>
+			</div>
+           	<p class="text-right small">27/01/2016</p>
+        	</div>
+                <hr>
+            </div>
+        </div>
+     <!--THESES---------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------->
+        <div class="panel panel-default">
+            <div class="panel-heading list-unstyled">
+                <li class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#theses"><i class="glyphicon glyphicon-tint small"></i>thèses</a>
+                </li>
+            </div>
+            <div id="theses" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="panel-body">
+			<div>
+			<!--ANNEES-->
+
+			<a href="#" class="btn btn-annee" role="button">2016</a>
+			<a href="#" class="btn btn-annee" role="button">2015</a>
+			<a href="#" class="btn btn-annee" role="button">2014</a>
+			<a href="#" class="btn btn-annee" role="button">2013</a>
+			<a href="#" class="btn btn-annee" role="button">2012</a>
+			<a href="#" class="btn btn-annee" role="button">2011</a>
+			<a href="#" class="btn btn-annee" role="button">2010</a>
+			<a href="#" class="btn btn-annee" role="button">2009</a>
+			<a href="#" class="btn btn-annee" role="button">2008</a>
+			<a href="#" class="btn btn-annee" role="button">2007</a>
+			<a href="#" class="btn btn-annee" role="button">2006</a>
+			<a href="#" class="btn btn-annee" role="button">2005</a>
+			<a href="#" class="btn btn-annee" role="button">2004</a>
+			<a href="#" class="btn btn-annee" role="button">2003</a>
+			<a href="#" class="btn btn-annee" role="button">2002</a>
+			<a href="#" class="btn btn-annee" role="button">2001</a>
+			<a href="#" class="btn btn-annee" role="button">2000</a>
+			<a href="#" class="btn btn-annee" role="button">1999</a>
+			<a href="#" class="btn btn-annee" role="button">1998</a>
+			<a href="#" class="btn btn-annee" role="button">1997</a>
+			<a href="#" class="btn btn-annee" role="button">1996</a>
+			<a href="#" class="btn btn-annee" role="button">1995</a>
+			<a href="#" class="btn btn-annee" role="button">1994</a>
+			<a href="#" class="btn btn-annee" role="button">1993</a>
+			<a href="#" class="btn btn-annee" role="button">all</a>
+			</div>
+           	<p class="text-right small">23/01/2017</p>
+        	</div>
+                <hr>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+{#  {{ maliste }}#}
+
+{#  {% for key, value in maliste.items %}#}
+{#    {{ key }}  <br>#}
+{#    {% for val in value %}#}
+{#      {{ val.auteurs|safe }} {{ val.titre|safe }}<br><br>#}
+{#    {% endfor %} <br>#}
+{# {% endfor %}#}
+{#  {% for object in  maliste.2015 %}#}
+{#  {{ object.auteurs | safe }} <br> <br>#}
+{#  {% endfor %}#}
+{#  {{ dict.1990.1 }}#}
+{% endblock %}

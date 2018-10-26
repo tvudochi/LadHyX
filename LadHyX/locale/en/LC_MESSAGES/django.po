@@ -1,0 +1,310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 14:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: LadHyX/settings.py:173
+msgid "French"
+msgstr ""
+
+#: LadHyX/settings.py:174
+msgid "English"
+msgstr ""
+
+#: LadHyX/templates/accueil.html:14 LadHyX/templates/accueil.html:74
+msgid "énergie et transport"
+msgstr "energy and transport"
+
+#: LadHyX/templates/accueil.html:16 LadHyX/templates/accueil.html:80
+msgid "Aérodynamique et performance"
+msgstr "Aerodynamic & performance"
+
+#: LadHyX/templates/accueil.html:17 LadHyX/templates/accueil.html:81
+msgid "Ingénierie du vent et vibrations"
+msgstr "Wind engineering"
+
+#: LadHyX/templates/accueil.html:18 LadHyX/templates/accueil.html:82
+msgid "Système éoliens et hydroliens"
+msgstr "Energy harvester systems"
+
+#: LadHyX/templates/accueil.html:25 LadHyX/templates/accueil.html:89
+msgid "Transport sans contact"
+msgstr "Contactless motion"
+
+#: LadHyX/templates/accueil.html:33 LadHyX/templates/accueil.html:105
+msgid "Écoulement géophysique"
+msgstr "Geophysical flow"
+
+#: LadHyX/templates/accueil.html:34 LadHyX/templates/accueil.html:106
+msgid "Dispersion des polluants"
+msgstr "Dispersion of pollutants"
+
+#: LadHyX/templates/accueil.html:35 LadHyX/templates/accueil.html:107
+msgid "Dissipation énergétique"
+msgstr "Energy dissipation"
+
+#: LadHyX/templates/accueil.html:36 LadHyX/templates/accueil.html:108
+msgid "Mélange des océans"
+msgstr "Mix oceans"
+
+#: LadHyX/templates/accueil.html:37 LadHyX/templates/accueil.html:109
+msgid "Récupération d'eau douce"
+msgstr "Water harvesting"
+
+#: LadHyX/templates/accueil.html:38 LadHyX/templates/accueil.html:110
+#: LadHyX/templates/wind-waves.html:11
+msgid "Vagues de vent"
+msgstr "Wind waves"
+
+#: LadHyX/templates/accueil.html:44 LadHyX/templates/accueil.html:120
+msgid "design et société"
+msgstr "Design and Society"
+
+#: LadHyX/templates/accueil.html:46 LadHyX/templates/accueil.html:126
+msgid "Art et science"
+msgstr "Art and Science"
+
+#: LadHyX/templates/accueil.html:48 LadHyX/templates/accueil.html:128
+msgid "Fabricationdu verre"
+msgstr "Glass manufacturing"
+
+#: LadHyX/templates/accueil.html:50 LadHyX/templates/accueil.html:130
+#: LadHyX/templates/multimedia.html:27 LadHyX/templates/multimedia.html:63
+msgid "Physique du sport"
+msgstr "Sport physics"
+
+#: LadHyX/templates/accueil.html:51 LadHyX/templates/accueil.html:131
+msgid "Textiles intelligents"
+msgstr "Smart textiles"
+
+#: LadHyX/templates/accueil.html:57 LadHyX/templates/accueil.html:141
+msgid "biomécanique et santé"
+msgstr "Biomechanics and health"
+
+#: LadHyX/templates/accueil.html:59 LadHyX/templates/accueil.html:147
+msgid "Biomécanique cellulaire"
+msgstr "Cellular engineering"
+
+#: LadHyX/templates/accueil.html:60 LadHyX/templates/accueil.html:148
+msgid "Biomécanique cardiovasculaire"
+msgstr "Cardiovascular engineering"
+
+#: LadHyX/templates/accueil.html:61 LadHyX/templates/accueil.html:149
+msgid "Biomécanique végétale"
+msgstr "Vegetal biomechanics"
+
+#: LadHyX/templates/accueil.html:62 LadHyX/templates/accueil.html:150
+msgid "Diagnostic cellulaire"
+msgstr "Cellular diagnostic"
+
+#: LadHyX/templates/accueil.html:99
+msgid "environnement"
+msgstr ""
+
+#: LadHyX/templates/actualites_save.html:25
+#: LadHyX/templates/evenement/actualites.html:27
+#: LadHyX/templates/evenement/actualites.html:181
+msgid "séminaires"
+msgstr "Seminars"
+
+#: LadHyX/templates/actualites_save.html:28
+#: LadHyX/templates/evenement/actualites.html:30
+#: LadHyX/templates/evenement/actualites.html:232
+msgid "colloques"
+msgstr "Colloquiums"
+
+#: LadHyX/templates/actualites_save.html:34
+msgid "évènements"
+msgstr "events"
+
+#: LadHyX/templates/base.html:55 LadHyX/templates/base_larecherche.html:53
+msgid "à propos"
+msgstr "about"
+
+#: LadHyX/templates/base.html:57 LadHyX/templates/base_larecherche.html:55
+msgid "accès"
+msgstr "access"
+
+#: LadHyX/templates/base.html:86 LadHyX/templates/base_larecherche.html:85
+msgid "recherche"
+msgstr "research"
+
+#: LadHyX/templates/base.html:87 LadHyX/templates/base_larecherche.html:86
+msgid "membres"
+msgstr "people"
+
+#: LadHyX/templates/base.html:88 LadHyX/templates/base_larecherche.html:87
+msgid "publications"
+msgstr "publications"
+
+#: LadHyX/templates/base.html:89 LadHyX/templates/base_larecherche.html:88
+msgid "événements"
+msgstr "events"
+
+#: LadHyX/templates/base.html:90 LadHyX/templates/base_larecherche.html:89
+msgid "actualites"
+msgstr "news"
+
+#: LadHyX/templates/base.html:91 LadHyX/templates/base_larecherche.html:90
+msgid "recrutements"
+msgstr "recruitment"
+
+#: LadHyX/templates/base.html:92 LadHyX/templates/base_larecherche.html:91
+msgid "multimédia"
+msgstr "multimedia"
+
+#: LadHyX/templates/base.html:120 LadHyX/templates/base.html:159
+#: LadHyX/templates/base.html:196 LadHyX/templates/base.html:283
+#: LadHyX/templates/index.html:103
+msgid "Séminaire"
+msgstr "Seminar"
+
+#: LadHyX/templates/base.html:135 LadHyX/templates/index.html:110
+msgid "Video du mois"
+msgstr "Video of the month"
+
+#: LadHyX/templates/base.html:149 LadHyX/templates/base.html:187
+#: LadHyX/templates/base.html:277
+msgid "Video"
+msgstr "Video"
+
+#: LadHyX/templates/base.html:235 LadHyX/templates/index.html:130
+msgid "Lieu"
+msgstr "Place"
+
+#: LadHyX/templates/base.html:236
+msgid "Date"
+msgstr ""
+
+#: LadHyX/templates/base.html:302 LadHyX/templates/base_larecherche.html:142
+msgid "Mentions légales"
+msgstr "legal notice"
+
+#: LadHyX/templates/emploi.html:24 LadHyX/templates/emploi.html:373
+msgid "stage"
+msgstr "intership"
+
+#: LadHyX/templates/emploi.html:27 LadHyX/templates/emploi.html:297
+msgid "PhD"
+msgstr "PhD"
+
+#: LadHyX/templates/emploi.html:30
+msgid "Postdoc"
+msgstr ""
+
+#: LadHyX/templates/emploi.html:33 LadHyX/templates/emploi.html:219
+msgid "professeur"
+msgstr "professor"
+
+#: LadHyX/templates/emploi.html:48 LadHyX/templates/emploi.html:230
+msgid "Professeur Assistant Gaspard Monge en Physique du Sport"
+msgstr "Gaspard Monge Assistant Professor in Sport Physics"
+
+#: LadHyX/templates/emploi.html:49 LadHyX/templates/emploi.html:67
+#: LadHyX/templates/emploi.html:231 LadHyX/templates/emploi.html:249
+msgid "Date limite d'inscription"
+msgstr "Submission deadline"
+
+#: LadHyX/templates/emploi.html:66 LadHyX/templates/emploi.html:248
+msgid "Professeur Assistant en Mécanique des Fluides"
+msgstr "Associate professor in fluid mechanics"
+
+#: LadHyX/templates/emploi.html:170 LadHyX/templates/emploi.html:346
+msgid "Interactions et mouvements collectifs de microparticules actives"
+msgstr "Collective dynamics of active microparticles and droplets"
+
+#: LadHyX/templates/emploi.html:266
+#, fuzzy
+#| msgid "post-doctorants"
+msgid "postdoc"
+msgstr "Postdoc"
+
+#: LadHyX/templates/evenement/actualites.html:33
+msgid "écoles d'été"
+msgstr "summer schools"
+
+
+#: LadHyX/templates/evenement/actualites.html:262
+msgid "écoles d\\"
+msgstr "summer schools"
+
+
+#: LadHyX/templates/index.html:131
+msgid "Horaire"
+msgstr "Schedule"
+
+#: LadHyX/templates/membres.html:28 LadHyX/templates/membres.html:159
+msgid "chercheurs"
+msgstr "academic staff"
+
+#: LadHyX/templates/membres.html:31 LadHyX/templates/membres.html:189
+msgid "doctorants"
+msgstr "PhD students"
+
+#: LadHyX/templates/membres.html:35 LadHyX/templates/membres.html:219
+msgid "post-doctorants"
+msgstr "Postdoc"
+
+#: LadHyX/templates/multimedia.html:25 LadHyX/templates/multimedia.html:61
+msgid "Expériences d'enseignements"
+msgstr "Teaching"
+
+#: LadHyX/templates/multimedia.html:26 LadHyX/templates/multimedia.html:62
+msgid "Ingénierie du vent"
+msgstr "Wind engineering"
+
+#: LadHyX/templates/multimedia.html:28 LadHyX/templates/multimedia.html:64
+msgid "Mécanique cellulaire"
+msgstr "Cell mechanics"
+
+#: LadHyX/templates/multimedia.html:29 LadHyX/templates/multimedia.html:65
+msgid "Art et Science"
+msgstr "Art and Science"
+
+#: LadHyX/templates/publications.html:25
+msgid "revues à comité de lecture"
+msgstr "Refereed Publications"
+
+#: LadHyX/templates/publications.html:28
+msgid "articles"
+msgstr "publications"
+
+#: LadHyX/templates/publications.html:98
+msgid "ouvrages, chapitres de livres, édition de livres, cours écrits"
+msgstr "Books, Book chapters, Lecture Notes"
+
+#: LadHyX/templates/publications.html:103
+msgid "livres"
+msgstr "books"
+
+#: LadHyX/templates/publications.html:142
+msgid "thèses"
+msgstr "Ph.D dissertations"
+
+#~ msgid "événements passés"
+#~ msgstr "past events"
+
+#~ msgid "Locomotion (Propulsion)"
+#~ msgstr "Locomotion (as propulsion)"
+
+#~ msgid "Nouveaux matériaux"
+#~ msgstr "New materials"
+
+#, fuzzy
+#~| msgid "PhD"
+#~ msgid "phD"
+#~ msgstr "PhD"

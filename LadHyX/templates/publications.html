@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% block image_specifique %}publications{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="row hidden-md hidden-sm hidden-xs hidden-lg">
+          <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+          </div>
+  </div>
+{% endblock slogan-actu %}
+{#{% block Actu %}#}
+{#  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">#}
+{#  </div>#}
+{#{% endblock Actu %}#}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="content row">
+    <div class="panel-group col-xs-12  col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1" id="accordion">
+      <!--REVUES A COMITE DE LECTURE-------------------------->
+      <div class="panel panel-default" style="margin-left: auto;margin-right: auto">
+        <div class="panel-heading list-unstyled">
+          <li class="panel-title hidden-xs">
+              <a data-toggle="collapse" data-parent="#accordion" href="#revues"><i class="glyphicon glyphicon-tint small"></i>{% trans "revues à comité de lecture" %}</a>
+         </li>
+          <li class="panel-title hidden-lg hidden-md hidden-sm">
+            <a data-toggle="collapse" data-parent="#accordion" href="#revues"><i class="glyphicon glyphicon-tint small"></i>{% trans "articles" %}</a>
+          </li>
+       </div>
+      <div id="revues" class="panel-collapse collapse ">
+        <div class="panel-body">
+			    <div>
+            <!--ANNEES-->
+            <a href="{% url 'searchpublications' "2018" %}"  class="btn btn-annee" role="button">2018</a>
+            <a href="{% url 'searchpublications' "2017" %}"  class="btn btn-annee" role="button">2017</a>
+            <a href="{% url 'searchpublications' "2016" %}"  class="btn btn-annee" role="button">2016</a>
+            <a href="{% url 'searchpublications' "2015" %}"  class="btn btn-annee" role="button">2015</a>
+            <a href="{% url 'searchpublications' "2014" %}"  class="btn btn-annee" role="button">2014</a>
+            <a href="{% url 'searchpublications' "2013" %}"  class="btn btn-annee" role="button">2013</a>
+            <a href="{% url 'searchpublications' "2012" %}"  class="btn btn-annee" role="button">2012</a>
+            <a href="{% url 'searchpublications' "2011" %}"  class="btn btn-annee" role="button">2011</a>
+            <a href="{% url 'searchpublications' "2010" %}"  class="btn btn-annee" role="button">2010</a>
+            <a href="{% url 'searchpublications' "2009" %}"  class="btn btn-annee" role="button">2009</a>
+            <a href="{% url 'searchpublications' "2008" %}"  class="btn btn-annee" role="button">2008</a>
+            <a href="{% url 'searchpublications' "2007" %}"  class="btn btn-annee" role="button">2007</a>
+            <a href="{% url 'searchpublications' "2006" %}"  class="btn btn-annee" role="button">2006</a>
+            <a href="{% url 'searchpublications' "2005" %}"  class="btn btn-annee" role="button">2005</a>
+            <a href="{% url 'searchpublications' "2004" %}"  class="btn btn-annee" role="button">2004</a>
+            <a href="{% url 'searchpublications' "2003" %}"  class="btn btn-annee" role="button">2003</a>
+            <a href="{% url 'searchpublications' "2002" %}"  class="btn btn-annee" role="button">2002</a>
+            <a href="{% url 'searchpublications' "2001" %}"  class="btn btn-annee" role="button">2001</a>
+            <a href="{% url 'searchpublications' "2000" %}"  class="btn btn-annee" role="button">2000</a>
+            <a href="{% url 'searchpublications' "1999" %}"  class="btn btn-annee" role="button">1999</a>
+            <a href="{% url 'searchpublications' "1998" %}"  class="btn btn-annee" role="button">1998</a>
+            <a href="{% url 'searchpublications' "1997" %}"  class="btn btn-annee" role="button">1997</a>
+            <a href="{% url 'searchpublications' "1996" %}"  class="btn btn-annee" role="button">1996</a>
+            <a href="{% url 'searchpublications' "1995" %}"  class="btn btn-annee" role="button">1995</a>
+            <a href="{% url 'searchpublications' "1994" %}"  class="btn btn-annee" role="button">1994</a>
+            <a href="{% url 'searchpublications' "1993" %}"  class="btn btn-annee" role="button">1993</a>
+            <a href="{% url 'searchpublications' "1992" %}"  class="btn btn-annee" role="button">1992</a>
+            <a href="{% url 'searchpublications' "1991" %}"  class="btn btn-annee" role="button">1991</a>
+            <a href="{% url 'searchpublications' "1990" %}"  class="btn btn-annee" role="button">1990</a>
+			    </div>
+
+          <!--CHAMPS DE RECHERCHE PAR AUTEUR-->
+          <form class="navbar-form navbar-left" method="POST">
+            <div class="form-group">
+              {% csrf_token %}
+{#              <h4>{% trans "Auteur" %}</h4>#}
+              {{ form.auteur }}
+            </div>
+
+          <!--CHAMPS DE RECHERCHE PAR JOURNAL-->
+            <div class="form-group">
+              {% csrf_token %}
+{#              <h4>Journal</h4>#}
+              {{ form.journal }}
+            </div>
+
+            <button type="submit" class="btn btn-submit" >
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </form>
+
+
+        </div>
+			  <hr>
+      </div>
+      </div>
+
+
+      <!--OUVRAGES-------------------------------------------->
+        <div class="panel panel-default" style="margin-left: auto;margin-right: auto">
+            <div class="panel-heading list-unstyled">
+                <li class="panel-title hidden-xs">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#ouvrages">
+                      <i class="glyphicon glyphicon-tint small"></i>{% trans "ouvrages, chapitres de livres, édition de livres, cours écrits" %}</a>
+                </li>
+
+              <li class="panel-title hidden-lg hidden-md hidden-sm">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#ouvrages">
+                                    <i class="glyphicon glyphicon-tint small"></i>{% trans "livres" %}</a>
+              </li>
+            </div>
+            <div id="ouvrages" class="panel-collapse collapse">
+                <div class="panel-body">
+			<div>
+			<!--ANNEES-->
+			<a href="{% url 'searchouvrages' "2015" %}"  class="btn btn-annee" role="button">2015</a>
+			<a href="{% url 'searchouvrages' "2014" %}"  class="btn btn-annee" role="button">2014</a>
+			<a href="{% url 'searchouvrages' "2010" %}"  class="btn btn-annee" role="button">2010</a>
+			<a href="{% url 'searchouvrages' "2009" %}"  class="btn btn-annee" role="button">2009</a>
+			<a href="{% url 'searchouvrages' "2008" %}"  class="btn btn-annee" role="button">2008</a>
+			<a href="{% url 'searchouvrages' "2006" %}"  class="btn btn-annee" role="button">2006</a>
+			<a href="{% url 'searchouvrages' "2005" %}"  class="btn btn-annee" role="button">2005</a>
+			<a href="{% url 'searchouvrages' "2004" %}"  class="btn btn-annee" role="button">2004</a>
+			<a href="{% url 'searchouvrages' "2003" %}"  class="btn btn-annee" role="button">2003</a>
+			<a href="{% url 'searchouvrages' "2002" %}"  class="btn btn-annee" role="button">2002</a>
+			<a href="{% url 'searchouvrages' "2001" %}"  class="btn btn-annee" role="button">2001</a>
+			<a href="{% url 'searchouvrages' "2000" %}"  class="btn btn-annee" role="button">2000</a>
+			<a href="{% url 'searchouvrages' "1999" %}"  class="btn btn-annee" role="button">1999</a>
+			<a href="{% url 'searchouvrages' "1998" %}"  class="btn btn-annee" role="button">1998</a>
+			<a href="{% url 'searchouvrages' "1997" %}"  class="btn btn-annee" role="button">1997</a>
+			<a href="{% url 'searchouvrages' "1996" %}"  class="btn btn-annee" role="button">1996</a>
+			<a href="{% url 'searchouvrages' "1995" %}"  class="btn btn-annee" role="button">1995</a>
+			<a href="{% url 'searchouvrages' "1994" %}"  class="btn btn-annee" role="button">1994</a>
+			<a href="{% url 'searchouvrages' "1993" %}"  class="btn btn-annee" role="button">1993</a>
+			<a href="{% url 'searchouvrages' "1992" %}"  class="btn btn-annee" role="button">1992</a>
+			<a href="{% url 'searchouvrages' "1991" %}"  class="btn btn-annee" role="button">1991</a>
+			</div>
+{#           	<p class="text-right small">27/01/2016</p>#}
+        	</div>
+                <hr>
+            </div>
+        </div>
+      <!--THESES--------------------------------------------->
+        <div class="panel panel-default" style="margin-left: auto;margin-right: auto">
+            <div class="panel-heading list-unstyled">
+                <li class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#theses"><i
+                        class="glyphicon glyphicon-tint small"></i>{% trans "thèses" %}</a>
+                </li>
+            </div>
+            <div id="theses" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="panel-body">
+			<div>
+			<!--ANNEES-->
+        <a href="{% url 'searchtheses' "2018" %}"  class="btn btn-annee" role="button">2018</a>
+        <a href="{% url 'searchtheses' "2017" %}"  class="btn btn-annee" role="button">2017</a>
+        <a href="{% url 'searchtheses' "2016" %}"  class="btn btn-annee" role="button">2016</a>
+			<a href="{% url 'searchtheses' "2015" %}"  class="btn btn-annee" role="button">2015</a>
+			<a href="{% url 'searchtheses' "2014" %}"  class="btn btn-annee" role="button">2014</a>
+			<a href="{% url 'searchtheses' "2013" %}"  class="btn btn-annee" role="button">2013</a>
+			<a href="{% url 'searchtheses' "2012" %}"  class="btn btn-annee" role="button">2012</a>
+			<a href="{% url 'searchtheses' "2011" %}"  class="btn btn-annee" role="button">2011</a>
+			<a href="{% url 'searchtheses' "2010" %}"  class="btn btn-annee" role="button">2010</a>
+			<a href="{% url 'searchtheses' "2009" %}"  class="btn btn-annee" role="button">2009</a>
+			<a href="{% url 'searchtheses' "2008" %}"  class="btn btn-annee" role="button">2008</a>
+			<a href="{% url 'searchtheses' "2007" %}"  class="btn btn-annee" role="button">2007</a>
+			<a href="{% url 'searchtheses' "2006" %}"  class="btn btn-annee" role="button">2006</a>
+			<a href="{% url 'searchtheses' "2005" %}"  class="btn btn-annee" role="button">2005</a>
+			<a href="{% url 'searchtheses' "2004" %}"  class="btn btn-annee" role="button">2004</a>
+			<a href="{% url 'searchtheses' "2003" %}"  class="btn btn-annee" role="button">2003</a>
+			<a href="{% url 'searchtheses' "2002" %}"  class="btn btn-annee" role="button">2002</a>
+			<a href="{% url 'searchtheses' "2001" %}"  class="btn btn-annee" role="button">2001</a>
+			<a href="{% url 'searchtheses' "2000" %}"  class="btn btn-annee" role="button">2000</a>
+			<a href="{% url 'searchtheses' "1999" %}"  class="btn btn-annee" role="button">1999</a>
+			<a href="{% url 'searchtheses' "1998" %}"  class="btn btn-annee" role="button">1998</a>
+			<a href="{% url 'searchtheses' "1997" %}"  class="btn btn-annee" role="button">1997</a>
+			<a href="{% url 'searchtheses' "1996" %}"  class="btn btn-annee" role="button">1996</a>
+			<a href="{% url 'searchtheses' "1995" %}"  class="btn btn-annee" role="button">1995</a>
+			<a href="{% url 'searchtheses' "1994" %}"  class="btn btn-annee" role="button">1994</a>
+			<a href="{% url 'searchtheses' "1993" %}"  class="btn btn-annee" role="button">1993</a>
+{#			<a href="{% url 'searchtheses' "0" "all" %}"  class="btn btn-annee" role="button">all</a>#}
+			</div>
+{#           	<p class="text-right small">23/01/2017</p>#}
+        	</div>
+                <hr>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+{% endblock %}
+
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}

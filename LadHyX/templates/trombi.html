@@ -1,0 +1,179 @@
+{% load  static %}
+{% load i18n %}
+
+<!doctype html>
+<html>
+<body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="Laboratoire d'Hydrodynamique de l'Ecole polytechnique">
+  <meta http-equiv="refresh" content="3600">
+
+  <title>LadHyX People</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static "LadHyX/css/bs4/bootstrap.min.css" %}" rel="stylesheet">
+
+  <link href="{% static "LadHyX/css/trombi.css" %}" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+
+
+  {% if debug  %}
+    <script src="http://127.0.0.1:35729/livereload.js"></script>
+  {% endif %}
+</head>
+{% get_static_prefix as STATIC_PREFIX %}
+
+<div class="d-flex flex-row flex-nowrap">
+  <div class="myflex m-1">
+
+    <div class="d-flex flex-column flex-wrap m-1" style="height: 1000px;">
+      {% for personne in one %}
+        <div class="d-flex flex-row">
+          <div>
+            {% if personne.Photo %}
+              <a  data-toggle="modal" data-target="#bug{{ personne.personnel_id }}">
+                <img class="img-responsive m-1 vignette" width="80" height="80" src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ personne.Photo }}">
+              </a>
+            {% else %}
+              <a  data-toggle="modal" data-target="#bug{{ personne.personnel_id }}">
+                <img class="img-responsive m-1 vignette" width="80" height="80"
+                       src="{{ STATIC_PREFIX }}/LadHyX/img/avatar.png">
+              </a>
+            {% endif %}
+          </div>
+          <div class="m-1">
+            {{ personne.nom }}<br>{{ personne.prenom }}<br>
+{#            {% if personne.telephone.all.0 %}#}
+{#              {{ personne.telephone.all.0 }}<br>#}
+{#            {% endif %}#}
+{#            {% if personne.bureau.all.0 %}#}
+{#              {% if personne.lieu %}#}
+{#                Bur. {{ personne.bureau.all.0 }}<br>#}
+{#              {% endif %}#}
+{#            {% endif %}#}
+{#            {% if personne.lieu %}#}
+{#              Lieu: {{ personne.lieu }}<br>#}
+{#            {% endif %}#}
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="myflex m-3 padding">
+    <div class="d-flex flex-column flex-wrap m-1" style="height: 600px;">
+      {% for personne in two %}
+        <div class="d-flex flex-row">
+          <div>
+            {% if personne.Photo %}
+              <a  data-toggle="modal" data-target="#bug{{ personne.personnel_id }}">
+                <img class="img-responsive m-1 vignette" width="80" height="80" src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ personne.Photo }}">
+              </a>
+            {% else %}
+              <a  data-toggle="modal" data-target="#bug{{ personne.personnel_id }}">
+                <img class="img-responsive m-1 vignette" width="80" height="80"
+                     src="{{ STATIC_PREFIX }}/LadHyX/img/avatar.png">
+              </a>
+            {% endif %}
+          </div>
+          <div class="m-1">
+            {{ personne.nom }}<br>{{ personne.prenom }}<br>
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="myflex m-1">
+    <div class="d-flex flex-column flex-wrap m-1" style="height: 1000px;">
+      {% for personne in three %}
+        <div class="d-flex flex-row">
+          <div>
+            {% if personne.Photo %}
+              <a  data-toggle="modal" data-target="#bug{{ personne.personnel_id }}">
+                <img class="img-responsive m-1 vignette" width="80" height="80"  src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ personne.Photo }}">
+              </a>
+            {% else %}
+              <a  data-toggle="modal" data-target="#bug{{ personne.personnel_id }}">
+                <img class="img-responsive m-1 vignette" width="80" height="80"
+                                  src="{{ STATIC_PREFIX }}/LadHyX/img/avatar.png">
+              </a>
+            {% endif %}
+          </div>
+          <div class="m-1">
+            {{ personne.nom }}<br>{{ personne.prenom }}<br>
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL ONE -->
+{% for personne in all %}
+  <div class="modal" id="bug{{ personne.personnel_id }}">
+    <div class="modal-dialog modal-lg" style="min-width: 1200px;">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+{#            <h4 class="modal-title">{{ personne.prenom }} {{ personne.nom }}</h4>#}
+            <div class="d-flex flex-row">
+              <div>
+                {% if personne.Photo %}
+                  <img class="img-responsive m-1 vignette" width="160" height="160"  src="{{ STATIC_PREFIX }}/LadHyX/img/people/NB/{{ personne.Photo }}" ">
+                {% else %}
+                  <img class="img-responsive m-1 vignette" width="160" height="160"  src="{{ STATIC_PREFIX }}/LadHyX/img/avatar.png">
+                {% endif %}
+              </div>
+              <div class="m-1" style="font-size: 0.9rem;">
+                <div>{{ personne.prenom }} {{ personne.nom }}</div>
+                {% if personne.fonction %}<div>{{ personne.fonction }}</div>{% endif %}
+                {% if personne.fonction1 %}<div>{{ personne.fonction1 }}</div>{% endif %}
+                {% if personne.fonction2 %}<div>{{ personne.fonction2 }}</div>{% endif %}
+                {% ifequal personne.categorie 'Doctorant' %}<div>{{ personne.categorie }}</div>{% endifequal %}
+                {% ifequal personne.categorie 'Post-doc' %}<div>{{ personne.categorie }}</div>{% endifequal %}
+                
+                {% if personne.telephone.all.0 %}<div>Phone {{ personne.telephone.all.0 }}</div>{% endif %}
+                {% if personne.bureau.all.0 %}<div style="color: red;">Desk {{ personne.bureau.all.0 }}</div>
+                {% endif %}
+              </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body" style="display: flex;justify-content: center;">
+            {% if personne.lieu %}
+              <img class="img-responsive" src="{{ STATIC_PREFIX }}/LadHyX/img/{{ personne.lieu }}.png">
+            {% endif %}
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+  </div>
+{% endfor %}
+<script src="{% static 'LadHyX/js/bs4/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'LadHyX/js/bs4/popper.min.js' %}"></script>
+<script src="{% static 'LadHyX/js/bs4/bootstrap.bundle.min.js' %}"></script>
+
+
+</body>
+</html>

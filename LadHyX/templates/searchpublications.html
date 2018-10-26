@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load  static %}
+{% block image_specifique %}publications{% endblock image_specifique %}
+{% block slogan-actu %}
+  <div class="sloga col-xs-6 col-xs-offset-3 hidden-md hidden-sm hidden-xs hidden-lg" style="min-height: 0px">
+  </div>
+{% endblock slogan-actu %}
+{#{% block Actu %}#}
+{#  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">#}
+{#  </div>#}
+{#{% endblock Actu %}#}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="content row">
+
+    <div class="panel-group col-xs-12  col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1" id="accordion">
+      <hr>
+      {% for dict in maliste %}
+        <p class="text-justify">{{ dict.date|safe }} - {{ dict.auteurs|safe }}
+          - {{ dict.titre|safe }} - <i>{{ dict.journal|safe }}</i> - {{ dict.index|safe }}
+{#        <p class="text-justify" style="margin-bottom: 0px">{{ dict.journal|safe }} - {{ dict.index|safe }}</p>#}
+        {% if dict.abstract %}
+          - <a href="{{ dict.abstract|safe }}" >Abstract</a>
+        {%  endif %}
+        {% if dict.preprint %}
+          - <a href="http://yakari.polytechnique.fr/Django-pub/documents/{{ dict.preprint|safe }}">Pre-print</a>
+        {% endif %}
+        </p>
+      <br>
+      {% endfor %}
+      <hr>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block xs-sem-vid %}
+{% endblock xs-sem-vid %}
+{#{% block footer %}#}
+{#{% endblock footer %}#}

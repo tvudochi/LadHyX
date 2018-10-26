@@ -1,0 +1,122 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Biomécanique cardiovasculaire</h1>
+
+    <hr>
+
+    <h2>What the effect of stent degradation on the arterial wall ?</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">J. Mensah</a> -
+    <a href="#" class="vert bolder">A. Lafont</a> -
+    <a href="#" class="vert bolder">A. I. Barakat</a>
+    <!-- FIN AUTEURS -->
+
+     <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire19.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire19.jpg" >
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <h3>Why ?</h3>
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Stents are the leading treatment for atherosclerosis today. Biodegradable stents, the latest
+      concept in stents, aim to provide structural support to maintain the artery open for only the
+      time needed and then degrade. It is crucial to understand interactions between stents and the arterial
+      wall and optimize the mechanical performance of these stents.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <h3>How ?</h3>
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    We are developing a finite element model
+      of a biodegradable stent deployed in an artery, and the mechanical stresses thus induced
+      during the: <br>
+      1. Deployment of the stent<br>
+      2. Degradation of the stent by hydrolysis modifying the properties of the stent<br>
+      3. Biological remodeling: an adaptive process of arterial wall geometry that aims to
+      normalize mechanical stresses.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <h3>Results</h3>
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Results of stresses induced in the arterial wall due to the deployment of a stent.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire20.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire20.jpg" >
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+     <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire21.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire21.jpg" >
+        </a>
+        <figcaption></figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire22.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire22.jpg" >
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

@@ -1,0 +1,165 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+  {% get_current_language as LANGUAGE_CODE %}
+
+  {%  ifequal LANGUAGE_CODE 'fr' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Biomécanique cellulaire</h1>
+
+    <hr>
+    <span class="vert bolder">Avin Babataheri</span> -
+    <a href="http://chair-axa-cce.polytechnique.fr" class="vert bolder">Abdul Barakat</a> -
+    <a href="https://cellmechanics.jimdo.com" class="vert bolder">Julien Husson</a>
+
+
+    <h3>Publications</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Sawicka et al. Molecular Biology of the Cell 2017(in press).
+      <br>
+      Basu et  al. Cell - 165:100-110 -
+      <a href="http://yakari.polytechnique.fr/Django-pub/documents/basu2016rp-1pp.pdf">pre-print</a>
+      <br>
+      Gonzalez-Rodriguez et al. Biophysical Journal 2016. 111 (12): 2711-2721.
+      <a href="http://yakari.polytechnique.fr/Django-pub/documents/gonzalez2016rp-2pp.pdf">pre-print</a>
+      <br>
+      Guillou et al. Molecular Biology of the Cell 2016. 27 (22):3574-3582 -
+      <a href="http://yakari.polytechnique.fr/Django-pub/documents/guillou2016rp-3pp.pdf">pre-print</a>
+      <br>
+      Guillou et al. Scientific Reports 2016. 6 - 21529 -
+      <a href="http://yakari.polytechnique.fr/Django-pub/documents/guillou2016rp-1pp.pdf">pre-print</a>
+      <br>
+      Hogan et al., Biophysical Journal 2015. 109 (2): 209–219 -
+      <a href="https://www.ladhyx.polytechnique.fr/media/larecherche/hogan2015rp-1pp.pdf">pre-print</a>
+      <br>
+      Gonzalez-Rodriguez et al. PRL 115, 088102 -
+      <a href="https://www.ladhyx.polytechnique.fr/media/larecherche/gonzalez2015rp-1pp.pdf">pre-print</a>
+    </p>
+    <hr>
+    <h2>Comment quantifier les propriétés mécaniques de cellules et leur évolution au cours de processus cellulaires ?
+    </h2>
+
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Nos recherches portent sur la mécanique cellulaire et intracellulaire. Nous étudions la mécanique
+      des leucocytes, des cellules endothéliales, et de leurs interactions. Nous étudions quels aspects
+      mécaniques entrent en jeu dans les processus cellulaires physiologiques et pathologiques.
+      Nous étudions par exemple la migration transendothéliale dans le cadre du développement de
+      l’athérosclérose, l’activation des lymphocytes T et la formation de la synapse immune, la fonction
+      cytotoxique des lymphocytes T, ou encore la phagocytose. Nous nous intéressons également à la
+      mécanique des membranes cellulaires.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Pour réaliser ces études nous développons et utilisons des techniques de micromanipulation de
+      cellules uniques (techniques de micropipettes) qui nous permettent de mesurer des forces générées
+      par des cellules, les propriétés viscoélastiques de ces dernières, et leur évolution au cours du temps.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/164067466" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Micropipette Force Probe and T Lymphocyte
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/164064421" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Profile microindentation of an endothelial cell</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+
+  <hr>
+
+  </div>
+
+  {% endifequal %}
+
+
+  {% ifequal LANGUAGE_CODE 'en' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+          <h1>Cellular engineering</h1>
+
+          <hr>
+          <span class="vert bolder">Avin Babataheri</span> -
+          <a href="http://chair-axa-cce.polytechnique.fr" class="vert bolder">Abdul Barakat</a> -
+          <a href="https://cellmechanics.jimdo.com" class="vert bolder">Julien Husson</a>
+
+
+          <h3>Publications</h3>
+          <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+            Sawicka et al. Molecular Biology of the Cell 2017(in press).
+            <br>
+            Basu et  al. Cell - 165:100-110 -
+            <a href="http://yakari.polytechnique.fr/Django-pub/documents/basu2016rp-1pp.pdf">pre-print</a>
+            <br>
+            Gonzalez-Rodriguez et al. Biophysical Journal 2016. 111 (12): 2711-2721.
+            <a href="http://yakari.polytechnique.fr/Django-pub/documents/gonzalez2016rp-2pp.pdf">pre-print</a>
+            <br>
+            Guillou et al. Molecular Biology of the Cell 2016. 27 (22):3574-3582 -
+            <a href="http://yakari.polytechnique.fr/Django-pub/documents/guillou2016rp-3pp.pdf">pre-print</a>
+            <br>
+            Guillou et al. Scientific Reports 2016. 6 - 21529 -
+            <a href="http://yakari.polytechnique.fr/Django-pub/documents/guillou2016rp-1pp.pdf">pre-print</a>
+            <br>
+            Hogan et al., Biophysical Journal 2015. 109 (2): 209–219 -
+            <a href="https://www.ladhyx.polytechnique.fr/media/larecherche/hogan2015rp-1pp.pdf">pre-print</a>
+            <br>
+            Gonzalez-Rodriguez et al. PRL 115, 088102 -
+            <a href="https://www.ladhyx.polytechnique.fr/media/larecherche/gonzalez2015rp-1pp.pdf">pre-print</a>
+          </p>
+          <hr>
+          <h2>How to quantify cell mechanical properties and their evolution over time ?</h2>
+
+
+          <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+            We study cellular and intracellular mechanics, specifically in leukocytes, endothelial cells,
+            and leukocyte-endothelium interactions. We are interested in the study of how mechanical aspects
+            are involved in cellular physiological and pathological processes. For instance, we study leukocyte
+            transendothelial migration in the concext of the development of atherosclerosis, T lymphocyte
+            activation and the formation of the immunological synapse, cytotoxic function of T lymphocytes,
+            as well as phagocytosis. We are also interested in the mechanics of cell membrane.
+          </p>
+
+          <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+            In order to perform these studies, we develop and use single-cell micromanipulation techniques
+            based on micropipettes. These allow us to measure forces generated by cells, the viscoelastic
+            properties of the latter, and their evolution over time.
+          </p>
+
+          <div class="row">
+            <section class="col-sm-4 col-md-4 col-lg-4">
+              <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/164067466" frameborder="0"
+                             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <figcaption>Micropipette Force Probe and T Lymphocyte
+              </figcaption>
+            </section>
+
+            <section class="col-sm-4 col-md-4 col-lg-4">
+              <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/164064421" frameborder="0"
+                      webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <figcaption>Profile microindentation of an endothelial cell</figcaption>
+            </section>
+
+            <section class="col-sm-4 col-md-4 col-lg-4">
+            </section>
+          </div>
+
+
+        <hr>
+
+        </div>
+
+  {% endifequal %}
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% load i18n %}
+<div class="content row hidden-xs">
+  <ul class="liste nav nav-tabs col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0
+    col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-2" role="tablist ">
+    <li class="tab-item active">
+      <a class="nav-link " data-toggle="tab" href="#seminaires" role="tab">
+        {% trans "séminaires" %}</a>
+    </li>
+    <li class="tab-item ">
+      <a class="nav-link" data-toggle="tab" href="#colloques" role="tab">{% trans "colloques" %}</a>
+    </li>
+    <li class="tab-item">
+      <a class="nav-link" data-toggle="tab" href="#ecoles" role="tab">{% trans "écoles d'été" %}</a>
+    </li>
+
+  </ul>
+
+  <div class="tab-content col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0
+    col-md-9 col-md-offset-2 col-lg-8 col-lg-offset-2">
+
+    <!-- TAB SEMINAIRES-->
+    <div class="tab-pane active" id="seminaires" role="tabpanel">
+      {% include "seminaires.html" %}
+    </div>
+
+    <!-- TAB COLLOQUES-->
+    <div class="tab-pane" id="colloques" role="tabpanel">
+      {% include "isfa2020.html" %}
+    </div>
+
+    <!-- TAB ECOLES-->
+    <div class="tab-pane" id="ecoles" role="tabpanel">
+      {% include "cmif2018.html" %}
+    </div>
+
+  </div>
+</div>

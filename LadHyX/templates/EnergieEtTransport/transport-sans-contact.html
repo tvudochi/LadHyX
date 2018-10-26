@@ -1,0 +1,163 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+  {% ifequal LANGUAGE_CODE 'fr' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Transport sans contact
+    </h1>
+    <hr>
+    <h2>Posée sur une feuille de lotus, une goutte d’eau prend la forme d’une perle liquide tandis
+        qu’elle s’étalerait sur du verre. Pourquoi ?</h2>
+
+    <span class="vert bolder">P. Bourrianne</span>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      La chimie offre une première réponse : le verre, contrairement à la cire qui recouvre la feuille
+      de lotus, a une forte affinité pour l'eau. Ainsi, une goutte d'eau s'étale plus facilement sur
+      du verre propre que sur du verre recouvert d'huile ou de cire. A cela s'ajoute un effet physique :
+      la surface de la feuille de lotus est couverte de bosses de taille micrométrique.
+      La goutte ci-contre n'est donc pas posée à plat sur la feuille, elle repose seulement sur le haut
+      de ces bosses comme un fakir sur son tapis de clous.<br>
+      Nous reproduisons cet effet en laboratoire sur des surfaces constituées de « forêts de micro-piliers »
+      réalisées grâce à des techniques de micro-fabrication. Cela nous permet d’étudier notamment la stabilité
+      de cet état fakir et ses propriétés : rebonds de gouttes, non-adhésion, faible friction, anti-buée…
+    </p>
+    <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <img class="vignette img-responsive" src="{{ MEDIA_URL }}larecherche/transport-sans-contact1.png"/>
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+
+    </div>
+    <hr>
+
+    <h2>Quand de l’eau déborde d’une casserole, on peut parfois observer la formation de perles
+      liquides sur une plaque chaude. Pourquoi ?
+    </h2>
+    <span class="vert bolder">P. Bourrianne</span>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Lorsqu'une goutte d'eau entre en contact avec une plaque chaude, le liquide entre en ébullition
+      et se vaporise très rapidement. Mais, lorsque la plaque est à une température nettement
+      supérieure à la température d’ébullition, la vapeur se forme assez vite pour intercaler un film
+      sous la goutte, qui lévite alors sur sa propre vapeur.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Ce film va alors jouer deux rôles :
+      <ul>
+        <li>il isole la goutte du substrat ; le liquide ne bout plus et met plusieurs minutes à s’évaporer</li>
+        <li>comme sur la feuille de lotus, le liquide prend une forme très arrondie et n’adhère pas à la
+            surface, ce qui lui confère une mobilité extrême.Ce phénomène est appelé la caléfaction
+            (on parle aussi parfois d’effet Leidenfrost).
+        </li>
+      </ul>
+      Nous nous intéressons à la description de ce phénomène et, nous tentons, notamment, de maîtriser
+      le mouvement de ces gouttes sur coussin de vapeur. Nous étudions aussi d’autres techniques pouvant
+      assurer pareille lévitation : via mouvement du solide ou encore en soufflant de l’air.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <img class="vignette img-responsive" src="{{ MEDIA_URL }}larecherche/transport-sans-contact2.png"/>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+    </div>
+    <hr>
+  </div>
+  {% endifequal %}
+
+  {% ifequal LANGUAGE_CODE 'en' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <h1>Contactless motion
+        </h1>
+        <hr>
+        <h2>Once placed on a lotus leaf, a water drop looks like a pearl, whereas it spreads on glass.
+            Why?
+        </h2>
+
+        <span class="vert bolder">P. Bourrianne</span>
+
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+          First, there is a chemical effect: glass, unlike the vegetal wax that coats lotus leaves,
+          has a strong affinity for water. That is why a water drop spreads more easily on clear glass
+          than on greasy glass. Then, there is an additional physical effect : the surface of the lotus
+          leaf is covered with many microscopic bumps. The droplet does not touch the bottom of this
+          rough surface : it sits on the top of those micro-bumps like a fakir on nails.
+          <br>
+          We can mimic lotus leaf in our laboratory designing forests of micro-pillars by micro-fabrication
+          techniques. Such substrates allow us to study the stability of those « fakir drops » and their
+          subsequent properties: bouncing droplets, anti-adhesion, low-friction, anti-fogging…
+        </p>
+        <div class="row">
+            <section class="col-sm-4 col-md-4 col-lg-4">
+            </section>
+
+            <section class="col-sm-4 col-md-4 col-lg-4">
+              <img class="vignette img-responsive" src="{{ MEDIA_URL }}larecherche/transport-sans-contact1.png"/>
+            </section>
+
+            <section class="col-sm-4 col-md-4 col-lg-4">
+            </section>
+
+        </div>
+        <hr>
+
+        <h2>When water overflows from a pan, the formation of liquid pearls can sometimes be
+            observed on a hot plate. Why ?
+        </h2>
+        <span class="vert bolder">P. Bourrianne</span>
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+          When a water droplet meets a hot surface, it starts to boil and turns into vapor very quickly.
+          But when the surface is clearly above the boiling temperature, the vapor forms quickly enough
+          to create a thin layer between the surface and the drop, which is therefore levitating
+        </p>
+
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+          This vapor film has two roles:
+          <ul>
+            <li>it insulates the drop from the substrate; the drop does not boil and lasts for
+                several minutes.
+            </li>
+            <li> like on a lotus leaf, the liquid gets a very rounded shape and does not stick to the
+                 surface, which gives it an extreme mobility. This state is called calefaction
+                 (this is also sometimes called Leidenfrost effect).
+            </li>
+          </ul>
+          We are interesting in the description of this effect and especially the control of the movement
+          of the drop. We also looking at other techniques to produce similar levitation: by blowing air
+          or moving the substrate…
+        </p>
+
+        <div class="row">
+          <section class="col-sm-4 col-md-4 col-lg-4">
+          </section>
+
+          <section class="col-sm-4 col-md-4 col-lg-4">
+            <img class="vignette img-responsive" src="{{ MEDIA_URL }}larecherche/transport-sans-contact2.png"/>
+          </section>
+
+          <section class="col-sm-4 col-md-4 col-lg-4">
+          </section>
+
+        </div>
+        <hr>
+      </div>
+  {% endifequal %}
+
+
+{% endblock content %}

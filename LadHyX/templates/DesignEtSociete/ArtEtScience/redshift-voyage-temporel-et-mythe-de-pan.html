@@ -1,0 +1,61 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et science</h1>
+
+    <hr>
+
+    <h2>Redshift : voyage temporel et mythe de Pan</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Est-ce la dilatation de l’espace, ou bien la lumière qui finit par se souvenir que l’Univers à un âge ou bien qu’il n’en a plus ? Mais les ombres que nos corps portent sur les galaxies lointaines se décalent inéluctablement vers le rouge laissant sur nos silhouettes qu’une légère irisation de bleu. Comment retourner le temps pour éclairer l’Univers, étoile double de ton regard ? Le cri de l’absence contracte le vide. Les diaphanes lambeaux de nuit se mêlent aux vivants. Grandes voiles noires que le vent solaire gonfle, elles transforment le présent en une arche de fantômes.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Redshift est une installation de réalité augmentée purement analogique. Par un procéder optique, sans aucun recourt à un artéfact numérique, elle permet aux spectateurs de se déplacer dans un espace où les ombres portées s’abstraient des surfaces sur lesquelles elles se forment et apparaissent comme des fantômes tridimensionnels. Comme si un repliement de l’univers avait mélangé les objets et leur empreinte négative. Ces formes planes en suspend se déplacent avec la source lumineuse. Par un retournement du temps, le procédé nous fait voir la scène du point de vue de la lumière. L’absence devient énergie noire rendue tangible par le décalage vers le rouge qu’elle provoque. Pour cette installation à Amstelpark, des ventilateurs, vestiges de notre civilisation mécanique, deviennent sphères armillaires pour réinventer l’univers et souffle de leur vent solaire les fantômes du vivant où des illusions anthropiques.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science12.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science12.jpg" >
+        </a>
+        <figcaption>Installation Redshift telle que présentée à Amsterdam Mai-Aout 2015
+          (doit être regardé avec des lunettes 3D anaglyphe rouge/cyan)</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

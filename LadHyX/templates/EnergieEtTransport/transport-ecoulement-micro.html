@@ -1,0 +1,277 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    {%  ifequal LANGUAGE_CODE 'fr' %}
+    <h1>Transport en écoulements microscopiques </h1>
+
+    <hr>
+    <p style="text-align: justify">
+      Aux échelles microscopiques, le mouvement d’un fluide est dominé par sa viscosité. C’est aussi
+      le cas des forces qu’il applique sur des particules colloïdales, des bulles, des gouttes ou
+      des micro-organismes, ce qui affecte de manière fondamentale leur transport. Ces phénomènes
+      présentent de nombreux défis aussi bien d’un point de vue fondamental que pour des
+      applications dans des systèmes industriels, allant ainsi de la modélisation biophysique des
+      systèmes vivants et de leur interaction avec leur environnement fluide, au contrôle du
+      mouvement et de la déformation de systèmes artificiels comme dans l’industrie textile ou pour
+      la conception de nouveaux fluides actifs.
+    </p>
+    <hr>
+    <h2>Nage individuelle et collective de microparticules actives</h2>
+    <br>
+    <!-- AUTEURS -->
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/michelin/Site/Home.html"
+       class="vert bolder">Sébastien Michelin</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Par le forçage mécanique qu’ils exercent, les nageurs microscopiques (biologiques ou
+      artificiels) mettent le fluide qui les entourent en mouvement, et en modifie les propriétés
+      macroscopiques  telles que la viscosité ou le mélange effectifs. Les particules catalytiques
+      sont un exemple canonique d’un tel « fluide actif » : au travers des propriétés
+      physico-chimique de leur surface, elles convertissent l’énergie d’un carburant présent dans
+      leur environnement en énergie mécanique. Notre travail porte sur les interactions complexes
+      entre l’hydrodynamique et ces échanges physico-chimiques, au cœur de la propulsion et de
+      l’interaction de ces particules. Notre but est de caractériser et de contrôler les propriétés
+      macroscopiques de ces suspensions actives.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- IMAGE et VIDEO --->
+    <div class="row">
+      <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/255546433?title=0&portrait=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" style="text-align: justify;">
+        <p style="margin-top: 15px;">
+        Brisure de symétrie et propulsion d’une particule catalytique sphérique en réponse à la
+        symétrie du champ chimique qu’elle génère. Le composé chimique est produit de manière
+        isotrope avec un flux constant à la surface. Lorsque son advection par l’écoulement domine
+        sa diffusion moléculaire, une asymétrie du champ de concentration peut apparaître en réponse
+        à ce couplage hydro-chimique non-linéaire, ce qui entretient le mouvement de la particule.
+        </p>
+      </div>
+    </div>
+    <!-- FIN ILAGE ET VIDEO -->
+  <hr>
+
+  <h2>Transport de fibres flexibles</h2>
+    <br>
+    <!-- AUTEURS -->
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/duprat/Home.html"
+       class="vert bolder">Camille Duprat</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Le transport d'objets allongés dans les écoulements visqueux ou à petite échelle se
+      retrouve dans un grand nombre d'applications, de la nage de micro-organismes à la
+      fabrication de textiles non-tissés comme le papier. Nous étudions l'écoulement de fibres
+      dans des micro-canaux et en sédimentation, afin de caractériser l'influence du
+      confinement, de la forme et de la flexibilité des fibres sur leurs trajectoires.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- IMAGE et VIDEO --->
+    <div class="row">
+      <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/transport-fibres-flexibles.png" data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/transport-fibres-flexibles.png" >
+          </img>
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" style="text-align: justify;">
+        <p style="margin-top: 15px;">
+          Chronophotographies (gauche) d’une fibre flexible en sédimentation dans un fluide visqueux
+          et (droite) d’une fibre rigide oscillant entre les parois d’un micro-canal sous l’effet de
+          l’écoulement (orienté de haut en bas).
+        </p>
+      </div>
+    </div>
+    <!-- FIN ILAGE ET VIDEO -->
+  <hr>
+    <h2>Nage des bactéries dans un écoulement externe</h2>
+    <br>
+    <!-- AUTEURS -->
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/amselem/"
+       class="vert bolder">Gabriel Amselem</a>
+    <!-- FIN AUTEURS -->
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Les micro-organismes marins sont en permanence soumis à des écoulements qui interfèrent avec
+      leur mouvement de nage naturel. Il a été démontré en particulier que l’interaction entre un
+      écoulement de cisaillement et la géométrie chirale de leurs flagelles induit une dérive des
+      bactéries dans la direction transverse au plan de cisaillement. Nous utilisons ici la
+      micro-fluidique pour confiner les bactéries et les soumettre à différents types d’écoulements
+      cisaillés, afin d’étudier leur réponse dynamique, et la distribution spatiale qui résulte de
+      ce forçage extérieur. 
+    </p>
+
+    <!-- IMAGE et VIDEO --->
+    <div class="row">
+      <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/255546585?title=0&portrait=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" style="text-align: justify;">
+        <p style="margin-top: 15px;">
+          Nage de bactéries dans deux gouttes maintenues immobiles dans un canal microfluidique.
+          A t=3s, un écoulement externe (de la droite vers la gauche) est imposé, ce qui induit
+          une recirculation dans chaque goutte. En réponse, les bactéries présentes dans les
+          gouttes se rapprochent (goutte du haute) ou s’éloignent (goutte du bas) du plan
+          d’observation.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <!-- FIN ILAGE ET VIDEO -->
+  {% endifequal %}
+
+    {%  ifequal LANGUAGE_CODE 'en' %}
+        <h1>Transport in microscale flows</h1>
+
+        <hr>
+        <p style="text-align: justify">
+          In small scale flows, fluid motion is dominated by viscosity, and so are the fluid forces
+          experienced by colloid particles, bubbles, droplets and biological micro-organisms, which
+          profoundly impacts their passive or active transport. Such processes present many
+          fundamental biological and engineering challenges, e.g. to understand the mechanical
+          interaction of living systems with their fluid environment or to control the motion and
+          deformation of artificial systems, for the textile industry or to design new active fluids
+          with controllable properties.
+        </p>
+        <hr>
+        <h2>Individual and collective motion of active microparticles</h2>
+        <br>
+        <!-- AUTEURS -->
+        <a href="http://www.off-ladhyx.polytechnique.fr/people/michelin/Site/Home.html"
+           class="vert bolder">Sébastien Michelin</a>
+        <!-- FIN AUTEURS -->
+
+        <!-- PARAGRAPHE pour texte -->
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+          By setting the fluid around them into motion, biological and artificial microswimmers
+          alike modify the effective macroscopic properties of their environment (e.g. viscosity,
+          mixing). An example of such ``active’’ fluids are catalytic particles, which convert the
+          physico-chemical energy of a fuel present in their environment into mechanical energy. Our
+          work focuses on the modeling and analysis of the complex interplay between hydrodynamics
+          and physical chemistry, at the heart of the self-propulsion and of interaction of these
+          particles. Our goal is to characterize and control the macroscopic properties of such
+          active suspensions.
+        </p>
+        <!-- FIN PARAGRAPHE pour texte -->
+
+        <!-- IMAGE et VIDEO --->
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/255546433?title=0&portrait=0"
+                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" style="text-align: justify;">
+            <p style="margin-top: 15px;">
+              Symmetry-breaking and propulsion of a spherical catalytic particle in a self-generated
+              gradient of chemical solute. The solute is released isotropically with a constant flux
+              from the particle’s surface. When its advection by the flow field prevails over
+              molecular diffusion, an asymmetry of the chemical field can be created by this
+              non-linear hydro-chemical coupling, which maintains the self-propulsion of the
+              particle.
+            </p>
+          </div>
+        </div>
+        <!-- FIN ILAGE ET VIDEO -->
+      <hr>
+
+      <h2>Transport of flexible fibers</h2>
+        <br>
+        <!-- AUTEURS -->
+        <a href="http://www.off-ladhyx.polytechnique.fr/people/duprat/Home.html"
+           class="vert bolder">Camille Duprat</a>
+        <!-- FIN AUTEURS -->
+
+        <!-- PARAGRAPHE pour texte -->
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+          The transport in viscous flows of rigid or flexible elongated objects such as fibers is
+          important for a variety of small-scale applications, from swimming micro-organisms and
+          biofilm streamers in blood capillaries to fabrication of non-woven fibrous media. We
+          consider the transport of elongated objects in pressure-driven flows in microfluidic
+          Hele-Shaw cells and in gravity-driven sedimentation, and study the effect of confinement,
+          shape and flexibility on the trajectories.
+        </p>
+        <!-- FIN PARAGRAPHE pour texte -->
+
+        <!-- IMAGE et VIDEO --->
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <a href="{{ MEDIA_URL }}larecherche/transport-fibres-flexibles.png" data-toggle="lightbox">
+              <img class="vignette img-responsive img-fluid"
+                   src="{{ MEDIA_URL }}larecherche/transport-fibres-flexibles.png" >
+              </img>
+            </a>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" style="text-align: justify;">
+            <p style="margin-top: 15px;">
+              Chronophotographies of (left) a flexible fiber settling in a viscous fluid and (right)
+              a rigid fiber transported in a microchannel exhibiting oscillations between the walls
+              of the channel (flow from top to bottom).
+            </p>
+          </div>
+        </div>
+        <!-- FIN ILAGE ET VIDEO -->
+      <hr>
+        <h2>Bacteria swimming in external flows</h2>
+        <br>
+        <!-- AUTEURS -->
+        <a href="http://www.off-ladhyx.polytechnique.fr/people/amselem/"
+           class="vert bolder">Gabriel Amselem</a>
+        <!-- FIN AUTEURS -->
+
+        <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+          Marine microorganisms are permanently subject to external flows that interfere  with their
+          natural propulsion strategies. In particular, it has been shown that the interaction
+          between a shear and the chiral geometry of bacterial flagella induced a bacterial drift
+          perpendicularly to the shear direction. Here, we use microfluidic devices to encapsulate
+          motile bacteria and subject them to shear. We study the dynamics of the bacterial response
+          to shear, as well as the stationary distribution of bacteria as a function of the external
+          forcing.
+        </p>
+
+        <!-- IMAGE et VIDEO --->
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/255546585?title=0&portrait=0"
+                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8" style="text-align: justify;">
+            <p style="margin-top: 15px;">
+              Motile bacteria are encapsulated in two droplets held immobile in a microfluidic
+              device. At t=3 seconds, an external flow (from right to left) is imposed, which
+              induces a recirculation in both droplets. As a result, bacteria in the bottom (resp.)
+              droplet move towards (resp. away) the field of view.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <!-- FIN ILAGE ET VIDEO -->
+      {% endifequal %}
+  </div>
+
+
+{% endblock content %}

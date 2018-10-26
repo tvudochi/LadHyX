@@ -1,0 +1,115 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Biomécanique et biomimétique végétale</h1>
+    <hr>
+    <h2>Cellular Internalization of Nanoparticles : A therapy for Atherosclerosis ?</h2>
+    <a href="#" class="vert bolder">David Gonzales-Rodriguez</a> -
+    <a href="#" class="vert bolder">Abdul I. Barakat</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Atherosclerosis involves inflammation of the endothelium, the inner cellular layer of blood vessels.
+      A promising treatment strategy uses functionalized, blood-borne nanoparticles foir targeted drug delivery.
+      This project studies the effect on internalization of particle characteristics (size, surface coating)
+      and the role of blood flow.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire9.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire9.jpg" >
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+  <h3>Theorical Modeling</h3>
+
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire10.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire10.jpg" >
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+  </div>
+    <br>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  Our analytical model describes naoparticle internalization driven by specific adhesion between
+    receptors on the endothelial cell membrane and ligands on the particle surface. The model accounts
+    for the effect of flow and predicts internalization for a wide range of particles sizes, consistent
+    with observations.
+  </p>
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire11.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire11.jpg" >
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+  </div>
+  <br>
+  <h3>Experiments</h3>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    We coat polystyrene particles with fluorescently-labeled anti-ICAM-1 antibodies or with control antibody.
+    Additionaly, we coat the particles with pHrodo, a pH-sensitive fluorophore that allows following
+    particle internalization in real time in an in vitro model system.
+  </p>
+
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire12.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire12.jpg" >
+        </a>
+      </section>
+
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire13.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire13.jpg" >
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+  </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Preliminary results suggest that the internalization of 1 µm particles is receptor-specific.
+      Ongoing experiments will validate the theorical model predictions and investigate the role of flow.
+    </p>
+
+  </div>
+
+
+{% endblock content %}

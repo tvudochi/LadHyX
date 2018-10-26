@@ -1,0 +1,157 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+  {% get_current_language as LANGUAGE_CODE %}
+
+  {% ifequal LANGUAGE_CODE 'fr' %}
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Textiles intelligents</h1>
+    <hr>
+    <a href="https://www.ladhyx.polytechnique.fr/people/duprat/" class="vert bolder">Camille Duprat</a>
+
+    <h3>References</h3>
+      <p>
+        C. Duprat and S. Protière, Capillary stretching of fibers, EPL 111 (2015)<br>
+        C. Duprat, A. D. Bick, P. B. Warren and H. A. Stone, Evaporation of Drops on Two Parallel Fibers:
+        Influence of the Liquid Morphology and Fiber Elasticity, Langmuir 29 (2013)
+      </p>
+    <h3>Financement</h3>
+    <p>
+      ANR Déformations de milieux fibreux hygroscopiques (DeFHy)
+    </p>
+    <hr>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Les textiles se retrouvent dans un grand nombre de secteurs d’activité (médecine, transports,
+      habillement, sport, construction), où ils sont privilégiés pour leurs qualités de filtration,
+      d’isolation, de rétention d’eau ou de couleur. Il existe aujourd’hui un essor de la recherche
+      de nouvelles fonctionnalités afin de développer des produits textiles à forte valeur ajoutée.
+      Le textile devient “intelligent”, par exemple en s’adaptant passivement en réponse à différentes
+      conditions environnementales (humidité, température...).
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Dans ce cadre, nous étudions le mouillage et le séchage de milieux fibrés, en particulier dans
+      le cas où les fibres sont élastiques et peuvent se déformer sous l’effet des forces capillaires.
+      Cet effet élasto-capillaire est particulièrement important lors du séchage, où de nombreuses
+      interfaces liquide/air apparaissent dans le textile. Notamment, les forces capillaires dues à
+      la présence de ces ménisques peuvent localement coller deux fibres adjacentes, ce qui conduit
+      à un rétrécissement global du textile. Le liquide peut adopter plusieurs morphologies en fonction
+      du volume de la goutte, de la tension de surface du fluide, et des propriétés mécaniques des fibres:
+      le liquide peut s’étaler sous la forme de longues colonnes liquides lorsque les déformations des
+      fibres sont importantes et/ou pour de faibles volumes de liquide, ou rester sous forme de goutte
+      compacte lorsque les déformations sont faibles et/ou pour des volumes plus importants.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Dans ce cadre, nous étudions le mouillage et le séchage de milieux fibrés, en particulier dans
+      le cas où les fibres sont élastiques et peuvent se déformer sous l’effet des forces capillaires.
+      Cet effet élasto-capillaire est particulièrement important lors du séchage, où de nombreuses
+      interfaces liquide/air apparaissent dans le textile. Notamment, les forces capillaires dues à
+      la présence de ces ménisques peuvent localement coller deux fibres adjacentes, ce qui conduit
+      à un rétrécissement global du textile. Le liquide peut adopter plusieurs morphologies en fonction
+      du volume de la goutte, de la tension de surface du fluide, et des propriétés mécaniques des fibres:
+      le liquide peut s’étaler sous la forme de longues colonnes liquides lorsque les déformations des
+      fibres sont importantes et/ou pour de faibles volumes de liquide, ou rester sous forme de goutte
+      compacte lorsque les déformations sont faibles et/ou pour des volumes plus importants.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/textiles-intelligents1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/textiles-intelligents1.jpg" >
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+          Mouillage de deux fibres élastiques: transition entre une goutte compacte et une colonne
+          liquide allongée en fonction de la distance entre les fibres et de la tension
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+
+
+  <hr>
+  </div>
+  {% endifequal %}
+
+  {% ifequal LANGUAGE_CODE 'en' %}
+
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+      <h1>Smart textiles</h1>
+      <hr>
+      <a href="https://www.ladhyx.polytechnique.fr/people/duprat/" class="vert bolder">Camille Duprat</a>
+
+      <h3>References</h3>
+        <p>
+          C. Duprat and S. Protière, Capillary stretching of fibers, EPL 111 (2015)<br>
+          C. Duprat, A. D. Bick, P. B. Warren and H. A. Stone, Evaporation of Drops on Two Parallel Fibers:
+          Influence of the Liquid Morphology and Fiber Elasticity, Langmuir 29 (2013)
+        </p>
+      <h3>Financement</h3>
+      <p>
+        ANR Déformations de milieux fibreux hygroscopiques (DeFHy)
+      </p>
+      <hr>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Fibrous media are functional and versatile materials, as demonstrated by their ubiquity
+        both in natural and engineered systems. They offer benefits in filtration, insulation, wetting,
+        water retention and coloring. Current research deals with “smart” textiles that respond to external stimuli
+        (e.g. a change in humidity or temperature).
+
+      </p>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        Within this context, we study the wetting and drying of fibrous materials, in particular
+        in the case where the individual fibers composing the material are flexible. Elastic fibers
+        can deform under the capillary forces arising at air-liquid interfaces. This elastocapillarity
+        phenomenon is for example responsible of the apparent shrinkage of fibrous filters upon drying.
+        Elastocapillary effects can also affect the liquid holding capacities of the textile, or its
+        drying rate, as the liquid distribution within the fiber array is modified. Indeed, when deposited
+        on a fiber array, liquid is distributed either in the form of long liquid columns or semi-spherical
+        compact droplets, depending upon the structure of the array (i.e., the distance between the fibers)
+        and its elasticity. In particular, we show that the  liquid morphology can be controlled by adjusting
+        the tension within the fibers. These results may be extended to tune (actively or passively) drying
+        rate or to optimize liquid capture on fiber arrays .
+      </p>
+
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/textiles-intelligents1.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/textiles-intelligents1.jpg" >
+            </img>
+          </a>
+          <figcaption style="text-align: justify">
+            Mouillage de deux fibres élastiques: transition entre une goutte compacte et une colonne
+            liquide allongée en fonction de la distance entre les fibres et de la tension
+          </figcaption>
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+      </div>
+
+
+
+    <hr>
+    </div>
+
+  {% endifequal %}
+
+
+{% endblock content %}

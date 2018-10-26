@@ -1,0 +1,60 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Physique du sport
+    </h1>
+    <hr>
+    <span class="vert bolder">Caroline Cohen</span> -
+        <a href="https://www.pmmh.espci.fr/fr/gouttes" class="vert bolder">
+          Christophe Clanet
+        </a>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Observer les terrains de sports avec un regard de Physicien permet de comprendre des
+      phénomènes que tout le monde peut observer et d’identifier des lois qui s’appliquent à
+      d’autres domaines. La Physique du Sport mène à des sujets originaux et à des applications
+      innovantes. Depuis 2009 le LadHyX s’est investi dans la Physique du Sport, en développant
+      trois axes : Sport,mouvement et santé, Sports de glisse et transport à faible coût, Sports et
+      matériaux pour la performance.
+    </p>
+
+    <ul class="list-unstyled" style="text-align: left;">
+      <li>
+        <a href="{% url 'sport-mouvement-et-sante' %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          Sport, Mouvement et Santé
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'sport-de-glisse-et-transport-a-faible-cout' %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+        Sport de glisse et transport à faible coût
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'sport-et-materiaux-pour-la-performance' %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+        Sport et Matériaux pour la performance
+        </a>
+      </li>
+{#      <li><a href="" >#}
+{#          <i class="glyphicon glyphicon-tint small"></i>#}
+{#        Publications et Liens</a>#}
+{#      </li>#}
+      <li><a href="{% url 'videos-et-conferences' %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+        Vidéos et Conférences</a>
+      </li>
+    </ul>
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

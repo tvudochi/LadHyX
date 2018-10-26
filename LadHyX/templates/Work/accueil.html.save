@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block image_specifique %}accueil{% endblock image_specifique %}
+{% block content %}
+  <!-- Liste Rubrique Recherche -->
+  <div class="content row">
+    <section class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-8 col-md-offset-2
+    col-lg-2 col-lg-offset-0">
+      <h1>énergie et transport </h1>
+      <ul class="list-unstyled">
+        <li><a href="{% url 'systeme-eoliens-et-hydroliens' %}" ><i class="glyphicon glyphicon-tint small"></i>Système
+          éoliens et hydroliens</a></li>
+        <li><a href="{% url 'ingenieurie-du-vent-et-vibrations' %}" ><i class="glyphicon glyphicon-tint small"></i>Ingénierie
+          du vent et vibrations</a></li>
+        <li><a href="{% url "aerodynamique-et-performance" %}" ><i class="glyphicon glyphicon-tint small"></i>Aérodynamique
+          et performance</a></li>
+        <li><a href="{% url "transport-sans-contact" %}"  ><i class="glyphicon glyphicon-tint small"></i>Transportsans contact</a></li>
+        <li><a href="{% url "locomotion" %}" ><i
+            class="glyphicon glyphicon-tint small"></i>Locomotion
+          (Propulsion)</a></li>
+      </ul>
+    </section>
+
+    <section
+        class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+      <h1>environnement</h1>
+      <ul class="list-unstyled">
+        <li><a href="href={% url "ecoulements-geophysiques" %}" ><i class="glyphicon glyphicon-tint small"></i>Écoulement
+          géophysique</a></li>
+        <li><a href="{% url "dispersion-des-polluants" %}" ><i class="glyphicon glyphicon-tint small"></i>Dispersion
+          des polluants</a></li>
+        <li><a href="{% url "dissipation-energetique" %}" ><i class="glyphicon glyphicon-tint small"></i>Dissipation
+          énergétique</a></li>
+        <li><a href="{% url "melange-des-oceans" %}" ><i class="glyphicon glyphicon-tint small"></i>Mélange des océans</a></li>
+        <li><a href="{% url "recuperation-eau-douce" %}" ><i class="glyphicon glyphicon-tint small"></i>Récupération d'eau douce</a></li>
+      </ul>
+    </section>
+
+    <section
+        class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+      <h1>design et société</h1>
+      <ul class="list-unstyled">
+        <li><a href="{% url "art-et-science" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          Art et science</a>
+        </li>
+
+        <li><a href="{% url "fabrication-du-verre" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          Fabricationdu verre</a>
+        </li>
+
+        <li><a href="{% url "nouveaux-materiaux" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          Nouveaux matériaux</a>
+        </li>
+
+        <li><a href="{% url "textiles-intelligents" %}" ><i class="glyphicon glyphicon-tint small">
+        </i>Textiles intelligents</a>
+        </li>
+
+        <li><a href="{% url "physique-du-sport" %}" ><i class="glyphicon glyphicon-tint small"></i>
+          Physique du sport</a>
+        </li>
+        <li><a href="{% url "econophysics" %}" ><i class="glyphicon glyphicon-tint small"></i>
+          Econophysics</a>
+        </li>
+      </ul>
+    </section>
+
+    <section
+        class="col-xs-4 col-xs-offset-3 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-2 col-lg-offset-0">
+      <h1>biomécanique et santé </h1>
+      <ul class="list-unstyled">
+
+        <li><a href="{% url "diagnostique-cellulaire" %}" ><i class="glyphicon glyphicon-tint small">
+        </i>Diagnostic cellulaire</a>
+        </li>
+
+        <li><a href="{% url "biomecanique-et-biomimetique-vegetale" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>Biomécanique végétale</a></li>
+
+        <li><a href="{% url "biomecanique-cellulaire" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          Biomécanique cellulaire</a>
+        </li>
+
+        <li><a href="{% url "biomecanique-cardiovasculaire" %}" >
+          <i class="glyphicon glyphicon-tint small"></i>
+          Biomécanique cardiovasculaire</a>
+        </li>
+
+      </ul>
+    </section>
+  </div>
+{% endblock content %}

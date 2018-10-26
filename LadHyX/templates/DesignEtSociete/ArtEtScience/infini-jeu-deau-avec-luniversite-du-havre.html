@@ -1,0 +1,61 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et science</h1>
+
+    <hr>
+
+    <h2>Infini : Jeu d’Eau avec L’université du Havre</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc chomaz</a>
+      <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    avec Gaële Perret, Arnaud Prigent et Jérôme  Brossard, exposée au Muséum d’histoire Naturelle du Havre, 2014.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Deux souffles d’eau gardent la porte d’entrée d’un temple invisible. Deux phénomènes hydrauliques, un jet formant ressaut et un vide générant un tourbillon, sont associés, créant une alternance de lignes et spirales. Provoqués tous deux par la gravité, ils se répondent en écho : le ressaut alimente le tourbillon en eau. Si on représente le ressaut par un point et le tourbillon par un trait, la fontaine écrit le message ·− ··− −− soit « AUM » en morse, qui signifie « l'infini » en sanskrit, le début des Mathématiques et de la spiritualité. Un Infini, une alternance d’horizons noirs et blancs, d’un Univers en création, une résonnance de la théorie des cordes donnant matérialité à l’absence.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science18.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science18.jpg" >
+        </a>
+        <figcaption>L’Infini : Ressauts versus tourbillons</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

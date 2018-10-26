@@ -1,0 +1,46 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Vidéos et conférences</h1>
+    <hr>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162966396" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Mathématiques et sport, Christophe Clanet</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162972218" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>La physique du football, Christophe Clanet et John W.M Bush</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/166008992" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Les vertus du sport pour le physicien</figcaption>
+      </section>
+    </div>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/252129178" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Shapes in Olympic Games, Christophe Clanet</figcaption>
+      </section>
+    </div>
+
+
+
+   <hr>
+  </div>
+
+
+{% endblock content %}

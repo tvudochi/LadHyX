@@ -1,0 +1,67 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Aérodynamique et performance</h1>
+    <hr>
+
+    </h2>
+
+    <span class="vert bolder">Xavier Garnaud</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/lutz/" class="vert bolder"> L. Lesshafft</a> -
+    <span class="vert bolder">P. Schmid</span> -
+    <span class="vert bolder">P. Huerre</span>
+
+    <h3>Publications</h3>
+    <p>
+      X. Garnaud L. Lesshafft, P. J. Schmid and P. Huerre, The preferred mode of incompressible jets:
+      linear frequency response analysis, J. Fluid Mech. (2013), vol. 716, pp. 189-202.
+      <a href="{{ MEDIA_URL }}larecherche/garnaud-2013.pdf" >(preprint)</a>
+    </p>
+    <hr>
+    <h2>What is the origin of engines’ noise ?
+    <h3> Why ?</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Jets are the main source of noise emission by airplanes during take-off climb phases.
+      In this study, we focus on acoustic radiation from large scale vortices and we aim at identifying
+      the mechanisms through which these structures are generated. The understanding of these phenomenas
+      will enable the control of the flow to reduce jet noise.
+    <h3>How ?</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Numerical simulation of compressible and incompressible flows, analysis of simplified models.
+    </p>
+    <h3>Results</h3>
+    <p>
+      Optimal excitation of the flow by external disturbances
+    </p>
+
+    <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <a href="{{ MEDIA_URL }}larecherche/aerodynamique-et-prefomance1.jpg"
+             data-toggle="lightbox">
+            <img class="vignette img-responsive img-fluid"
+                 src="{{ MEDIA_URL }}larecherche/aerodynamique-et-prefomance1.jpg" >
+            </img>
+          </a>
+          <figcaption style="text-align: justify">
+          </figcaption>
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+        </section>
+    </div>
+
+  <hr>
+  </div>
+
+{% endblock content %}

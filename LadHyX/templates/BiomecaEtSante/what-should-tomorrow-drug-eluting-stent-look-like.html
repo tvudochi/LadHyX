@@ -1,0 +1,117 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Biomécanique cardiovasculaire</h1>
+    <a href="#" class="vert bolder">F. Bozsak</a> -
+    <a href="#" class="vert bolder">J.-M Chomaz</a> -
+    <a href="#" class="vert bolder">A. I. Barakat</a>
+    <hr>
+    <h2>What should tomorrow's drug-eluting stent look like ?
+    </h2>
+    <h3>Why?</h3>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire1.jpg" >
+          </img>
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Stents are very commonly used today to re-open blood vessels that have been blocked du to atherosclerosis.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire2.jpg" >
+          </img>
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire3.jpg" >
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Re-blockage (re-stenosis) is a common problem of bare-metal stents.<br> Drug-releasing stents prevents this at
+      the cost of increasing the risk of the formation of blood clots (thrombosis)
+    </p>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Our research aims at the creation of new stents that effectively avoid both restenosis and thrombosis.
+    </p>
+
+    <h3>How ?</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Devising stents designs that optimize drug distribution in the arterial wall
+    </p>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire4.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire4.jpg" >
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+
+    <h3>Results</h3>
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Drug concentration distributions
+    </p>
+      <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire5.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/biomecanique-cardiovasculaire5.jpg" >
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+  <hr>
+
+  </div>
+
+
+{% endblock content %}

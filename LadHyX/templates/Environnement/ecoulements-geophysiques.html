@@ -1,0 +1,123 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Geophysical flows
+    </h1>
+    <hr>
+    <span class="vert bolder">J. Park</span> -
+    <span class="vert bolder">Paul Billant</span>
+
+    <h3>References</h3>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        J. Fluid Mech., X.Riedienger, S. Le Dizès and P. Meunier (2010).<br>
+        Geophys. Res. Lett., C. Ménesguen et al. (2009)<br>
+        J. Fluid Mech., J. Park and P. Billant (2012)
+      </p>
+    <hr>
+    <h2>How does planetary rotation affects geophysical vortices ?</h2>
+
+    <h3>Geophysical vortices</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Geophysical vortices are one the most famous subjects in geophysical fluid dynamics since,
+      for example, they affect mixing properties in the oceans.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques1.jpg" >
+          </img>
+        </a>
+        <figcaption>
+          Numerical simulation of the Medditerranean eddy, from Ménesguen et al. 2009
+         </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <h3>Relative instability</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Geophysical vortices are unstable due to an inertia-gravity wave emission,
+      know as the radiative instability
+    </p>
+    <div class="row">
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques2.jpg" >
+          </img>
+        </a>
+        <figcaption>
+          Radiative instability on the flow around a rotating cylinder, from Riedinger et al. 2011
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <h3>Objectives</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Investigate an effect of planetary rotation on the radiative instability of a columnar vortex
+      in stratified fluids.
+    </p>
+
+    <h3>Methods</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Numerical and asymptotic linear stability analyses.
+    </p>
+
+    <h3>Results</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      The radiative instability is stabilized in the presence of both cyclonic and strong anticyclonic
+      planetary rotations.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques3.jpg" >
+
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques4.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/ecoulement-geophysiques4.jpg" >
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

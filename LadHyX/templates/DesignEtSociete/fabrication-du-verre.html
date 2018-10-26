@@ -1,0 +1,109 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Glass manufacturing</h1>
+    <hr>
+    <span class="vert bolder">M. Guémas</span> -
+    <span class="vert bolder">F. Pigeonneau</span> -
+    <span class="vert bolder">A. Sellier</span>
+
+    <h3>Publications</h3>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+        M. Guémas, A. Sellier and F. Pigeonneau, Slow viscous gravity-driven interaction between a bubble and a free surface with unequal surface tensions, PHYSICS OF FLUIDS 27, 043102 (2015)
+        <a href="{{ MEDIA_URL }}larecherche/guemas-2015.pdf" >preprint</a>
+      </p>
+    <hr>
+    <h2>How to remove bubbles in melting glass ?</h2>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      To predict how these bubble will behave is a crucial issue for glass industry.
+      The melted glass is indeed highly viscous implying that bubbles need a large
+      energy to rise and go through the surface.
+    </p>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/fabrication-du-verre1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/fabrication-du-verre1.jpg" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <h3>Numerical simulation</h3>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/fabrication-du-verre2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/fabrication-du-verre2.jpg" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+          Idealized problem
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <h3>Goal</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Tracking in time the deformations of the bubbles and free shapes.
+    </p>
+    <h3>Results</h3>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/fabrication-du-verre3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/fabrication-du-verre3.jpg" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+          Shape Evolution in time
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Strong sensitivity to the variation of surface tension.
+    </p>
+
+
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

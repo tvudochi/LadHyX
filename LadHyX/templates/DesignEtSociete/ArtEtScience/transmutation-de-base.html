@@ -1,0 +1,71 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et Science</h1>
+    <hr>
+
+    <h2>Transmutation de base : installation et chorégraphie sur les éléments de mémoire</h2>
+    <br>
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Aniara Rodado</a>, chorégraphe, étudiante aux Beaux-Arts de Lyon -
+    <a href="#" class="vert bolder">Marco Suarez-Cifuentez</a>, compositeur, doctorant de Paris Sciences
+    Lettres -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Dans le contexte de cette résidence longue de création et de recherche, nous développons un triptyque autour des problématiques liées au changement climatique et à l'écologie. Après avoir travaillé entre 2013 et 2014 sur une installation haptique comprenant la production d'anneaux tourbillonnaires et des jets synthétiques de vents, cette année, nous avons axé notre recherche autour des plantes pour la création d'une pièce chorégraphique.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Pour ce projet, nous avons choisi de travailler avec des plantes aromatiques en lien avec la pharmacopée populaire et des technologies telles que la distillation ou d’autres systèmes destinés à amplifier et isoler les odeurs de plantes. Nous questionnons le corps humain, non pas en tant que point central d'un quelconque système, mais en tant que récepteur-émetteur inséré dans des contextes complexes.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Nous avons dessiné un parcours qui va du laboratoire scientifique à la science citoyenne, en passant par les contraintes/possibilités propres à la création in-situ. Nous souhaitons établir des ponts entre ces différents types de savoirs et expérimenter, à travers les corps des danseurs, des ressorts de mouvements « non humains », tout en explorant des échelles temporelles propres aux plantes et aux processus microscopiques. Ceci afin de produire un rendu sensible dans la dimension mésoscopique accessible à la perception humaine.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science9.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science9.jpg" >
+        </a>
+        <figcaption>Projet de dispositif scénique qui est en cours de développement et
+          sera finalisé en 2015-2016</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science10.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science10.jpg" >
+        </a>
+        <figcaption>Atelier avec le public autour du savoir populaire sur les plantes médicinales
+          au Brésil dans le cadre du programme Rural.Scapes, juin 2015</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

@@ -1,0 +1,1113 @@
+#
+# Le 06/11/2001 : Fichier utilisé par le script admin-pub.cgi
+#
+# Ce fichier contient les donnée utilisées par les formulaires
+# html générés par les scripts admin-pub.cgi et search-pub.cgi
+#
+# Ce fichier peut être lu par un grep de la forme grep -E "^CLE.*\|"
+# ou bien par un fgetc(langage c).
+#
+# Chaque ligne significative débute par une clé de 2 caractéres suivie d'informations
+# La structure des infos est la suivante : CLExxx|yyyy[|zzzzz]
+#
+# ATTENTION : rien ne doit être ajouté en fin de fichier!
+# car des ajouts ou suppressions peuvent intervenir après le champs kw.
+#
+# Voici les differentes clés utilisées : 
+#
+# Ye - bornes de l'intervalle des années données en choix.
+# St - Statut de la publication.
+# Pp - type de Pré-print et affichage associé.
+# Rs - type d'Abstract et affichage associé.
+# Au - Liste d'auteurs Aunom|prénom nom|initiales nom|...
+# Wa - Liste des auteurs qui apparaissent sur le web (moteur de recherche)
+# Ed - Nom journal/publications (edition).
+# Dr - domaines de recherches.
+# Kw - Mots clés
+#
+# NB 1 : Pour avoir le dernier n° des Editeurs
+# >cat info-publi.dat | grep -E "^Ed" | sed "s/^Ed//" | sort -n
+#
+# NB Pour ajouter une revue par exemple
+#
+
+# Intervalle des Années
+Yed|1990
+Yef|2018
+
+#
+# St - Statut de la publication.
+# Opt supprimees le 14/01/2013
+Stpub|publié
+Stacc|accepté
+Stsub|soumis
+Stinp|sous presse
+
+
+#
+# Documents associés aux publications (Abstract pré-print)
+## Opts supprimees le 14/01/2013
+## Ppps|Format (ps)
+## Pppg|Format (ps.gz)
+## Rspg|Format (ps.gz)
+## Rsps|Format (ps)
+## Ppur|Format (url)
+## Rsht|Format (html)
+## Rsur|Format (url)
+
+Ppno|- Aucun -
+Pppd|Format (pdf)
+
+Rsno|- Aucun -
+Rspd|Format (pdf)
+
+#
+# Au -  nom|prénom nom|initiales(prénom) nom 
+#  NB pour trier 
+# cat tmpinfo.txt | awk -F'|' '{print $2 "|" $1 "|" $3 }' | sort | \
+#		    awk -F'|' '{print $2 "|" $1 "|" $3 }'
+#  NB tri nom prénom pour le 2nd champ
+#  cat auteurs.txt | awk -F'|' '{print $2 "|" $1 "|" $3 }' | \
+#           sed -e"s/\(.*\) \([^|]*\)|\([^|]*\)|\(.*\)/\3|\2 \1|\4/"
+#
+Auabbyad|Abbyad Paul|P. Abbyad
+Auabell|Abell C.|C. Abell
+Auabid|Abid Malek|M. Abid
+Auadamb|Adam Boris|B. Adam
+Auadams|Adams N. A.|N. A. Adams
+Auahmed|Ahmed Madiha|M. Ahmed
+Aualam|Alam Mahbub|M. Alam
+Aualbon|Albon J.|J. Albon
+Aualbrecht|Albrecht A.|A. Albrecht
+Auantigoni|Alexandrou Antigoni|A. Antigoni
+Aualicke|Alicke A.| A. Alicke
+Auallain|Allain Jean-Marc|J. M. Allain
+Aualon|Alon G.|G. Alon
+Aualonzo|Alonzo B.|B. Alonzo
+Aualouges|Alouges F.|F. Alouges
+Aualvarado|Alvarado José|J. Alvarado
+Aualy|Aly M.|M. Aly
+Auamandolese|Amandolèse Xavier|X. Amandolèse
+Auamram|Amram Karen|K. Amram
+Auamselem|Amselem Gabriel|G. Amselem
+Auandrianne|Andrianne T.|T. Andrianne
+Auantar|Antar Ghassan|G. Antar
+Auantoinee|Antoine Elisabeth|E. Antoine
+Auantoineg|Antoine Guillaume|G. Antoine
+Auantoine|Antoine Maxime|M. Antoine
+Auaristoff|Aristoff J. M.|J. M. Aristoff
+Auarnault|Arnault N.|N. Arnault
+Auarratia|Arratia Cristobal|C. Arratia
+Auarutkin|Arutkin Maxence|M. Arutkin
+Auaryoputro|ARYOPUTRO Renar P.|R. P. ARYOPUTRO
+Auasadauskas|Asadauskas S. J.|S. J. Asadauskas
+Auatallah|Atallah A.|A. Atallah
+Auaugier|Augier Pierre|P. Augier
+Auaussal|Aussal M.|M. Aussal
+Auauvray|Auvray L.|L. Auvray
+Auavila|Avila M.|M. Avila
+Auayari|Ayari Anthony|A. Ayari
+Auaydin|Aydin S.H.|S.H. Aydin
+Aubabataheri|Babataheri Avin|A. Babataheri
+Aubaboud|Baboud Lionel|L. Baboud
+Aubacot|Bacot Vincent|V. Bacot
+Aubadel|Badel E.|E. Badel
+Aubagheri|Bagheri Shervin|S. Bagheri
+Aubaier|Baier Tobias|T. Baier
+Aubaik|Baik J. J.|J. J. Baik
+Aubaj|Baj Franck|F. Baj
+Aubarakat|Barakat Abdul|A. Barakat
+Aubarbacci|Barbacci A.|A. Barbacci
+Aubarbagallo|Barbagallo Alexandre|A. Barbagallo
+Aubarizien|Barizien Antoine|A. Barizien
+Aubarois|Barois Thomas|T. Barois
+Aubaroud|Baroud Charles|C. Baroud
+Aubartolo|Bartolo D.|D. Bartolo
+Aubassereau|Bassereau Patricia|P. Bassereau
+Aubastien|Bastien R.|R. Bastien
+Aubastin|Bastin S.|S. Bastin
+Aubasu|Basu Roshni|R. Basu
+Aubaudoin|Baudoin Michaël|M. baudoin
+Aubaumchen|Baumchen O.|O. Baumchen
+Aubayer|Bayer Christopher|C. Bayer
+Aubeauvais|Beauvais M.|M. Beauvais
+Aubeilharz|Beilharz Daniel|D. Beilharz
+Aubejoy|Bejoy J.|J. Bejoy
+Aubelitz|Belitz Paul|P. Belitz
+Aubeltramo|Beltramo P. J.|P. J. Beltramo
+Aubeneddine|Beneddine S.|S. Beneddine
+Aubenusiglio|Benusiglio Adrien|A. Benusiglio
+Aubenzaquen|Benzaquen Michael|M. Benzaquen
+Auberthet|Berthet Hélène|H. Berthet
+Aubertin|Bertin G. I.|G. I. Bertin
+Aubewley|Bewley Tom|T. Bewley
+Aubhatt|Bhatt M.|M. Bhatt
+Aubick|Bick Alison D.|A. D. Bick
+Aubico|Bico José|J. Bico
+Aubillant|Billant Paul|P. Billant
+Aubiolley|Biolley Francis|F. Biolley
+Aubird|Bird J.|J. Bird
+Aublack|Black Charles T.|C. T. Black
+Aublanchard|Blanchard Mathieu|M. Blanchard
+Aublawzdziewicz|Blawzdziewicz J.|J. Blawzdziewicz
+Aubocquet|Bocquet L.|L. Bocquet
+Aubohineust|Bohineust A.|A. Bohineust
+Aubohr|Bohr T.|T. Bohr
+Auboilot|Boilot P.|P. Boilot
+Aubonazzi|Bonazzi D.|D. Bonazzi
+Aubondavalli|Bondavalli Paolo|P. Bondavalli
+Aubonnesoeur|Bonnesoeur V.|V. Bonnesoeur
+Aubonneton|Bonneton Philippe|P. Bonneton
+Aulariviere|Borel de Larivière Aurélie|A. Borel de Larivière
+Aubottin|Bottin Sabine|S. Bottin
+Aubouchaud|Bouchaud J. P.|J. P. Bouchaud
+Auboucher|Boucher Jean-Philippe|J-P Boucher
+Auboulanger|Boulanger C. M.|C. M. Boulanger
+Aubourguet|Bourguet R.|R. Bourguet
+Aubourrianne|Bourrianne Philippe|P. Bourrianne
+Auboutillon|Boutillon Xavier|X. Boutillon
+Aubozsak|Bozsak Franz|F. Bozsak
+Aubrachet|Brachet Marc-Etienne|M. E. Brachet
+Aubrancher|Brancher Pierre|P. Brancher
+Aubrandt|Brandt Luca|L. Brandt
+Aubrethouwer|Brethouwer G.|G. Brethouwer
+Aubrouwer|Brouwer M.|M. Brouwer
+Aubrowand|Browand Frederic|F. K. Browand
+Aubrun|Brun P.-T.|P.-T. Brun
+Aubrunel|Brunel Eric|E. Brunel
+Aubrunet|Brunet Yves|Y. Brunet
+Auburnham|Burnham Daniel R.|D. R. Burnham
+Aubuschv|Busch-Vishniac Ilene|I. Busch-Vishniac
+Aubush|Bush John|J. Bush
+Aubusse|Busse J.|J. Busse
+Aubutet|Butet Alain|A. Butet
+Aucaillaud|Caillaud Sébatien|S. Caillaud
+Aucampbell|Campbell P. A.|P. A. Campbell
+Aucamporeale|Camporeale C.|C. Camporeale
+Aucasas|Casas Jérôme|J. Casas
+Aucaulfield|Caulfield Colm-Cille Patrick|C. P. Caulfield
+Auchandler|Chandler G. J.|G. J. Chandler
+Auchandran|Chandran Suja|S. Chandran
+Aucharles|Charles M.|M. Charles
+Auchate|Chaté Hugues|H. Chaté
+Auchaudan|Chaudan E.|E. Chaudan
+Auchecco|Checco Antonio|A. Checco
+Auchevalier|Chevalier Mattias|M. Chevalier
+Auchevy|Chevy F.|F. Chevy
+Auchibbaro|Chibbaro S.|S. Chibbaro
+Auchissey|Chissey A.|A. Chissey
+Auchoi|Choi S-Y.|S-Y. Choi
+Auchomaz|Chomaz Jean-Marc|J. M. Chomaz
+Auchoquel|Choquel Maxime|M. Choquel
+Auchoueib|Choueib M.|M. Choueib
+Auclanet|Clanet Christophe|C. Clanet
+Aucochard|Cochard Précillia|P. Cochard
+Aucockenpot|Cockenpot H.|H. Cockenpot
+Aucodogno|Codogno P.|P. Codogno
+Aucoenen|Coenen W.|W. Coenen
+Aucohen|Cohen Caroline|C. Cohen
+Aucohenj|Cohen J.|J. cohen
+Aucolson|COLSON Gerald|G. COLSON
+Aucombettes|Combettes L.|L. Combettes
+Aucomtet|Comtet Jean|J. Comtet
+Auconstant|Constant T.|T. Constant
+Auconstantinescu|Constantinescu Andrei|A. Constantinescu
+Aucooper|Cooper J. M.|J. M. Cooper
+Aucordero|Cordero Maria-Luisa|M. A. Cordero
+Aucornat|Cornat François|F. Cornat
+Aucossu|Cossu Carlo|C. Cossu
+Aucosse|Cossé Julia|J. Cossé
+Aucosta|Costa Michela|M. Costa
+Aucouairon|Couairon Arnaud|A. Couairon
+Aucoullet|Coullet Pierre|P. Coullet
+Aucournede|Cournede P-H.|P-H.
+Aucoutand|Coutand C.|C. Coutand
+Aucoux|Coux M.|M. Coux
+Aucrighton|Crighton David George|D. G. Crighton
+Aucroizat|Croizat G.|G. Croizat
+Auczarny|Czarny Olivier|O. Czarny
+Ausilva|Da Silva N.|N. Da Silva
+Audalnoki-veress|Dalnoki-Veress K.|K. Dalnoki-Veress
+Audandois|Dandois J.|J. Dandois
+Audangla|Dangla Rémi|R. Dangla
+Audarboistexier|Darbois-Texier Baptiste|B. Darbois-Texier
+Audaube|Daube Olivier|O. Daube
+Audauchot|Dauchot Olivier|O. Dauchot
+Audaviaud|Daviaud François|F. Daviaud
+Aubezieux|de Bezieux H. R.|H. R. de Bezieux
+Aucanio|De Canio Gabriele|G. De Canio
+Audelangre|de Langre Emmanuel|E. de Langre
+Aumaleprade|de Maleprade H.|H. de Maleprade
+Auvincent|de Saint Vincent Robert|R. de Saint Vincent
+Audefossez|Defossez P.|P. Defossez
+Audehandschoewercker|Dehandschoewercker Eline|E. Dehandschoewercker
+Audelaune|Delaune Xavier|X. Delaune
+Audelbende|Delbende Ivan|I. Delbende
+Audeloison|Deloison B.|B. Deloison
+Audeloncle|Deloncle Axel|A. Deloncle
+Audeloron|Deloron P.|P. Deloron
+Audelour|Delour Jean|J. Delour
+Audelville|Delville Jean-Pierre|J. P. Delville
+Audematteis|Dematteis G.|G. Dematteis
+Audepardon|Depardon S.|S. Depardon
+Auloughian|Der Loughian Christelle|C. Der Loughian
+Audergham|Dergham G.|G. Dergham
+Audevue|Devue C.|C. Devue
+Audhal|Dhal J. B.|J. B. Dhal
+Aucostanzo|Di Costanzo E.|E. Di Costanzo
+Audiener|Diener Julien|J. Diener
+Audilman|Dilman V. V.| V. V. Dilman
+Audjafercherif|Djafer-Cherif I.|I. Djafer-Cherif
+Audoare|Doaré Olivier|O. Doaré
+Audogniaux|Dogniaux S.|S. Dogniaux
+Audonier|Donier J.|J. Donier
+Audonnadieu|Donnadieu Claire|C. Donnadieu
+Audones|Donès Nicolas|N. Donès
+Audoppler|Doppler L.|L. Doppler
+Audotiwala|Dotiwala F.|F. Dotiwala
+Audovetta|Dovetta Nicolas|N. Dovetta
+Audritschel|Dritschel D.|D. Dritschel
+Audrobinski|Drobinski P.|P. Drobinski
+Audrogue|Drogue Benoît|B. Drogue
+Auroure|du Roure Olivia|O. du Roure
+Audubois|Dubois Thierry|T. Dubois
+Auviolette|Dubois-Violette Elisabeth|E. Dubois-Violette
+Audubos|Dubos Thomas|T. Dubos
+Audubrulle|Dubrulle Bérengère|B. Dubrulle
+Auduclaux|Duclaux V.|V. Duclaux
+Auduez|Duez C.|C. Duez
+Auduguet|Duguet Y.|Y. Duguet
+Audumenil|Duménil G.|G. Duménil
+Audupeux|Dupeux Guillaume|G. Dupeux
+Audupontn|Dupont N.|N. Dupont
+Audupont|Dupont Pascal|P. Dupont
+Auduponts|Dupont Sylvain|S. Dupont
+Auduprat|Duprat Camille|C. Duprat
+Audupuiswilliams|Dupuis-Williams P.|P. Dupuis-Williams
+Aueckelmann|Eckelmann H.|H. Eckelmann
+Aueisler|Eisler Z.|Z. Eisler
+Auekieljezewska|Ekiel-Jezewska M. L.|M. L. Ekiel-Jezewska
+Aukirat|El Kirat K.|K. El Kirat
+Auelsami|Elasmi L.|L. Elasmi
+Aueloy|Eloy Christophe|C. Eloy
+Auethier|Ethier C. R.| C. R.  Ethier
+Auetienne|Etienne Stéphane|S. Etienne
+Auevain-brion|Evain-Brion D.|D. Evain-Brion
+Aufabbiane|Fabbiane N.|N. Fabbiane
+Aufabre|Fabre David|D. Fabre
+Aumatteo|Facchinetti Matteo|M. Facchinetti
+Aufan|Fan Chengwei|C. Fan
+Aufaranda|Faranda Davide|D. Faranda
+Aufarge|Farge M.|M. Farge
+Aufelderhof|Felderhof B. U.|B. U. Felderhof
+Aufeuillebois|Feuillebois F.|F. Feuillebois
+Aufigliuzzi|Figliuzzi B.|B. Figliuzzi
+Aufinn|Finn A. V.|A. V. Finn
+Aufisch|Fisch C.|C. Fisch
+Auflamant|Flamant P. H.|P. H. Flamant
+Auflor|Flor Jan-Bert|J. B. Flor
+Aufontaine|Fontaine Emmanuel|E. Fontaine
+Auforterre|Forterre Y.|Y. Forterre
+Aupando|Fosas de Pando Miguel Angel|M. A. Fosas de Pando
+Aufoures|Foures Dimitry|D. Foures
+Aufournier|Fournier M.|M. Fournier
+Aufourniert|Fournier T.|T. Fournier
+Aufournierleblanc|Fournier-Leblanc N.|N. Fournier-Leblanc
+Aufowler|Fowler P. D.|P. D. Fowler
+Aufrachisse|Frachisse J. M.|J. M. Frachisse
+Aufrachon|Frachon H.|H. Frachon
+Aufradet|Fradet Etienne|E. Fradet
+Aufranchel|Franchel G.|G. Franchel
+Aufransson|Fransson Jens H. M.|J. H. M. Fransson
+Aufricout|Fricout G.|G. Fricout
+Aufrot|Frot Caroline|C. Frot
+Aufugmann|Fugmann H.|H. Fugmann
+Aufunfak|Funfak Anette|A. Funfak
+Augacoin|Gacoin T.|T. Gacoin
+Augallaire|Gallaire François|F. Gallaire
+Augallino|Gallino G.|G. Gallino
+Augaltier|Galtier S.|S. Galtier
+Augvillalba|Garcia-Villalba M.|M. Garcia-Villalba
+Augardiner|Gardiner B.|B. Gardiner
+Augarnaud|Garnaud Xavier|X. Garnaud
+Augauthier|Gauthier Anaïs|A. Gauthier
+Autorre|Gaziola de la Torre L.|L. Gaziola de la Torre
+Aughalia|Ghalia Nejiba|N. Ghalia
+Aughil|Ghil Michael|M. Ghil
+Augiannone|Giannone G.|G. Giannone
+Augirard|Girard M. J.| M. J. Girard
+Augodoy|Godoy-Diana Ramiro|R. Godoy-Diana
+Augoh|Goh J. C.|J. C. Goh
+Augonzalez|Gonzalez-Rodriguez David|D. Gonzalez-Rodriguez
+Augosselin|Gosselin Frederick|F. Gosselin
+Augouget|Gouget Cécile|C. Gouget
+Augourcilleau|Gourcilleau D.|D. Gourcilleau
+Augouttenoire|Gouttenoire V.|V. Gouttenoire
+Augraham|Graham J. M. R.|J. M. R. Graham
+Augrilli|Grilli M.|M. Grilli
+Augrouthier|Grouthier Clément|C. Grouthier
+Auguazzelli|Guazzelli Ellisabeth|E. Guazzelli
+Auguemas|Guemas Marine|M. Guemas
+Auguermond|Guermond Jean-Luc|J. L. Guermond
+Auguermonprez|Guermonprez Cyprien|C. Guermonprez
+Auguibourdenche|Guibourdenche J.|J. Guibourdenche
+Auguillot|Guillot D.|D. Guillot
+Auguillou|Guillou Lionel|L. Guillou
+Augunes|Gunes Denis Z.|D. Z. Gunes
+Augupta|Gupta M.|M. Gupta
+Augutfraind|Gutfraind R.|R. Gutfraind
+Augutierrez|Gutierrez A|A. Gutierrez
+Auguegan|Guégan Alan|A. Guégan
+Auguerin|Guérin E.|E. Guérin
+Auhaddad|Haddad B.|B. Haddad
+Auhall|Hall B.|B. Hall
+Auhamel|Hamel Amandine|A. Hamel
+Auhammoutene|Hammoutene A.|A. Hammoutene
+Auhansen|Hansen R.|R. Hansen
+Auhardt|Hardt S.|S. Hardt
+Auheaton|Heaton Christopher|C. Heaton
+Auhedhili|Hedhili L|L Hedhili
+Auheil|Heil Matthias|M. Heil
+Auhenningson|Henningson Dan S.|D. S. Henningson
+Auhenry|Henry N.|N. Henry
+Auherbert|Herbert S.|S. Herbert
+Auhervea|Herve A.|A. Herve
+Auhickel|Hickel S.|S. Hickel
+Auhilbers|Hilbers M.|M. Hilbers
+Auhivroz|Hivroz Claire|C. Hivroz
+Auhoepffner|Hoepffner Jérôme|J. Hoepffner
+Auhof|Hof B.|B. Hof
+Auhogan|Hogan Brenna|B. Hogan
+Auhollands|Hollands Martin|M. Hollands
+Auhollfelder|Hollfelder F.|F. Hollfelder
+Auhopfinger|Hopfinger Emil|E. Hopfinger
+Auhosoi|Hosoi A. E.|A. E. Hosoi
+Auhuck|Huck W.|W. Huck
+Auhuebner|Huebner A.|A. Huebner
+Auhuerre|Huerre Patrick|P. Huerre
+Auhure|Hure J.|J. Hure
+Auhuse|Huse M.|M. Huse
+Auhusson|Husson Julien|J. Husson
+Auhwang|Hwang Yongyun|Y. Hwang
+Auhemon|Hémon Pascal|P. Hémon
+Auide|Ide Kayo|K. Ide
+Auilton|Ilton M.|M. Ilton
+Auizri|Izri Z.|Z. Izri
+Aujacquin|Jacquin Laurent|L. Jacquin
+Aujambonpuillet|Jambon-Puillet Etienne|Etienne Jambon-Puillet
+Aujames|James J.|J. James
+Aujaunet|Jaunet V.|V. Jaunet
+Aujensen|Jensen K. H.|K. H. Jensen
+Aujeulin|Jeulin D.|D. Jeulin
+Aujian|Jian  Zhen|Z. Jian
+Aujimenez|Jimenez Javier|J. Jimenez
+Aujin|Jin W.|W. Jin
+Aujoner|Joner M.|M. Joner
+Aujones|Jones H.|H. Jones
+Aujordan|Jordan P.|P. Jordan
+Aujosserand|Josserand Christophe| C. Josserand
+Aujovanovic|Jovanovic M. R.|M. R. Jovanovic
+Aujuillet|Juillet Fabien|F. Juillet
+Aujulia|Julia P.|P. Julia
+Aujulienjl|Julien J. L.|J. L. Julien
+Aujulien|Julien Stéphanie|S. Julien
+Aujulio|Julio Kévin|K. Julio
+Aujung|Jung S.|S. Jung
+Aujuniper|Juniper Matthew P.|M. P. Juniper
+Aukadri|Kadri Yassin|Y. Kadri
+Aukam|Kam Lance C.|L. C. Kam
+Aukawahara|Kawahara G.|G. Kawahara
+Aukayi|Kayi Serif Cagri|S. C. Kayi
+Aukehren|Kehren A.|A. Kehren
+AukeiserA|Keiser A.|A. Keiser
+AukeiserL|Keiser L.|L. Keiser
+Aukennedy|Kennedy Ian M.|I. M. Kennedy
+Aukerswell|Kerswell R. R.|R. R. Kerswell
+Aukhabthani|Khabthani S.|S. Khabthani
+Aukheloufi|Kheloufi M.|M. Kheloufi
+Aukida|Kida Teruhiko|T. Kida
+Aukim|Kim J.|J. Kim
+Aukimura|Kimura Y.|Y. Kimura
+Aukneller|Kneller B.|B. Kneller
+Aukonopliv|Konopliv N.|N. Konopliv
+Aukumarp|Kumar Praveen|P. Kumar
+Aukumar|Kumar S.|S. Kumar
+Aulabbe|Labbe Romain|R. Labbe
+Aulafaurie-janvore|Lafaurie-Janvore Julie|J. Lafaurie-Janvore
+Aulaffaye|Laffaye G.|G. Laffaye
+Aulafont|Lafont A.|A. Lafont
+Aulagha|Lagha Maher|M. Lagha
+Aulagubeau|Lagubeau G.|G. Lagubeau
+Aukuen|Lai Kuen R.|R. Lai Kuen
+Aulambert|Lambert J. F.|J. F. Lambert
+Aulandel|Landel JR| JR Landel
+Aulandoulsi|Landoulsi J.|J. Landoulsi
+Aulasheras|Lasheras Juan|J. C. Lasheras
+Aulasselin|Lasselin J.|J. Lasselin
+Aulauga|Lauga Eric|E. Lauga
+Aulaure|Laure Patrice|P. Laure
+Aulaurent|LAURENT Philippe|P. LAURENT
+Aulazarus|Lazarus Arnaud|A. Lazarus
+Aulecunff|Le Cunff Cédric|C. Le Cunff
+Auledizes|Le Dizès Stéphane|S. Le Dizès
+Aufloch|Le Floc'h Audrey|A. Le Floc'h
+Augoff|Le Goff A.|A. Le Goff
+Auguludec|Le Guludec E.|E. Le Guludec
+Aumerrer|Le Merrer Marie|M. Le Merrer
+Auquere|Le Quéré Patrick|P. Le Quéré
+Aulecarpentier|Lecarpentier E.|E. Lecarpentier
+Auleclercq|Leclercq Tristan|T. Leclercq
+Auleess|Lee S.|S. Lee
+Aulefebvrelepot|Lefebvre-Lepot A.|A. Lefebvre-Lepot
+Aulegagneux|Legagneux Pierre|P. Legagneux
+Aulehoucq|Lehoucq Gaëlle|G. Lehoucq
+Aulemaitrec|Lemaitre Cécile|C. Lemaitre
+Aulemaitre|Lemaître Anaël|A. Lemaître
+Aulenne|Lenne C.|C. Lenne
+Aulequeux|Lequeux François|F. Lequeux
+Aulerisson|Lerisson Gaëtan|G. Lerisson
+Aulesshafft|Lesshafft Lutz|L. Lesshafft
+AuliEQ|Li E. Q.|E. Q. Li
+Aulil|Li L.|L. Li
+Auli|Li Y.|Y. Li
+Auliascukiene|Liascukiene I.|I. Liascukiene
+Aulieberman|Lieberman J.|J. Lieberman
+Aulinjm|Lin J-M. G.|J-M. G. Lin
+Aulindborg|Lindborg Erik|E. Lindborg
+Aulindner|Lindner Anke|A. Lindner
+Aulippera|Lippera Kevin|K. Lippera
+Aulisicki|Lisicki Maciej|M. Lisicki
+Auliugy|Liu Gang-Yu|G-Y. Liu
+Auliu|Liu Ying X.|Y. X. Liu
+Auliuyingzheng|Liu Yingzheng|Y. Liu
+Aulix|Lix C.|C. Lix
+Auschiavo|Lo Schiavo V.|V. Lo Schiavo
+Aulobato|Lobato-Dauzier Nicolas|N. Lobato-Dauzier
+Aulocher|Locher Fabien|F. Locher
+Auloiseleux|Loiseleux Thomas|T. Loiseleux
+Aulombardi|Lombardi M.|M. Lombardi
+Aulopez|Lopez Diego|L. Lopez
+Aulopezy|Lopez Yonathan|Y. Lopez
+Aulorenceau|Lorenceau E.|E. Lorenceau
+Auloyer|Loyer X.|X. Loyer
+Aulucarini|Lucarini Valerio|V. Lucarini
+Aulusseyran|Lusseyran F.|F. Lusseyran
+Aulv|Lv Cunjing|C. Lv
+Aumaga|Ma Grace|G. Ma
+Aumat|Ma T.|T. Mat
+Aumacdougall|Mac Dougall C.|C. Mac Dougall
+Aumalmeida|Machado-Almeida Bruno|B. Machado-Almeida
+Aumachata|Machata S.|S. Machata
+Auchristoph|Mack Christoph J.|C. J. Mack
+Auquentin|Magdelaine Quentin|Q. Magdelaine
+Aumaleki|Maleki M.|M. Maleki
+Aumanneville|Manneville Paul|P. Manneville
+Aumanriquez|Manriquez V.|V. Manriquez
+Aumarcq|Marcq Philippe|P. Marcq
+Aumarquet|Marquet Olivier|O. Marquet
+Aumarquier|Marquier André|A. Marquier
+Aumarsden|Marsden A.|A. Marsden
+Aumoreno|Marti-Moreno Marta|M. Marti-Moreno
+Aumartinjl|Martin Jean-louis|J. L. Martin
+Aumartino|Martin O.|O. Martin
+Aumartinand|Martinand D.|D. Martinand
+Aumartinelli|Martinelli Fulvio|F. Martinelli
+Aumartinellil|Martinelli L.|L. Martinelli
+Aumartinezbazan|Martinez-Bazan C.|C. Martinez-Bazan
+Aumasson|Masson J-B|J. b. Masson
+Aumastromatteo|Mastromatteo I.|I. Mastromatteo
+Aumathelin|Mathelin Lionel|L. Mathelin
+Aumathieu|Mathieu M.|M. Mathieu
+Aumathur|Mathur Manikandan|M. Mathur
+Aumayer|Mayer H|H. Mayer
+Aumckerman|Mc Kerman|Mc Kerman
+Aumcginty|McGinty S.|S. McGinty
+Aumcgloin|McGloin David|D. McGloin
+Aumcgraw|McGraw J. D.|J. D. McGraw
+Aumchugh|McHugh P.|P. McHugh
+Aumckeon|McKeon B.J.|B.J. McKeon
+Aumeicc|Mei C. C.|C. C. Mei
+Aumeiburg|Meiburg Eckart|E. Meiburg
+Aumeliga|Meliga Philippe|P. Meliga
+Aumeneghello|Meneghello Gianluca|G. Meneghello
+Aumenesguen|Menesguen C.|C. Menesguen
+Aumenetrier|Menetrier Laure|L. Menetrier
+Aumensah|Mensah-Gourmel Johanne|J. Mensah-Gourmel
+Aumichelin|Michelin Sébastien|S. Michelin
+Aumidavaine|Midavaine Thierry|T. Midavaine
+Auminoux|Minoux E.|E. Minoux
+Aumitchel|Mitchel S. J.|S. J. Mitchel
+Aumodarres|Modarres-Sadeghi Yahya|Y. Modarres-Sadeghi
+Aumoffatt|Moffatt Keitt|H. K. Moffatt
+Aumoin|Moin P.|P. Moin
+Aumonasson|Monasson Rémy|R. Monasson
+Aumonkewitz|Monkewitz Peter|P. A. Monkewitz
+Aujohnson|Montenegro-Johnson T. D.|T. D. Montenegro Johnson
+Aumoore|Moore J. R.|J. R. Moore
+Aumorgan|Morgan Joshua T.|J. T. Morgan
+Aumorino|Morino Luigi|L. Morino
+Aumortagne|Mortagne C.|C. Mortagne
+Aumotaal|Motaal Hatem T. Abdel|H. T. Abdel Motaal
+Aumougel|Mougel Jérôme|J. Mougel
+Aumoulia|Moulia Bruno|B. Moulia
+Aumouterde|Mouterde Timothée|T. Mouterde
+Aumuller|Muller Caroline|C. Muller
+Aumullersj|Muller S. J.|S. J. Muller
+Aunagel|Nagel M.|M. Nagel
+Aunakanishi|Nakanishi M.|M. Nakanishi
+Aunakano|Nakano M.|M. Nakano
+Aunasto|Nasto Alice|A. Nasto
+Aunegretti|Negretti Maria-Eletta|M. E. Negretti
+Aunichols|Nichols Joseph|J. Nichols
+Aunicolas|Nicolas Maxime|M. Nicolas
+Aunicoll|Nicoll B. C.|B. C. Nicoll
+Aunilas|Nilas K. J.|K. J. Nilas
+Aunivoit|Nivoit P.|P. Nivoit
+Aunoger|Noger Christophe|C. Noger
+Auobrist|Obrist D|D. Obrist
+Auody|Ody Cédric|C. Ody
+Auogilvie|Ogilvie G-I|G. I. Ogilvie
+Auokkels|Okkels Fridolin|F. Okkels
+Auolendraru|Olendraru Cornel|C. Olendraru
+Auondarcuhu|Ondarçuhu T.|T. Ondarçuhu
+Auortiz|Ortiz Sabine|S. Ortiz
+Auotheguy|Otheguy Pantxika|P. Otheguy
+Auouvrard|Ouvrard Anne-Emmanuelle|A. E. Ouvrard
+Aupacheco|Pacheco E.|E. Pacheco
+Aupark|Park Daniel|D. S. Park
+Auparkj|Park Junho|J. Park
+Aupasol|Pasol Laurentiu|L. Pasol
+Aupastur|Pastur L.|L. Pastur
+Aupaidoussis|Païdoussis Michael|M. Païdoussis
+Aupeake|Peake N.|N. Peake
+Aupellet|Pellet Frédéric|F. Pellet
+Auperetti|Peretti J.|J. Peretti
+Auperisanu|Perisanu Sorin|S. Perisanu
+Auperkins|Perkins S. J.|S. J. Perkins
+Auperret|Perret G.|G. Perret
+Auperrier|Perrier Michel|M. Perrier
+Aupettigrew|Pettigrew M. J.|M. J. Pettigrew
+Auphalippou|Phalippou Chistian|C. Phalippou
+Auphilip|Philip Jimmy|J. Philip
+Auphomsoupha|Phomsoupha M.|M. Phomsoupha
+Aupic|Pic I.|I. Pic
+Aupidoux|Pidoux G.|G. Pidoux
+Aupier|Pier Benoît|B. Pier
+Aupiezanowski|Piezanowski J. J.|J. J. Piezanowski
+Aupigeonneau|Pigeonneau F.|F. Pigeonneau
+Aupiroird|Piroird Keyvan|K. Piroird
+Aupiteau|Piteau Philippe|P. Piteau
+Aupineirua|Piñeirua Miguel|M. Piñeirua
+Aubrendan|Plapp Brendan B.|P. B.
+Auploquin|Ploquin Sétphane|S. Ploquin
+Aupoisson|Poisson J.|J. Poisson
+Aupolyanin|Polyanin A. D.| A. D. Polyanin
+Auponcharal|Poncharal Philippe|P. Poncharal
+Auponomarenko|Ponomarenko Alexandre|A. Ponomarenko
+Aupontrelli|Pontrelli G.|G. Pontrelli
+Aupopinet|Popinet Stephane|S. Popinet
+Aupouliquen|Pouliquen Olivier|O. Pouliquen
+Aupribat|Pribat Didier|D. Pribat
+Auproctor|Proctor M. R. E.|M. R. E. Proctor
+Auprotiere|Protière Suzie|S. Protière
+Aupuech|Puech P.H.|P. H. Puech
+Aupujals|Pujals Grégory|G. Pujals
+Aupurcell|Purcell Stephen|S. Purcell
+Aupust|Pust O.|O. Pust
+Auputot|Putot Claude|C. Putot
+Aupy|Py Charlotte|C. Py
+Auquadrio|Quadrio Mauricio|M. Quadrio
+Auquered|Quere David|D. Quere
+Auquilliet|Quilliet C.|C. Quilliet
+Auragwitz|Ragwitz Mario|M. Ragwitz
+Aurahman|Rahman Atikur|A. Rahman
+Auramaiolo|Ramaiolo M.|M. Ramaiolo
+Auraphael|Raphael E.|E. Raphael
+Aurautou|Rautou P. E.|P. E. Rautou
+Auraux|Raux Pascal|P. Raux
+Auchakravarthy|Ravilla Vamsi Krishna Chakravarthy|R. V. K. Chakravarthy
+Auray|Ray Pascal|P. Ray
+Auredekopp|Redekopp Larry|L.G. Redekopp
+Auregardin|Regardin Clotilde|C. Regardin
+Auregli|Regli Marianne|M. Regli
+Aureis|Reis P.|P. Reis
+Aurenaut|Renaut N.|N. Renaut
+Aurestagno|Restagno F.|F. Restagno
+Aureverdy|Reverdy P.|P. Reverdy
+Aureveret|Reveret Lionel|L. Reveret
+Aureyssat|Reyssat M.|M. Reyssat
+Aurichard|Richard D.|D. Richard
+Aurichet|Richet Oceane|O. Richet
+Auridolfi|Ridolfi L.|L. Ridolfi
+Aurieutord|Rieutord Michel|M. Rieutord
+Auriley|Riley J. J.|J. J. Riley
+Aurincon|Rincon François|F. Rincon
+Aurio|Rio E.|E. Rio
+Auriverin|Riverin J. L.|J. L. Riverin
+Aurivetti|Rivetti M.|M. Rivetti
+Aurobinet|Robinet Jean-christophe|J. C. Robinet
+Aurodriguez|Rodriguez Mathieu|M. Rodriguez
+Auroeckeldrevet|Roeckel-Drevet P.|P. Roeckel-Drevet
+Aurolfsnes|Rolfsnes H. O.|H. O. Rolfsnes
+Aurolland|Rolland Joran|J. Rolland
+Auroman|Roman Benoît|B. Roman
+Aurondoni|Rondoni L.|L. Rondoni
+Aurossi|Rossi Maurice|M. Rossi
+Aurott|Rott Stéphanie|S. Rott
+Auruith|Ruith Michael|M. Ruith
+Auruyer|Ruyer-Quil Christian|C. Ruyer-Quil
+Aurylander|Rylander M. N.|M. N. Rylander
+Ausagaut|Sagaut Pierre|P. Sagaut
+Ausaitakis|Saitakis M.|M. Saitakis
+Ausalez|Salez T.|T. Salez
+Ausalomon|Salomon L. J.|L. J. Salomon
+Ausalsac|Salsac Anne-Virginie|A. V. Salsac
+Ausamuelides|Samuelides M.|M. Samuelides
+Ausanmiguelrojas|Sanmiguel-Rojas E.|E. Sanmiguel-Rojas
+Ausanti|Santi Francoise|F. Santi
+Ausart|Sart Sébastien|S. Sart
+Ausaudreau|Saudreau Marc|M. Saudreau
+Ausauret|Sauret Alban|A. Sauret
+Ausavage|Savage Stuart|S. B. Savage
+Ausawicka|Sawicka Ana|A. Sawicka
+Ausayadi|Sayadi T.|T. Sayadi
+Auscarano|Scarano F.|F. Scarano
+Auscheid|Scheid Benoît|B. Scheid
+Auschelhaas|Schelhaas M-J|M-J Schelhaas
+Auschindler|Schindler D.|D. Schindler
+Auschlatter|Schlatter Philipp|P. Schlatter
+Auschmid|Schmid Peter|P. J. Schmid
+Auschuller|Schuller T.|T. Schuller
+Auschulze|Schulze Jan|J. Schulze
+Auschuster|Schuster M.|M. Schuster
+Auschwartz|Schwartz Martin|M. Schwartz
+Auschonborn|Schönborn J.|J. Schönborn
+Auseiwert|Seiwert Jacopo|J. Seiwert
+Ausellier|Sellier Antoine|A. Sellier
+Ausemeraro|Semeraro Onofrio|O. Semeraro
+Auseo|Seo T.|T. Seo
+Auserre|Serre E.|E. Serre
+Auseshasyanan|Seshasyanan K.|K. Seshasyanan
+Aujorn|Sesterhenn Jörn L.|J. L. Sesterhenn Jörn
+Ausevilla|Sevilla A.|A. Sevilla
+Aushaabani|Shaabani-Ardali Leopold|L. Shaabani-Ardali
+Ausharkawi|Sharkawi T.|T. Sharkawi
+Aushe|SHE Zhen-Su|Z-S. SHE
+Aumanzoor|Shehryar Manzoor Muhammad|S. Manzoor-Muhammad
+Aushimizu|Shimizu M.|M. Shimizu
+Ausingh|Singh Kiran|K. Singh
+Ausipp|Sipp Denis|D. Sipp
+Ausnoeijerc|Snoeijerc Jacco H.|J. H. Snoeijerc
+Ausongl|Song L.|L. Song
+Ausong|Song Yu|Y. Song
+Ausoto|Soto Dan|D. Soto
+Ausoundar|Soundar Jerome Joseph John|J. J. J. Soundar
+Ausouyri|Souyri M.|M. Souyri
+Ausparks|Sparks Steven R.|S. R. Sparks
+Auspatz|Spatz H. A.|H. A. Spatz
+Auspruijt|Spruijt E.|E. Spruijt
+Austark|Stark K.|K. Stark
+Austegner|Stegner Alexandre|A. Stegner
+Austeinmann|Steinmann Thomas|T. Steinmann
+Austernberger|Sternberger Z.|Z. Sternberger
+Austone|Stone Howard A.|H. A. Stone
+Ausungwan|Sungwan S|S. Sungwan
+Auswinney|Swinney Harry L.|H. L. Swinney
+Ausymon|Symon Sean|S. Symon
+Auszydlowski|Szydlowski Julien|J. Szydlowski
+Autabeling|Tabeling Patrick|P. Tabeling
+Autaccoen|Taccoen Nicolas|N. Taccoen
+Autadrist|Tadrist Loïc|L. Tadrist
+Autalamelli|Talamelli Alessandro|A. Talamelli
+Autamara|Tamara M.|M. Tamara
+Autanimoto|Tanimoto H.|H. Tanimoto
+Autareste|Tareste David|D. Tareste
+Autedgui|Tedgui A.|A. Tedgui
+Autelewski|Telewski F. W.|F. W. Telewski
+Auterracol|Terracol M.|M. Terracol
+Autezersezgin|Tezer-Sezgin M.|M. Tezer-Sezgin
+Autharaux|Tharaux Pierre-Louis|P. L. Tharaux
+Autheckes|Theckes Benoît|B. Theckes
+Autheron|Theron Alain|A. Theron
+Authoroddsen|Thoroddsen S. T.|S. T. Thoroddsen
+Autian|Tian Yudong|Y. Tian
+Autilley|Tilley Burt|B. Tilley
+Automasi|Tomasi Raphael|R. Tomasi
+Autordjeman|Tordjeman P.|P. Tordjeman
+Autorii|Torii S.|S. Torii
+Autourkine|Tourkine P.|P. Tourkine
+Autsai|Tsai A.-C.|A.-C. Tsai
+Autsatsaris|Tsatsaris V.|V. Tsatsaris
+Autsikata|Tsikata Sedina|S. Tsikata
+Auueda|Ueda Yoshiaki|Y. Ueda
+Auurbach|Urbach J. S.|J. S. Urbach
+Auvallet|Vallet D.|D. Vallet
+Aulindern|Van der Lindern M. N.|M. N. Van der Lindern
+Auvarma|Varma Akhil|A. Varma
+Auverga|Verga A.|A. Verga
+Auvermant|Vermant J.|J. Vermant
+Auverneuil|Verneuil Emilie|E. Verneuil
+AuvertM|Vert M.|M. Vert
+Auverttiquintero|Vertti-quintero Nadia|N. Vertti-quintero
+Auvesipa|Vesipa R.|R. Vesipa
+Auviaud|Viaud B.|B. Viaud
+Auvieillefosse|Vieillefosse S.|S. Vieillefosse
+Auvillard|Villard B.|B. Villard
+Auvillermaux|Villermaux E.|E. Villermaux
+Auvincentp|Vincent Pascal|P. Vincent
+Auviolato|Violato D.|D. Violato
+Auvioletter|Violette Rémi|R. Violette
+Auviollet|Viollet B.|B. Viollet
+Auvion|Vion A. C.|A. C. Vion
+Auvirmani|Virmani R.|R. Virmani
+Auvirot|Virot Emmanuel|E. Virot
+Auvitor|Vitor M.T.|M. T. Vitor
+Auvlachos|Vlachos P. P.|P. P. Vlachos
+Auvogt|Vogt R.|R. Vogt
+Auvoituriez|Voituriez R.|R. Voituriez
+Auvos|Vos Marten|M. Vos
+Auvyazmina|Vyazmina Elena|E. Vyazmina
+Auwagner|Wagner M.|M. Wagner
+Auwajnryb|Wajnryb E.|E. Wajnryb
+Auwallace|Wallace D.|D. Wallace
+Auwangkh|Wang Kang-Hsin|K-H. Wang
+Auwang|Wang X. C.|X. C. Wang
+Auweeks|Weeks Eric R.|E. R. Weeks
+Auweidman|Weidman Patrick|P. Weidman
+Auwexler|Wexler Jason S.|J. S. Wexler
+Auwhidborne|Whidborne J. F.|J. F. Whidborne
+Auwhite|White R. M.|R. M. White
+Auwhitlock|Whitlock Benjamin M.|BM. Whitlock
+Auwillaime|Willaime Hervé|H. Willaime
+Auwilliamson|Williamson Charles|C. H. K. Williamson
+Auwillis|Willis Ashley|A. Willis
+Auwojciechowski|Wojciechowski Jan|J. Wojciechowski
+Auwood|Wood Kristin|K. Wood
+Auwouters|Wouters Jeroen|J. Wouters
+Auwu|Wu Xuesong|X. Wu
+Auwunenburger|Wunenburger Régis|R. Wunenburger
+Auxavier|Xavier S.|S. Xavier
+Auxia|Xia Yifan|Y. Xia
+Auyahagi|Yahagi K.|K. Yahagi
+Auyamada|Yamada Ayako|A. Yamada
+Auyangg|Yang Guohua|G. Yang
+Auyang|Yang Ruixin|R. Yang
+AuyangY|Yang Y.|Y. Yangy
+Auyariv|Yariv E.|E. Yariv
+Auybert|Ybert C.|C. Ybert
+Auyim|Yim Eunok|E. Yim
+Auyuelong|Yu Yuelong|Y. Yu
+Auyuan|Yuan X.|X. Yuan
+Auzagnoni|Zagnoni M.|M. Zagnoni
+Auzaleski|Zaleski Stehane|S. Zaleski
+Auzhang|Zhang L.|L. Zhang
+Auzhou|Zhou Yu|Y. Zhou
+Auziaei|Ziaei A.|A. Ziaei
+Auzimmer|Zimmer Christopher|C. Zimmer
+
+# Web Autors
+# Wa -  nom|prénom nom|initiales(prénom) nom
+#
+#
+Waamandolese|Amandolèse Xavier|X. Amandolèse
+Waamselem|Amselem Gabriel|G. Amselem
+Waarratia|Arratia Cristobal|C. Arratia
+Waaugier|Augier Pierre|P. Augier
+Wababataheri|Babataheri Avin|A. Babataheri
+Wabarakat|Barakat Abdul|A. Barakat
+Wabarizien|Barizien Antoine|A. Barizien
+Wabaroud|Baroud Charles|C. Baroud
+Wabeilharz|Beilharz Daniel|D. Beilharz
+Wabenusiglio|Benusiglio Adrien|A. Benusiglio
+Wabenzaquen|Benzaquen Michael|M. Benzaquen
+Wabillant|Billant Paul|P. Billant
+Wablanchard|Blanchard Mathieu|M. Blanchard
+Waboucher|Boucher Jean-Philippe|J-P Boucher
+Wabourrianne|Bourrianne Philippe|P. Bourrianne
+Wabozsak|Bozsak Franz|F. Bozsak
+Wabrancher|Brancher Pierre|P. Brancher
+Wachakravarthy|Ravilla Vamsi Krishna Chakravarthy|R. V. K. Chakravarthy
+Wachomaz|Chomaz Jean-Marc|J. M. Chomaz
+Waclanet|Clanet Christophe|C. Clanet
+Wacohen|Cohen Caroline|C. Caroline
+Wacornat|Cornat François|C. Cornat
+Wacossu|Cossu Carlo|C. Cossu
+Wacouairon|Couairon Arnaud|A. Couairon
+Wadangla|Dangla Rémi|D. Rémi
+Wadarboistexier|Darbois-Texier Baptiste|B. Darbois-Texier
+Wadehandschoewercker|Dehandschoewercker Eline|E. Dehandschoewercker
+Wadelangre|de Langre Emmanuel|E. de Langre
+Wadelbende|Delbende Ivan|I. Delbende
+Wadeloncle|Deloncle Axel|A. Deloncle
+Wadoare|Doaré Olivier|O. Doaré
+Wadonnadieu|Donnadieu Claire|C. Donnadieu
+Wadovetta|Dovetta Nicolas|N. Dovetta
+Wadupeux|Dupeux Guillaume|G. Dupeux
+Waduprat|Duprat Camille|C. Duprat
+Wafradet|Fradet Etienne|E. Fradet
+Wafrot|Frot Caroline|C. Frot
+Wagallaire|Gallaire François|F. Gallaire
+Wagarnaud|Garnaud Xavier|X. Garnaud
+Wagauthier|Gauthier Anaïs|A. Gauthier
+Wagodoy|Godoy-Diana Ramiro|R. Godoy-Diana
+Wagonzalez|Gonzalez-Rodriguez David|D. Gonzalez-Rodriguez
+Wagouget|Gouget Cécile|C. GOUGET
+Wagrouthier|Grouthier Clément|C. Grouthier
+Waguegan|Guégan Alan|A. Guégan
+Waguemas|Guemas Marine|M. Guemas
+Waguermonprez|Guermonprez Cyprien|C. Guermonprez
+Waguillou|Guillou Lionel|L. Guillou
+Wahemon|Hémon Pascal|P. Hémon
+Wahogan|Hogan Brenna|B. Hogan
+Wahuerre|Huerre Patrick|P. Huerre
+Wahusson|Husson Julien|J. Husson
+Wajosserand|Josserand Christophe| C. Josserand
+Wajuillet|Juillet Fabien|F. Juillet
+Wajulien|Julien Stéphanie|S. Julien
+Walabbe|Labbe Romain|R. Labbe
+Walagha|Lagha Maher|M. Lagha
+Waleclercq|Leclercq Tristan|T. Leclercq
+Waledizes|Le Dizès Stéphane|S. Le Dizès
+Walemaitrec|Lemaitre Cécile|C. Lemaitre
+Walemaitre|Lemaître Anaël|A. Lemaître
+Walesshafft|Lesshafft Lutz|L. Lesshafft
+Waloiseleux|Loiseleux Thomas|T. Loiseleux
+Walopez|Lopez Diego|L. Lopez
+Waloughian|Der Loughian Christelle|C. Der Loughian
+Wamaleprade|de Maleprade Hélène|H. de Maleprade
+Wamanneville|Manneville Paul|P. Manneville
+Wamanzoor|Manzoor Sheryar|S. Manzoor
+Wamatteo|Facchinetti Matteo|M. Facchinetti
+Wameneghello|Meneghello Gianluca|G. Meneghello
+Wamensah|Mensah-Gourmel Johanne|J. Mensah-Gourmel
+Wamerrer|Le Merrer Marie|M. Le Merrer
+Wamichelin|Michelin Sébastien|S. Michelin
+Wamouterde|Mouterde Timothée|T. Mouterde
+Wamuller|Muller Caroline|C. Muller
+Wanegretti|Negretti Maria-Eletta|M. E. Negretti
+Waolendraru|Olendraru Cornel|C. Olendraru
+Waortiz|Ortiz Sabine|S. Ortiz
+Waotheguy|Otheguy Pantxika|P. Otheguy
+Wapando|Fosas de Pando Miguel Angel| M. A. Fosas de Pando
+Waparkj|Park Junho|J. Park
+Wapier|Pier Benoît|B. Pier
+Wapiroird|Piroird Keyvan|K. Piroird
+Waponomarenko|Ponomarenko Alexandre|A. Ponomarenko
+Wapouliquen|Pouliquen Olivier|O. Pouliquen
+Wapujals|Pujals Grgory|G. Pujals
+Wapy|Py Charlotte|C. Py
+Waraux|Raux Pascal|P. Raux
+Warichet|Richet Oceane|O. Richet
+Warolland|Rolland Joran|J. Rolland
+Waruyer|Ruyer-Quil Christian|C. Ruyer-Quil
+Wasalsac|Salsac Anne-Virginie|A. V. Salsac
+Wasawicka|Sawicka Ana|A. Sawicka
+Waschmid|Schmid Peter|P. J. Schmid
+Waseiwert|Seiwert Jacopo|J. Seiwert
+Wasellier|Sellier Antoine|A. Sellier
+Washaabani|Shaabani-Ardali Leopold|L. Shaabani-Ardali
+Wasoto|Soto Dan|D. Soto
+Wasoundar|Soundar Jerome Joseph John|J. J. J. Soundar
+Watadrist|Tadrist Loïc|L. Tadrist
+Watomasi|Tomasi Raphael|R. Tomasi
+Wavirot|Virot Emmanuel|E. Virot
+Waxia|Xia Yifan|Y. Xia
+Wayim|Yim Eunok|E. Yim
+
+# Sections modifables par le script Dr et Ed.
+# ATTENTION ne rein ajoute aprés cette section !!!!
+Ed0|
+Ed156|Advanced Functional Materials
+Ed53|Aerospace Science and Technology
+Ed54|Agricultural and Forest Meteorology
+Ed135|AIP Conference Proceeding
+Ed66|American Journal of Botany
+Ed93|Analytical Chemistry
+Ed118|Annals of Biomedical Engineering
+Ed56|Annals of Vascular Surgery
+Ed2|Annual Review of Fluid Mechanics
+Ed67|Applied Mechanic Review
+Ed68|Applied Physics Letters
+Ed32|ASME Journal of Pressure Vessel Technology
+Ed69|Astronomische Nachrichten
+Ed63|Astronomy & Astrophysics
+Ed159|Autophagy
+Ed99|Bioinspiration and Biomimetics
+Ed111|Biomechanics and Modeling In Mechanobiology
+Ed119|Biomedical Microdevices
+Ed83|Biomicrofluidics
+Ed105|Biophysical Journal
+Ed123|Bulletin of JSME, Mechanical Engineering Reviews
+Ed22|Canadian Journal of Mathematics
+Ed117|Cell
+Ed103|Chaos, Solitons & Fractals
+Ed52|Comptes Rendus de Physique
+Ed4|Comptes-Rendus de l'Académie des Sciences, Paris
+Ed40|Comptes-Rendus Mécanique
+Ed121|Computational & Applied Mechanics
+Ed41|Computational Mechanics
+Ed74|Computer Graphics Forum
+Ed62|Computer Methods in Applied Mechanics and Engineering
+Ed146|Computer Methods in Biomechanics and Biomedical Engineering
+Ed73|Computer Modeling in Engineering and Sciences
+Ed89|Computers & Fluids
+Ed94|Computers & Geosciences
+Ed60|Computers and Structures
+Ed137|Discrete and Continuous Dynamical Systems-Series B
+Ed16|Dynamics of Atmospheres and Oceans
+Ed147|Entropy
+Ed85|EPL - Europhysics Letters
+Ed131|European Journal of Computational Mechanics
+Ed37|European Journal of Mechanics A/Solids
+Ed31|European Journal of Mechanics B/Fluids
+Ed30|European Physical Journal B
+Ed25|Europhysics Letters
+Ed140|Europhysicsnews
+Ed5|Experiments in Fluids
+Ed58|Far East Journal of Applied Mathematics
+Ed90|Faraday Discussions
+Ed34|Flow Turbulence and Combustion
+Ed81|Fluid Dynamics Research
+Ed130|Fluids Structure Interactions in Low-Reynolds Number Flow
+Ed8|Geophysical and Astrophysical Fluid Dynamics
+Ed120|Hypertension
+Ed33|IMA Journal of Applied Mathematics
+Ed114|Integrative Biology
+Ed70|International Journal for Numerical Methods in Fluids
+Ed132|International Journal of Bifurcation and Chaos
+Ed133|International Journal of Computational Methods and Experimental Measurements
+Ed51|International Journal of Heat and Fluid Flow
+Ed75|International Journal of Mechanical Science
+Ed55|International Journal of Solids and Structures
+Ed151|Investigative Opthalmology & Visual Science
+Ed20|Journal de Physique II (France)
+Ed48|Journal of Acoustical Society of America
+Ed138|Journal of Applied Mathematics and Mechanics
+Ed36|Journal of Applied Mechanics
+Ed47|Journal of Biomechanical Engineering
+Ed65|Journal of Biomechanics
+Ed91|Journal of Climate
+Ed61|Journal of Colloid and Interface science
+Ed92|Journal of Computational and Applied Mathematics
+Ed28|Journal of Computational Physics
+Ed24|Journal of Energy Ressource Technology
+Ed1|Journal of Fluid Mechanics
+Ed29|Journal of Fluids and Structures
+Ed125|Journal of Geophysical Reasearch-Atmospheres
+Ed158|Journal of Geophysical Research: Oceans
+Ed15|Journal of Mathematical Analysis and Applications
+Ed101|Journal of Mathematical Biology
+Ed78|Journal of Mathematics in Industry
+Ed113|Journal of Mechanics of Materials and Structures
+Ed9|Journal of Mechanics
+Ed150|Journal of Physical Chemistry B
+Ed84|Journal of Physical D: Applied Physics
+Ed149|Journal of Physical Oceanography
+Ed72|Journal of Physics
+Ed145|Journal of Risk
+Ed35|Journal of Sound and Vibration
+Ed144|Journal of Statistical Mechanics
+Ed46|Journal of Statistical Physics
+Ed148|Journal of the American Heart Association
+Ed128|Journal of the Royal Society Interface
+Ed96|Journal of Theoretical Biology
+Ed10|Journal of Tribology
+Ed39|Journal of Vibrations and Acoustics
+Ed57|Journal of Wind Engineering and Industrial Aerodynamics
+Ed43|JSME International Journal
+Ed38|La Houille Blanche
+Ed64|Lab on Chip
+Ed124|Lancet
+Ed71|Langmuir
+Ed110|Leonardo
+Ed50|Magneto-hydrodynamics
+Ed143|Market Microstructure and Liquidity
+Ed27|Mathematical Proceedings of the Cambridge Philosophical Society
+Ed98|Medical Engineering and Physics
+Ed122|Molecular Biology of the Cell
+Ed102|Nature Communications
+Ed141|Nature Materials
+Ed139|Nature Nanotechnology
+Ed95|Nature Physics
+Ed26|Nature
+Ed88|New journal of Physics
+Ed127|Nonlinear Dynamics: Materials, Theory and Experiments
+Ed42|Nonlinear Phenomena in Complex Systems
+Ed44|Oil and Gas Science and Technology (IFP)
+Ed18|Philosophical Transactions A of the Royal Society of London
+Ed21|Philosophical Transactions of the Royal Society of London
+Ed17|Physica A
+Ed14|Physica D
+Ed109|Physical Review Applied
+Ed100|Physical Review B
+Ed19|Physical Review E
+Ed126|Physical Review Fluids
+Ed6|Physical Review Letters
+Ed115|Physical Review X
+Ed13|Physics of Earth and Planetary Interiors
+Ed7|Physics of Fluids A
+Ed12|Physics of Fluids
+Ed142|Physics today
+Ed107|Plant Science
+Ed112|Plos One
+Ed45|Powder Technology
+Ed86|PRAMANA - Journal of Physics
+Ed76|Proceedings of the National Academy of Sciences
+Ed82|Proceedings of the Royal Society A
+Ed23|Proceedings of the Royal Society of London
+Ed59|Progress of Theoretical Physics Supplements
+Ed157|Quantitative Finance
+Ed11|Quarterly Journal of Applied Mathematics
+Ed104|Scientific Reports
+Ed79|Sensors and Actuators B: Chemical
+Ed97|Signaling and Communication in Plants
+Ed116|Smart Materials and Structures
+Ed80|Soft Matter
+Ed155|Sports Engineering
+Ed3|Studies in Applied Mathematics
+Ed108|The European Physical Journal E
+Ed136|The Journal of Chemical Physics
+Ed77|The Journal of Experimental Biology
+Ed154|Theoretical & Applied Mechanics Letters
+Ed49|Theoretical and Computational Fluid Dynamics
+Ed87|Theoretical Foundations of Chemical Engineering
+Ed152|Tissue Engineering Part A
+Ed153|Tissue Engineering Part B-Reviews
+Ed106|Wind and Structures
+Ed134|Zeitschrift für angewandte Mathematik und Physik
+
+
+Dr0||
+Dr1|Jets et tourbillons|Jets and vortices
+Dr2|Désordre spatio-temporel|Spatio-temporal disorder
+Dr3|Théorie de l'instabilité|Hydrodynamic Stability Theory
+Dr4|Ecoulements géophysiques|Geophysical Flows
+Dr5|Interaction Fluide-Structure|Flow-Struture Interactions
+Dr6|Couches de mélange|Mixing layers
+Dr7|Ecoulements à faible nombre de Reynolds|Low-Reynolds-number flows
+Dr8|Aéroacoustique|Aeroacoustics
+Dr9|Contrôle des écoulements|Flow Control
+Dr10|Instabilité de couche limite|Boundary-Layer Instabilities
+Dr11|Divers|Miscellaneous
+Dr12|Microfluidique|Microfluidics
+Dr13|Biomécanique|Biomechanics
+Dr14|Matière molle|Soft Matter
+
+Kw1|Absolute convective instability
+Kw15|Aeroelasticity
+Kw18|biomechanics
+Kw8|boundary layer instability
+Kw5|Dynamics
+Kw7|eliptic hyperbolic instability
+Kw9|flow control
+Kw3|Fluid-conveying pipe
+Kw13|Holmboe instability
+Kw4|Local & global instability
+Kw14|Mixing layer
+Kw2|Pattern selection
+Kw6|secondary instability
+Kw16|stratified flows
+Kw12|Transition to turbulence
+Kw11|Two-phase flow
+Kw17|vortex dynamics
+Kw10|Vortex-induced vibrations

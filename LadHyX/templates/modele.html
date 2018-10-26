@@ -1,0 +1,59 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1> </h1>
+
+    <hr>
+
+    <h2></h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder"></a> -
+    <a href="#" class="vert bolder"></a> -
+    <a href="#" class="vert bolder"></a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/" >
+        </a>
+        <figcaption></figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <h4></h4>
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/204348974?title=0&portrait=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+        </iframe>
+        <figcaption></figcaption>
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

@@ -1,0 +1,152 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Sport et Matériaux pour la performance</h1>
+    <hr>
+    <h3>Publications</h3>
+      <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Dupeux G, Le Goff A., Quéré D, Clanet C. The spinning ball spiral. New Journal of Physics, 12 093004 (2010)
+        <br>
+      Clanet C. Sports Ballistics. Annual Review of Fluid Mechanics, 47, 455 (2015)
+        <br>
+      Cohen C, Darbois-Texier B, Dupeux G, Brunel E, Quéré D, Clanet C. The aerodynamic wall. Proceedings of the Royal Society A, 470 20130497 (2014).
+        <br>
+      Darbois-Texier B, Cohen C, Dupeux G, Quéré D, Clanet C. On the size of sports fields. New Journal of Physics, 16 033039 (2014).
+        <br>
+      Darbois Texier B, Cohen C, Quéré D, Clanet C. Physics of knuckleballs.
+
+
+      </p>
+
+    <hr>
+    <h3>Comprendre et modifier les trajectoires de balles</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Les balles de sport qui se déplacent dans l’air sont soumises à leur poids et aux forces aérodynamiques : la traînée et la portance. En fonction de l’importance relative de ces trois forces, on rencontre les différentes trajectoires de balles observées dans le diagramme de phases (Sp, Dr) : parabole (a), ligne droite (b), zig-zag (c), Tartaglia (d), spirale(e), cusp (f).
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics7.png"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics7.png" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+
+  <hr>
+  <h3>Tartaglia et taille des terrains de sport</h3>
+
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  Lorsqu’un projectile est lancé à grande vitesse initiale devant sa vitesse terminale de chute, il suit une trajectoire triangulaire, à cause de la traînée aérodynamique. C’est le cas du dégagé de fond de court au badminton. Nous avons montré que la portée de ces trajectoires sature avec la vitesse initiale. On a beau frapper plus fort, le projectile ne va pas plus loin qu’une longueur fixée par les caractéristiques du projectile.
+  </p>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+  Aux vitesses typiques de jeu, la plupart des balles de sport décrivent des trajectoires triangulaires et leur portée sature avec la vitesse. Une conséquence est que la taille des terrains de sport, fixée empiriquement est corrélée à cette portée maximale.
+  </p>
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162945186" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics8.png"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/physique-du-sport/sportphysics8.png" >
+
+          </img>
+        </a>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+
+
+    <h3>Presse</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    <a href="http://www.lemonde.fr/sciences/article/2012/04/06/le-gardien-de-but-au-pied-du-mur-aerodynamique_1681232_1650684.html" >
+      Le gardien de but au pied du mur aérodynamique</a> par David Larousserie, Le Monde.fr
+    </p>
+    <hr>
+  <h3>Balles flottantes</h3>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Certains ballons (foot, volley..), lorsqu’ils sont frappés sans rotation et à des vitesses critiques, se mettent soudainement à zigzaguer, et sont redoutables pour les adversaires. Nous nous sommes intéressé à l’origine physique de la force de portance instationnaire, responsable du zigzag du ballon. Nous avons reproduit ces trajectoires, pour comprendre dans quelles conditions elles sont observées.
+  </p>
+
+  <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/166001872" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Rebroussement Coup franc à effet Keisuke Honda</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162946587" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Foot</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+  <h3>Presse</h3>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    <a href="http://www.lemonde.fr/sport/article/2012/08/07/pourquoi-les-ballons-zigzaguent-ils_1743217_3242.html" >
+      Pourquoi les ballons zigzaguent-ils ?</a> par David Larousserie, Le Monde.fr
+  </p>
+  <hr>
+  <h3>La spirale de Roberto Carlos</h3>
+  <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Lorsque le ballon est frappé avec une rotation initiale, il est dévié par une force latérale qui dépend de la direction et du sens de rotation, de la vitesse du ballon et de sa vitesse de rotation (c’est l’effet Magnus). Nous avons reproduit ces trajectoires expérimentalement en lançant des billes dans une cuve remplie d’eau et montré que le ballon décrit une spirale.
+  </p>
+
+   <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162947252" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Foot</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/162947526" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Spirale</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+  </div>
+
+
+{% endblock content %}

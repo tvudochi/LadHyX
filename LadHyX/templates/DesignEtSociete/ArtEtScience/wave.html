@@ -1,0 +1,75 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>art et science</h1>
+
+    <hr>
+
+    <h2>Wave</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">François Eudes Chanfrault</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Les ondes à la surface d’une mince nappe d’eau de profondeur H se propagent à la vitesse    , où g est la gravité, quelque soit leur longueur d’onde tant que celle-ci est grande par rapport à la profondeur. Ces ondes sont donc analogues aux ondes sonores qui dans l’air se déplacent 300 m/s quelque soit la fréquence de l’onde. Comme toutes les fréquences progressent à la même vitesse, la forme de l’onde ne se déforme pas lors de sa propagation et le son reste le même que l’on soit près ou loin de la source et ses ondes sont dites non dispersive.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Les ondes électromagnétiques (la lumière, les ondes radios, les rayons X ou g) appartiennent aussi à la famille des ondes non dispersives et se propagent à 300 000 km/s dans le vide, un million de fois plus vite que le son. Pour une nappe d’eau de 1cm d’épaisseur, la vitesse des ondes à l’interface eau-air sera de 30 cm/s, mille fois moins rapide que le son, un milliard de fois moins que la lumière.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+L’installation wave exploite la nature non dispersive des ondes partagée entre le son, la lumière et les ondes à la surface de l’eau et joue avec les facteurs mille et un million entre leur vitesse de propagation pour bâtir une architecture de l’espace et du temps sonore et visuel. La composition musicale est étendue à une composition ondulatoire.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+La hiérarchie dans les vitesses de propagation permet d’augmenter la palette des fréquences de la composition musicale pour inclure des infrasons avec des fréquences de l’ordre du hertz en continuité avec les fréquences émises dans l’air, par le caisson de basse qui sont à la fois entendu et ressenti par le corps car dans la gamme de 10 à 100 Hz. Les infrasons entre 1 et 10 Hz sont inaudibles mais la nappe d’eau de l’installation est utilisée comme en média pour les propager et les matérialiser.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science14.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science14.jpg" >
+        </a>
+        <figcaption>Wave exposée en version une seule métamachine au domaine de Souci, Fontenay les
+          Briis, dans le cadre de la Biennale La Science de l’Art, 2013</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Mentions Légales</h1>
+    <hr>
+    <h2>Laboratoire d’Hydromécanique de l’École polytechnique</h2>
+
+    <p>Route de Saclay - 91128 Palaiseau cedex - France</p>
+
+    <p class="col-xs-4 champ">Hébergeur :</p>
+    <p>LadHyX</p>
+    <p class="col-xs-4 champ">Intégration :</p>
+    <p>Vu Do Chi Toaï, LadHyX</p>
+
+    <p class="col-xs-2 champ">Webdesign :</p>
+    <p> Centre Poly-Média de l’École polytechnique </p>
+
+    <p class="col-xs-2 champ">Crédits photos :</p>
+    <p>© 2017 Thinkstock - Collection: iStock. Tous droits réservés.<br>Photo « Calopteryx » - Lydie Le Gal</p>
+
+
+
+    <hr>
+  </div>
+
+
+{% endblock content %}

@@ -1,0 +1,69 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et Science</h1>
+    <hr>
+
+    <h2>Luminous Drift : climat de Saturne</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Evelina Domnitch</a> -
+    <a href="#" class="vert bolder">Dmitry Gelfand</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Appréhender autrement le climat et les enjeux du changement climatique en mettant en scène un mystère scientifique du climat de Saturne, où les différentes missions d’exploration ont révélé l’existence d’un énorme nuage en forme d’hexagone parfait. Ce phénomène est probablement dû à l’instabilité du jet circumpolaire que l’on reproduit en laboratoire en utilisant une table tournante et un chauffage différentiel radial, recréant ainsi  les conditions d’une atmosphère chauffée à l’équateur et refroidie au pôle. Ce projet est réalisé en collaboration avec l’Université de Cambridge en Angleterre. Des élèves de seconde année de l’Ecole polytechnique sont impliqués dans le projet (2015).
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science11.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science11.jpg" >
+        </a>
+        <figcaption>Visualisation de l’écoulement au dessus d’un disque tournant par la
+          bioluminescence du Phytoplancton</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      La portée du projet de recherche a également été considérablement élargie. Le projet vise désormais à sonder les méthodes artistiques qui peuvent aider à dévoiler la vaste gamme de dynamique de la biosphère, en constante évolution: phénomènes atmosphériques, courants océaniques, et le comportement des acteurs vivants tels que la biogéochimique marine et le plancton aérien.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Afin de mieux comprendre les mécanismes impliqués, nous avons cultivé une grande quantité de plancton bioluminescent. Ainsi nous avons pu observer le comportement du plancton dans une cuve tournante. Nous avons ensuite effectué des expériences dans lesquelles la rotation a été induite par un disque tournant. Malgré la beauté stupéfiante de leurs émissions de lumière qui retracent intimement l'environnement fluide, nous avons décidé qu’il serait préférable de synthétiser une suspension colloïdale avec des capacités luminescentes accordables.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    L’idée de créer des proto-cellules bioluminescentes artificielles a suscité l'enthousiasme et l'engagement de collaboration avec l'Université Radboud de Huck.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+  <hr>
+  </div>
+
+
+{% endblock content %}

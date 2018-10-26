@@ -1,0 +1,138 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  {% ifequal LANGUAGE_CODE  'fr' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Ingénierie du vent et vibrations
+    </h1>
+    <hr>
+    <h2>Comment calculer les mouvements de structures placées dans un écoulement comme le vent ?
+    </h2>
+
+    <span class="vert bolder">Xavier Amandolese</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/pascal" class="vert bolder">
+      Pascal Hémon</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/delangre" class="vert bolder">
+      Emmanuel de Langre</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Lorsqu'une structure souple est soumise à un écoulement tel que le vent - ou, inversement,
+      lorsqu'elle avance dans un fluide au repos - elle interagit avec le fluide selon le principe
+      d'action-réaction. On parle ainsi d'interactions fluide-structure. Si l'écoulement est en air
+      on utilise également  le terme aéroélasticité. L'ingénierie du vent qui étudie plus précisément
+      les interactions entre le vent et les activités humaines rentre dans ce cadre.
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Nous nous intéressons au comportement des structures qui vibrent ou oscillent sous l'action d'un
+    écoulement fluide. Plusieurs types d'instabilité peuvent entrer en jeu, le flottement par couplage
+    de mode, le flottement de décrochage responsable de la destruction du Pont de Tacoma, le galop,
+    les vibrations induites par lâcher périodique de tourbillons, la réponse à la turbulence comme
+    les rafales de vent. Ils concernent des domaines variés, du génie civil à l'aéronautique en
+    passant par l'industrie nucléaire et la biomécanique. Ces recherches sont également utiles pour
+    la conception de <a href="{% url "systeme-eoliens-et-hydroliens" %}" >
+    nouveaux systèmes de récupération d'énergie.</a>
+    </p>
+    <p>
+
+    </p>
+		<div class="row">
+
+       <section class="col-sm-4 col-md-4 col-lg-4">
+        <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/176145230?title=0&portrait=0" width="360" height="204" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		  </section>
+
+		  <section class="col-sm-4 col-md-4 col-lg-4">
+        <img class="vignette img-responsive" src="{{ MEDIA_URL }}larecherche/ingenierie-du-vent-et-vibrations1.jpg" width="360" height="204" alt="dernière video"/>
+      </section>
+
+
+{#		  <section class="col-sm-4 col-md-4 col-lg-4">#}
+{#		    <h4>Ciliat Nassula ornata</h4>#}
+{#        <img class="vignette img-responsive" src="{{ STATIC_PREFIX }}img/vignette_photos.jpg" width="360" height="204" alt="dernière photo"/>#}
+{#		    <figcaption>Aliquam et nibh vel risus gravida porta at vitae elit. Phasellus tristique odio et molestie pulvinar. </figcaption>#}
+{#		  </section>#}
+
+    </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Plusieurs thèses ont été soutenues au LadHyX sur ces mécanismes :
+      <a href="{{ MEDIA_URL }}larecherche/manzoor.pdf" >Manzoor (2010)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/violette.pdf" > Violette (2009)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/lemaitre.pdf" > Lemaitre (2006)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/facchinetti.pdf" > Faschinetti (2003)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/doare.pdf" > Doaré (2001)</a>,<br>
+      Le LadHyX est un membre actif de <a href="http://www.aiv.asso.fr/" >
+    l'Association de l'Ingénierie du Vent (AIV)</a>.
+      Des contrats industriels variés sont régulièrement réalisés par l'équipe comme par exemple pour
+      la construction de la Fondation Louis Vuitton à Paris.
+    </p>
+  <hr>
+  </div>
+{% endifequal %}
+
+  {% ifequal LANGUAGE_CODE 'en' %}
+    <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Wind engineering and vibrations
+    </h1>
+    <hr>
+    <h2>How to compute the motion of structures interacting with a fluid flow such as atmospheric wind ?
+    </h2>
+
+    <span class="vert bolder">Xavier Amandolese</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/pascal" class="vert bolder">
+      Pascal Hémon</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/delangre" class="vert bolder">
+      Emmanuel de Langre</a>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      When a flexible structure is submitted to a flow, such as wind, - or, conversely, when the structure
+      moves surrounded by a fluid at rest - it interacts with the fluid according to the action-reaction
+      principle. We speak then of <b>fluid-structure interactions</b>. When the flow is in air, one uses the word
+      <b>aeroelasticity</b>. This is also the case for wind engineering which studies the interactions between
+      the wind and human activities.
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      We are interested in the behavior of structures which vibrate or oscillate under the action of a flow.
+      Different kind of instabilities can occur, coupled mode flutter, stall flutter which is responsible for
+      the Tacoma bridge collapse, galloping, vortex induced vibrations, turbulence induced vibrations.
+      Numerous domains are concerned, for instance civil engineering, aeronautics, energy, and biomechanics.
+      These research are also useful for the design of
+      <a href="{% url "systeme-eoliens-et-hydroliens" %}" >new energy harvester systems.</a>
+    </p>
+    <p>
+
+    </p>
+      <div class="row">
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/176145230?title=0&portrait=0" width="360" height="204" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </section>
+
+        <section class="col-sm-4 col-md-4 col-lg-4">
+          <img class="vignette img-responsive" src="{{ MEDIA_URL }}larecherche/ingenierie-du-vent-et-vibrations1.jpg" width="360" height="204" alt="dernière video"/>
+        </section>
+
+      </div>
+    <br>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Several PhD thesis have been succesffully defended at LadHyX on these phenomena :
+      <a href="{{ MEDIA_URL }}larecherche/manzoor.pdf" >Manzoor (2010)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/violette.pdf" > Violette (2009)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/lemaitre.pdf" > Lemaitre (2006)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/facchinetti.pdf" > Faschinetti (2003)</a>,
+      <a href="{{ MEDIA_URL }}larecherche/doare.pdf" > Doaré (2001)</a>,<br>
+      LadHyX is an active member of <a href="http://www.aiv.asso.fr/" >
+      l'Association de l'Ingénierie du Vent (AIV)</a> the french speaking wind engineering association
+      (Belgium, France, Swizerland).
+      Various industrial contracts are oftenly performed, such as for the erection of the Fondation
+      Louis Vuitton in Paris.
+    </p>
+      <hr>
+    </div>
+
+  {% endifequal %}
+{% endblock content %}

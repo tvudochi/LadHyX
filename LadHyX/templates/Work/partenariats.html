@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block image_specifique %}partenariats{% endblock image_specifique %}
+{% block slogan %}
+  <div class="sloga col-xs-6 col-xs-offset-3" style="min-height: 0px">
+  </div>
+{% endblock slogan %}
+{% block Actu %}
+  <div class="newseven col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-1" style="min-height: 0px">
+  </div>
+{% endblock Actu %}
+
+{% block content %}
+  <div class="content row">
+
+    {% get_static_prefix as STATIC_PREFIX %}
+    <h1 style="color: red"> EN CONSTRUCTION</h1>
+
+
+	<ul class="liste nav nav-tabs col-xs-10 col-xs-offset-1  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" role="tablist ">
+  <li class="tab-item active">
+    <a class="nav-link active" data-toggle="tab" href="#partenariats" role="tab">partenariats</a>
+  </li>
+  <li class="tab-item">
+    <a class="nav-link" data-toggle="tab" href="#chaires" role="tab">chaires d'entreprise</a>
+  </li>
+  <li class="tab-item">
+    <a class="nav-link" data-toggle="tab" href="#startupsnews" role="tab">startups</a>
+  </li>
+</ul>
+
+
+<div class="tab-content col-xs-10  col-xs-offset-1 col-sm-10 col-sm-offset-1  col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+ <!-- Tab panes PARTENARIATS-->
+  <div class="tab-pane active" id="partenariats" role="tabpanel">
+
+
+	<p class="clearfix">
+	<p><img class="vignette col-xs-2" src="{{ STATIC_PREFIX }}img/vignette_partenariats.png" width="120" height="120" alt="Claire Hivroz"/>
+	<h2><em>"Claire Hivroz et l'Institut Curie"</em></h2>
+	</p>
+	<p class="clearfix">
+	<p>
+	<img class="vignette col-xs-2" src="{{ STATIC_PREFIX }}img/vignette_partenariats_2.png" width="120" height="120" alt="Jean-Marc Chomaz"/>
+	<h2><em>"La fondation Daniel et Nina Carasso"</em></h2>
+    </p>
+
+  </div>
+
+  <!-- Tab panes CHAIRES-->
+  <div class="tab-pane" id="chaires" role="tabpanel">
+    <p class="clearfix">
+	<p>
+	<img class="vignette col-xs-2" src="{{ STATIC_PREFIX }}img/vignette_partenariats_3.png" width="120" height="120" alt="Pascal Hémon"/>
+	<h2><em>"La simulation du vent sur les constructions : l’exemple de la Fondation Louis Vuitton"</em></h2>
+	Au-delà des effets statiques, le calcul des effets des rafales de vent sur les constructions représente parfois un défi scientifique et technique. La Fondation Louis Vuitton récemment inaugurée près de Paris en est un parfait exemple. Les douze voiles de verre qui entourent le bâtiment imaginé par l’architecte Frank Géhry ont été calculées par simulation temporelle, contrairement à l’habitude où l’on utilise des méthodes spectrales. <a href="#" class="btn btn-auto" role="button">Lire la suite</a> </p>
+    </p>
+</div>
+<!-- Tab panes 	STARTUPS-->
+  <div class="tab-pane" id="startupsnews" role="tabpanel">
+   <p class="clearfix">
+
+
+	<p>
+	  <img class="vignette col-xs-2" src="{{ STATIC_PREFIX }}img/vignette_startups.png" width="120" height="120" alt="Chercheurs"/>
+	  <h2><em><em>"Quand la success story de PriceMatch rend possible celle d’Instent"</em></em></h2>
+
+	Instent, spin-off de l’X tout juste sortie de l’accélérateur X-UP de Polytechnique, réalise une première levée de fonds d’un million d’euros. Parmi les principaux investisseurs privés se trouvent les fondateurs de Pricematch, une start-up créée par des polytechniciens et depuis rachetée par Booking. <a href="#" class="btn btn-auto" role="button">Lire la suite</a></p>
+    </p>
+
+  </div>
+
+</div>
+{% endblock %}

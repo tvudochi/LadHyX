@@ -1,0 +1,66 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Art et Science</h1>
+
+    <hr>
+
+    <h2>Redshift n°0.20 Malevitch dialogue avec Takis</h2>
+
+    <!-- AUTEURS -->
+    <a href="#" class="vert bolder">Labofactory</a> -
+    <a href="#" class="vert bolder">Anouk Daguin</a> -
+    <a href="#" class="vert bolder">Laurent Karst</a> -
+    <a href="#" class="vert bolder">Jean-marc Chomaz</a>
+    <!-- FIN AUTEURS -->
+
+    <!- IMAGE et VIDEO --->
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+         <a href="{{ MEDIA_URL }}larecherche/art-et-science/art-science13.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/art-et-science/art-science13.jpg" >
+        </a>
+        <figcaption>Photo by Brigitte Cavanagh</figcaption>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+    <!-- FIN ILAGE ET VIDEO -->
+
+    <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Est-ce la dilatation de l’espace, ou bien la lumière qui finit par se souvenir que l’Univers à un âge ou bien qu’il n’en a plus ? Mais les ombres que nos corps portent sur les galaxies lointaines se décalent inéluctablement vers le rouge laissant sur nos silhouettes qu’une légère irisation de bleu. Comment retourner le temps pour éclairer l’Univers, étoile double de ton regard ? Le cri de l’absence contracte le vide. Les diaphanes lambeaux de nuit se mêlent aux vivants. Grandes voiles noires que le vent solaire gonfle, elles transforment le présent en une arche de fantômes.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      L'installation <b>Redshift n ° 0.20, Malevitch Dialogue avec Takis</b>, est composé d'un carré blanc maintenu en lévitation par un aimant, rappelant l'utilisation du champ magnétique par Takis. La double lampe inventée au laboratoire projette une ombre, noire avec des irisations rouges et cyans. Le spectateur portant des lunettes 3D rouge et cyan perçoit l'ombre du carré blanc pas sur le mur mais comme un carré noir flottant dans l'espace à la même distance du spectateur que la distance de la lumière au carré blanc.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+
+     <!-- PARAGRAPHE pour texte -->
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+Lorsque le spectateur s’approche l'ombre noire se déplace devant lui et reste à la même distance au début devant le carré blanc, un peu de temps derrière. L'ombre du monochrome blanc est un monochrome noir dématérialisée, comme si la peinture de 1915 le carré noir à bords blanc de Malevitch était passé dans une autre réalité, entrainé par un invisible  magnétique dans le sillage temporel du carré blanc peint trois ans plus tard. Ombre noire libérée du support sur lequel elle aurait dû se projeter,  entrant dans l’abstraction ultime du retournement temporel.
+    </p>
+    <!-- FIN PARAGRAPHE pour texte -->
+  <hr>
+  </div>
+
+
+{% endblock content %}

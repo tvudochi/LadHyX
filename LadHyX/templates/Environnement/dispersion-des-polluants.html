@@ -1,0 +1,103 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <h1>Dispersion of pollutants
+    </h1>
+    <hr>
+
+    <span class="vert bolder">R.V.K. Chakravarthy</span> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/lutz" class="vert bolder">
+      L. Lesshafft</a> -
+    <span  class="vert bolder">P. Huerre</span>
+
+    <h3>Publications</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      R. V. K. Chakravarthy, L. Lessafft, and P. Huerre, Local linear stability of laminar axisymmetric
+      plumes,<br> J. Fluid Mech. (2015), vol. 780, pp. 344-369
+      <a href="{{ MEDIA_URL }}larecherche/chakravarthy-2015.pdf" >(Preprint)</a>
+    </p>
+    <hr>
+    <h2>What drives the large scale structures in plumes ?</h2>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/dispersion-des-polluants1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/dispersion-des-polluants1.jpg" >
+
+          </img>
+        </a>
+        <figcaption style="text-align: justify">Plume rising from a volcano</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <h3>Motivation</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Plumes are flows driven by buoyancy. Analyzoing the dynamics of plumes is the first step towards
+      understanding flows of practical insterest like polluant transfer, noise control of an exhaust, etc.
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Most of the plumes exhibit large scale vortical structures as shown above. We aim to understand
+      the cause and behaviour of these vortical structures.
+    </p>
+
+    <h3>Methodology</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      The dynamics of thermal plumes are investigated by applying local (absolute/convective) and global
+      instability criteria that characterize the oscillator or amplifier behaviour. This analysis is carried
+      out in a linear framework and its result are compared against nonlinear simulations.
+    </p>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Most of the plumes exhibit large scale vortical structures as shown above. We aim to understand
+      the cause and behaviour of these vortical structures.
+    </p>
+
+    <h3>Results</h3>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      In a buoyancy dominated regime, the laminar self-similar plume exhibits absolute instability
+      for the first helical mode. This indicate an oscillator-type behaviour and could be the reason
+      for the vortical structures observed in the flow.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/dispersion-des-polluants2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/dispersion-des-polluants2.jpg" >
+
+          </img>
+        </a>
+      </section>
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+
+    <h3>References</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      M. Grae Worster, Stud. Appl. Maths (1986), pp. 139-152<br>
+      S. Wakitani, J. Phys. Soc. Jpn (1980), pp. 2392 - 2399.
+    </p>
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

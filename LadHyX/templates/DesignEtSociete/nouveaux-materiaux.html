@@ -1,0 +1,159 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>New materials</h1>
+    <hr>
+    <span class="vert bolder">P. S. Raux</span> -
+    <span class="vert bolder">H. Cockenpot</span> -
+    <span class="vert bolder">M. Ramaioli</span> -
+    <a href="https://www.pmmh.espci.fr/fr/gouttes" class="vert bolder">D. Quéré</a> -
+    <a href="https://www.pmmh.espci.fr/fr/gouttes" class="vert bolder">C. Clanet</a>
+
+    <h3>Publications</h3>
+    <p>
+      P. S. Raux, H. Cockenpot, M. Ramaioli, D. Quéré and C. Clanet, Wicking in a Powder, Langmuir, 29, 3636-3644, 2013,
+      <a href="{{ MEDIA_URL }}larecherche/langmuir-raux-2013.pdf" >preprint</a>
+    </p>
+    <hr>
+    <h3>Applications</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      Imbibition can sometimes be beneficial for Agriculture and Inductry.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux1.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux1.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+          Hydrophobic soils and nutriment transport
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux3.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux3.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+          Water seepage in wall.
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+	      <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux2.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux2.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+          Dissolution of powder
+        </figcaption>
+      </section>
+    </div>
+    <br>
+    <h3>Lab experiments</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+      We measure the critical angle &Theta;* corresponding to the imbibition threshold.
+    </p>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+        <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux4.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux4.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+{#      <section class="col-sm-4 col-md-4 col-lg-4">#}
+
+{#      </section>#}
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+	      <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux5.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux5.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+    </div>
+    <br>
+    <h3>Results</h3>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Experimentally, the critical contact angle &Theta;* is found to be close to 51°, far from the value
+      for capillary tubes (90°). Additionnaly, it does not depend on the size of the grains.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux6.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux6.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+       <a href="{{ MEDIA_URL }}larecherche/nouveaux-materiaux7.jpg"
+           data-toggle="lightbox">
+          <img class="vignette img-responsive img-fluid"
+               src="{{ MEDIA_URL }}larecherche/nouveaux-materiaux7.jpg" >
+          </img>
+        </a>
+
+        <figcaption style="text-align: justify">
+        </figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+
+      </section>
+    </div>
+    <br>
+
+  <hr>
+  </div>
+
+
+{% endblock content %}

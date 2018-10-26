@@ -1,0 +1,92 @@
+{% extends "base_larecherche.html" %}
+{% load  static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+{% get_static_prefix as STATIC_PREFIX %}
+
+  <div class="col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+    <h1>Biomécanique et biomimétique végétale</h1>
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/delangre" class="vert bolder">
+      Emmanuel de Langre</a> -
+    <a href="http://www.off-ladhyx.polytechnique.fr/people/pascal" class="vert bolder">
+      Pascal Hémon</a>
+    <hr>
+    <h2>VIBROPHENE : une innovation dans le domaine du phénotypage pour les plantes</h2>
+
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+   Le phénotypage non destructif consiste à identifier une caractéristique physique de lots de plantes et de la suivre au cours de leur croissance.
+Cela permet par exemple d'observer les différences entre plantes traitées et non traitées ou entre différentes variétés. Il existe ainsi des plateformes de phénotypage haut-débit qui se développent dans le monde entier, capables de traiter des centaines de plantes chaque jour et pour lesquelles des entreprises spécialisées développent des systèmes de mesure non destructif.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    La connaissance des fréquences vibratoires permet de construire une signature mécanique de la plante analysée, particulièrement utile pour connaître, par exemple, le risque de casse au vent ou de déformation en période sèche. C’est là que réside notre innovation.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Notre méthode de phénotypage sans contact par signature vibratoire permet de caractériser, de manière précoce et discriminante, des phénotypes inconnus jusqu’alors. Déjà largement automatisée, elle peut être optimisée pour le phénotypage haut-débit de plantes. Permettant de révéler de nouveaux phénotypes inconnus, elle permet de mesurer des caractères qui sont importants pour la tenue des plantes face au vent.
+    </p>
+
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Un brevet a été déposé conjointement par l'Ecole Polytechnique, le CNRS (I2BC, Gif/Yvette) et l'INRA <br>(PIAF, Clermont-Ferrand).
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <iframe class="vignette img-responsive" src="https://player.vimeo.com/video/213665517" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Vibrophene - Phénotypage vibratoire</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <hr>
+
+   <h2>Comment les plantes interagissent-elles avec le vent et peut-on les imiter pour innover ?</h2>
+    <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Le vent déforme et fait bouger les plantes, de l'arbre entier à la feuille individuelle. Ces mouvements sont importants pour la plante, pour son fonctionnement, sa croissance et  parfois sa survie. Depuis plus de 15 ans le LadHyX étudie ces mouvements avec le laboratoire PIAF de l'INRA, spécialisé dans l'arbre. Nous nous intéressons à l'effet de la déformation sur la réduction du risque de rupture des feuilles ou des branches. Nous étudions aussi par des expériences, des simulations numériques et des modèles les modes vibratoires de ces systèmes, pour mieux connaitre leurs interactions avec le vent.
+    </p>
+
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Ces travaux nous servent aussi à proposer des nouveaux concepts de structures souples, en s'inspirant des stratégies des plantes pour s'adapter passivement au vent.
+    </p>
+
+    <div class="row">
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      <iframe class="vignette img-responsive" src="https://www.dailymotion.com/embed/video/x28jaj5" frameborder="0"
+               webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <figcaption>Un reportage de CNRS Images sur une expérience grandeur nature</figcaption>
+      </section>
+
+      <section class="col-sm-4 col-md-4 col-lg-4">
+      </section>
+    </div>
+    <br>
+
+     <p style="display:block;text-align:justify; margin-right:auto;margin-left:auto;">
+    Plusieurs thèses ont été soutenues sur cette thématique :<br>
+       <a href="{{ MEDIA_URL }}larecherche/tadrist.pdf">Tadrist (2015)</a>,
+       <a href="{{ MEDIA_URL }}larecherche/theckes.pdf">Theckes (2012)</a>,
+       <a href="{{ MEDIA_URL }}larecherche/derloughian.pdf">Der Loughian (2012)</a>,
+       <a href="{{ MEDIA_URL }}larecherche/lopez.pdf">Lopez (2012)</a>,
+       <a href="{{ MEDIA_URL }}larecherche/gosselin.pdf">Gosselin (2009)</a>,
+       <a href="{{ MEDIA_URL }}larecherche/rodriguez.pdf">Rodriguez (2009)</a>,
+       <a href="{{ MEDIA_URL }}larecherche/py.pdf">Py (2005)</a>.
+    </p>
+
+  <hr>
+
+  </div>
+
+
+{% endblock content %}
