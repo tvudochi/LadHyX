@@ -26,7 +26,6 @@ print(os.path.join(BASE_DIR, 'LadHyX', 'templates'))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^b4nhjtrh&e=3l_=@*85o38$ky19gh&0iuuort7i+fspf*@tfd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = ['*']
@@ -38,9 +37,6 @@ if gethostname() == 'alix':
     OUVRAGES = BASE_DIR + '/publications/Data/publi.bo.dat'
     THESES = BASE_DIR + '/publications/Data/publi.ph.dat'
     INFO = BASE_DIR + '/publications/Data/info-publi.dat'
-    TOKEN = "12691339049ae2a9fa802cfc48a44d3e"
-    KEY = "4154291421c99e630e0bc3c3a1ba7d1102e76269"
-    SECRET = "tddAX7IrrZ2tOSWmZdcxfbKdH0+YjtBvPuzjZYUP6C6+t9KLyCha7dzH9YnavjWtmPb2/o73FsuHtuDSiWtDaLHJ2D5odEiWrmr8yNbhcOB1iQY4K0/w9rV4X8q8SrKZ"
 
 if gethostname() == 'quasi':
     DEBUG = False
@@ -49,9 +45,7 @@ if gethostname() == 'quasi':
     OUVRAGES = '/srv/www/Django-publications/Data/publi.bo.dat'
     THESES = '/srv/www/Django-publications/Data/publi.ph.dat'
     INFO = '/srv/www/Django-publications/Data/info-publi.dat'
-    TOKEN = 'b9e171f734af8e6a52021c63ae6af185'
-    KEY = '9a8c333c8e3b2c8ffa1c413cbfc7543c7044f70c'
-    SECRET = 'vtnar0+IV19YNf+iNfgzK3h2Ivclqc/KFCg2osbWdO3Xu00Dd/c0wZjsGw5Qv8cacYV1DNlaXQM3AyS+qK1Xe/aAIPVcPXfak8GDzYhWHdxeGq0MrSV+Y6TBg/tMV8wQ'
+
 
 # Application definition
 
@@ -139,9 +133,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'localhost',
         'PORT': '',
-        'NAME': 'LadHyXWeb',
-        'USER': 'cms_ladhyx',
-        'PASSWORD': 'ladhyx_cms!',
+     
     }
 }
 
